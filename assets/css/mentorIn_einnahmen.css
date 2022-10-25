@@ -1,3 +1,7 @@
+.userName {
+  color: rgb(92, 91, 164);
+}
+
 .mainSec_nav .nav-link:hover {
   color: rgb(92, 91, 164);
   background-color: rgba(90, 92, 168, 0.09);
@@ -72,8 +76,8 @@ table.einnahmen-table {
   color: #5a5ca8;
 }
 
-.sticky-table th:nth-child(2),
-.sticky-table td:nth-child(2) {
+.sticky-table th:first-child,
+.sticky-table td:first-child {
   position: sticky;
   left: 0;
   z-index: 2;
