@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="assets/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <title>Share4Growth</title>
+
+    <!-- ............. stylesheets ............. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/css/aos.css" />
+    <link rel="stylesheet" href="assets/css/glightbox.min.css" />
+
+    <link rel="stylesheet" href="assets/css/default.css" />
+    <link rel="stylesheet" href="assets/css/profile.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--  -->
+    <link rel="stylesheet" href="assets/css/mentorIn_einnahmen.css" />
+  </head>
+
+  <body>
+    <!-- ..................... start header section ..................... -->
+    <header class="header_sec fixed-top">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <a href="index.html">
+            <img
+              src="assets/img/Logo.svg"
+              alt="logo"
+              class="img-fluid header_sec_logo"
+            />
+          </a>
+
+          <div class="header_navLinkArea" id="header_navLinkArea">
+            <div class="nav_backDrop d-lg-none" id="nav_backDrop"></div>
+            <div class="header_navLinksBox">
+              <button class="menu_clsBtn d-lg-none" id="menu_clsBtn"></button>
+              <ul class="header_navLinks">
+                <li class="header_navItem d-lg-none">
+                  <a href="index.html">
+                    <img
+                      src="assets/img/Logo.svg"
+                      alt="logo"
+                      class="img-fluid header_sec_logo"
+                    />
+                  </a>
+                </li>
+                <li class="header_navItem">
+                  <a class="header_navLink" href="index.html">Home</a>
+                </li>
+                <li class="header_navItem">
+                  <a class="header_navLink" href="competence_marketplace.html"
+                    >Kompetenzmarktplatz</a
+                  >
+                </li>
+                <li class="header_navItem">
+                  <a class="header_navLink" href="growth_marketplace.html"
+                    >Wachstumsmarktplatz</a
+                  >
+                </li>
+                <li class="header_navItem">
+                  <a class="header_navLink" href="prices.html">Preise</a>
+                </li>
+                <li class="header_navItem">
+                  <a class="header_navLink" href="blog.html">Blog</a>
+                </li>
+                <!-- 
+                                before login
+
+                                <div class="header_navItem d-lg-none">
+                                    <a href="#" class="btn btn_primary rounded-pill">Log In</a>
+                                </div> 
+                            -->
+
+                <!-- for logged user -->
+                <li class="header_navItem d-lg-none">
+                  <div class="logged_divider"></div>
+                </li>
+                <li class="header_navItem d-lg-none">
+                  <a class="header_navLink" href="mentor_profile_details.html"
+                    >MentorIn</a
+                  >
+                </li>
+                <li class="header_navItem d-lg-none">
+                  <a
+                    class="header_navLink active"
+                    href="mentee_profile_details.html"
+                    >Mentee</a
+                  >
+                </li>
+                <li class="header_navItem d-lg-none">
+                  <a class="header_navLink" href="general_settings.html"
+                    >Allg. Einstellungen</a
+                  >
+                </li>
+                <li class="header_navItem d-lg-none">
+                  <a class="header_navLink" href="security_settings.html"
+                    >Sicherheit</a
+                  >
+                </li>
+                <li class="header_navItem d-lg-none">
+                  <a class="header_navLink" href="notification_settings.html"
+                    >Benachrichtigungen</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!--
+                    before login
+
+                    <div class="d-none d-lg-block">
+                        <a href="#" class="btn btn_primary rounded-pill">Log In</a>
+                    </div> 
+                -->
+
+          <!-- for logged user -->
+          <div class="userOptBox">
+            <div>
+              <a href="#" class="userOpt_item"
+                ><i class="fa-solid fa-arrow-right-from-bracket"></i
+              ></a>
+            </div>
+            <div>
+              <a href="#" class="userOpt_item">
+                <i class="fa-regular fa-bell"></i>
+                <span class="notification_idecator"></span>
+              </a>
+            </div>
+
+            <div class="d-none d-lg-block">
+              <div class="btn-group">
+                <button
+                  type="button"
+                  class="btn userOpt_userImgBox"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    class="userOpt_userImg"
+                    src="assets/img/messages/profile_img.png"
+                    alt="profile image"
+                  />
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end cus_dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="mentor_profile_details.html"
+                      >MentorIn</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item active"
+                      href="mentee_profile_details.html"
+                      >Mentee</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="general_settings.html"
+                      >Allg. Einstellungen</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="security_settings.html"
+                      >Sicherheit</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="notification_settings.html"
+                      >Benachrichtigungen</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="userWelcomeTxt">
+              Schön das Du da bist <br />
+              <span class="c_secondary">22_George</span>
+            </div>
+          </div>
+
+          <button class="menu_toggleBtn d-lg-none" id="menu_toggleBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- ..................... End header section ..................... -->
+
+    <!-- ..................... start main section ..................... -->
+    <div class="main_sec mentee_main_sec">
+      <!-- navigation toggle button -->
+      <div class="d-xl-none">
+        <button class="main_navColTglBtn">
+          <i class="fa-solid fa-gear"></i>
+        </button>
+      </div>
+      <!-- navigation column -->
+      <div class="main_navCol">
+        <div class="main_navColBox">
+          <div class="userDetailsBox">
+            <img
+              class="userImg"
+              src="assets/img/profile/user_img.png"
+              alt="Profile picture"
+            />
+            <p class="userName">22_George</p>
+
+            <div class="pageNavBox">
+              <a
+                class="pageNavItem pageNavItem1 active"
+                href="mentor_profile_details.html"
+                >MentorIn</a
+              >
+              <a
+                class="pageNavItem pageNavItem2"
+                href="mentee_profile_details.html"
+                >Mentee</a
+              >
+            </div>
+
+            <div class="d-flex justify-content-center user_ratingBox">
+              <div>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+              </div>
+              <div class="text-warning fw-bold ps-1 mb-0">4.8</div>
+              <div class="ps-1 mb-0">(121)</div>
+            </div>
+          </div>
+          <ul class="navbar-nav flex-column mainSec_nav thin_scrollbar">
+            <li class="nav-item">
+              <a class="nav-link" href="mentee_profile_details.html">
+                <div class="d-flex align-items-center">
+                  <span class="nav_link_icon">
+                    <i class="fa-solid fa-house-chimney"></i>
+                  </span>
+                  <span class="nav-link-text ps-1">Profildetails</span>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link dropdown_indicator collapsed"
+                href="#growth_plan"
+                role="button"
+                data-bs-toggle="collapse"
+                aria-expanded="false"
+                aria-controls="dashboard"
+              >
+                <div class="d-flex align-items-center">
+                  <span class="nav_link_icon">
+                    <i class="fa-solid fa-chart-area"></i>
+                  </span>
+                  <span class="nav-link-text ps-1">Meine Wachstums- pläne</span>
+                </div>
+              </a>
+              <div class="collapse" id="growth_plan">
+                <ul class="nav sub_nav">
+                  <li class="sub_nav_item">
+                    <a class="sub_nav_link" href="mentee_set_growth_plans.html">
+                      Wachstumspläne einstellen
+                    </a>
+                  </li>
+                  <li class="sub_nav_item">
+                    <a
+                      class="sub_nav_link"
+                      href="mentee_submitted_requests.html"
+                    >
+                      Abgegebene Anfragen
+                    </a>
+                  </li>
+                  <li class="sub_nav_item">
+                    <a class="sub_nav_link" href="mentee_order_overview.html">
+                      Auftragsübersicht
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mentee_reviews.html">
+                <div class="d-flex align-items-center">
+                  <span class="nav_link_icon">
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                  <span class="nav-link-text ps-1">Bewertungen</span>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mentee_investments.html">
+                <div class="d-flex align-items-center">
+                  <span class="nav_link_icon">
+                    <i class="fa-solid fa-wallet"></i>
+                  </span>
+                  <span class="nav-link-text ps-1">Investitionen</span>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="mentee_favourites.html">
+                <div class="d-flex align-items-center">
+                  <span class="nav_link_icon">
+                    <i class="fa-solid fa-wallet"></i>
+                  </span>
+                  <span class="nav-link-text ps-1">Einnahmen</span>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mentorIn_einnahmen.html">
+                <div class="d-flex align-items-center">
+                  <span class="nav_link_icon">
+                    <i class="fa-solid fa-heart"></i>
+                  </span>
+                  <span class="nav-link-text ps-1">Favoriten</span>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="s4g_performace_dashboard.html">
+                <div class="d-flex align-items-center">
+                  <span class="nav_link_icon">
+                    <img
+                      class="nav_link_icon_1"
+                      src="assets/img/profile/s4g_performance_dashboard_1.svg"
+                      alt="icon"
+                    />
+                    <img
+                      class="nav_link_icon_2"
+                      src="assets/img/profile/s4g_performance_dashboard_2.svg"
+                      alt="icon"
+                    />
+                  </span>
+                  <span class="nav-link-text ps-1"
+                    >S4G Performance Dashboard</span
+                  >
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="s4g_automation.html">
+                <div class="d-flex align-items-center">
+                  <span class="nav_link_icon">
+                    <img
+                      class="nav_link_icon_1"
+                      src="assets/img/profile/s4g_automatisierung_1.svg"
+                      alt="icon"
+                    />
+                    <img
+                      class="nav_link_icon_2"
+                      src="assets/img/profile/s4g_automatisierung_2.svg"
+                      alt="icon"
+                    />
+                  </span>
+                  <span class="nav-link-text ps-1">S4G Automatisierung</span>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="s4g_marketing">
+                <div class="d-flex align-items-center">
+                  <span class="nav_link_icon">
+                    <img
+                      class="nav_link_icon_1"
+                      src="assets/img/profile/s4g_marketing_1.svg"
+                      alt="icon"
+                    />
+                    <img
+                      class="nav_link_icon_2"
+                      src="assets/img/profile/s4g_marketing_2.svg"
+                      alt="icon"
+                    />
+                  </span>
+                  <span class="nav-link-text ps-1">S4G Marketing</span>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <!-- parent pages-->
+              <a
+                class="nav-link dropdown_indicator collapsed"
+                href="#moreOption"
+                role="button"
+                data-bs-toggle="collapse"
+                aria-expanded="false"
+                aria-controls="dashboard"
+              >
+                <div class="d-flex align-items-center">
+                  <span class="nav_link_icon">
+                    <i class="fa-brands fa-buromobelexperte"></i>
+                  </span>
+                  <span class="nav-link-text ps-1">Others</span>
+                </div>
+              </a>
+              <div class="collapse" id="moreOption">
+                <ul class="nav sub_nav">
+                  <li class="sub_nav_item">
+                    <a class="sub_nav_link" href="#"> Demo title 1 </a>
+                  </li>
+                  <li class="sub_nav_item">
+                    <a class="sub_nav_link" href="#"> Demo title 2 </a>
+                  </li>
+                  <li class="sub_nav_item">
+                    <a class="sub_nav_link" href="#"> Demo title 3 </a>
+                  </li>
+                  <li class="sub_nav_item">
+                    <a class="sub_nav_link" href="#"> Demo title 4 </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="main_navColBackdrop d-xl-none"></div>
+      </div>
+
+      <!-- main content column -->
+      <div class="main_contentCol">
+        <div class="main_contentColBox">
+          <div class="einnahmen_contianer">
+            <div class="einnahmen-toggle">
+              <label class="d-flex align-items-center mb-2">
+                <span class="me4">4ME</span>
+                <div class="form-check form-switch">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id=""
+                    autocomplete="off"
+                    data-tgl_inprow="inprow_itm_2"
+                  />
+                </div>
+                <span class="c_gray">4 Share</span>
+              </label>
+            </div>
+            <h2 class="einnahmen_secTitle">
+              Meine Einnahmenübersicht als MentorIn -
+              <span>4Me</span>
+            </h2>
+            <div class="row">
+              <div class="einnahmen-wrapper">
+                <div class="sticky-table">
+                  <table class="einnahmen-table">
+                    <thead>
+                      <tr>
+                        <th>
+                          <select>
+                            <option>Datum</option>
+                          </select>
+                        </th>
+                        <th>
+                          <select>
+                            <option>
+                              Benutzername <br />
+                              Mentee
+                            </option>
+                          </select>
+                        </th>
+                        <th>
+                          Rechnungs- <br />
+                          nummer
+                        </th>
+                        <th>Rechnung</th>
+                        <th>
+                          Abrechnungs- <br />
+                          nummer
+                        </th>
+                        <th>
+                          S4G- <br />
+                          Abrechnung
+                        </th>
+                        <th>
+                          <select>
+                            <option>
+                              Gesamt- <br />
+                              gutschrift
+                            </option>
+                          </select>
+                        </th>
+                        <th>Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>15.07.2022</td>
+                        <td>Leaves</td>
+                        <td>R4M2022111</td>
+                        <td style="text-align: center">
+                          <a href="#">
+                            <img
+                              src="assets/icon/download-deep.svg"
+                              alt="download-deep"
+                          /></a>
+                        </td>
+                        <td>A4M2022111</td>
+                        <td style="text-align: center">
+                          <a href="#"
+                            ><img
+                              src="assets/icon/download-light.svg"
+                              alt="download-light"
+                          /></a>
+                        </td>
+                        <td>6,03 EUR</td>
+                        <td>abgeschlossen</td>
+                      </tr>
+                      <tr>
+                        <td>16.05.2022</td>
+                        <td>LH_2022</td>
+                        <td>R4M2022298</td>
+                        <td style="text-align: center">
+                          <a href="#"
+                            ><img
+                              src="assets/icon/download-deep.svg"
+                              alt="download-deep"
+                          /></a>
+                        </td>
+                        <td>A4M2022298</td>
+                        <td style="text-align: center">
+                          <a href="#"
+                            ><img
+                              src="assets/icon/download-light.svg"
+                              alt="download-light"
+                          /></a>
+                        </td>
+                        <td>6,69 EUR</td>
+                        <td>abgeschlossen</td>
+                      </tr>
+                      <tr>
+                        <td>1.05.2022</td>
+                        <td>210Luka</td>
+                        <td>R4M2022296</td>
+                        <td style="text-align: center">
+                          <a href="#"
+                            ><img
+                              src="assets/icon/download-deep.svg"
+                              alt="download-deep"
+                          /></a>
+                        </td>
+                        <td>A4M2022296</td>
+                        <td style="text-align: center">
+                          <a href="#"
+                            ><img
+                              src="assets/icon/download-light.svg"
+                              alt="download-light"
+                          /></a>
+                        </td>
+                        <td>6,52 EUR</td>
+                        <td>abgeschlossen</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ..................... end main section ..................... -->
+
+    <!-- ..................... Start footer section ..................... -->
+    <footer class="footer_sec">
+      <div class="container">
+        <div class="row footer_topRow">
+          <div class="col-0 col-xl-2"></div>
+          <div class="col-lg-12 col-xl-9">
+            <div class="row">
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="footer_content">
+                  <p class="footer_contentTitle">Kompetenzmarktplatz</p>
+                  <ul class="footer_nav">
+                    <li class="footer_navItem">
+                      <a
+                        class="footer_navLink"
+                        href="about_competence_marketplace.html"
+                        >So funktioniert's</a
+                      >
+                    </li>
+                    <li class="footer_navItem">
+                      <a class="footer_navLink" href="#"
+                        >Kostenlose Registrierung</a
+                      >
+                    </li>
+                    <li class="footer_navItem">
+                      <a class="footer_navLink" href="#">Login</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="footer_content">
+                  <p class="footer_contentTitle">Wachstumsmarktplatz</p>
+                  <ul class="footer_nav">
+                    <li class="footer_navItem">
+                      <a
+                        class="footer_navLink"
+                        href="about_growth_marketplace.html"
+                        >So funktioniert's</a
+                      >
+                    </li>
+                    <li class="footer_navItem">
+                      <a class="footer_navLink" href="#"
+                        >Kostenlose Registrierung</a
+                      >
+                    </li>
+                    <li class="footer_navItem">
+                      <a class="footer_navLink" href="#">Login</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-2">
+                <div class="footer_content">
+                  <p class="footer_contentTitle">Über uns</p>
+                  <ul class="footer_nav">
+                    <li class="footer_navItem">
+                      <a class="footer_navLink" href="#">Team</a>
+                    </li>
+                    <li class="footer_navItem">
+                      <a class="footer_navLink" href="#">Karriere</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-2">
+                <div class="footer_content">
+                  <p class="footer_contentTitle">Hilfe</p>
+                  <ul class="footer_nav">
+                    <li class="footer_navItem">
+                      <a class="footer_navLink" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="footer_navItem">
+                      <a class="footer_navLink" href="contact_us.html"
+                        >Hilfe und Kontakt</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-2">
+                <div class="footer_content">
+                  <p class="footer_contentTitle">Rechtliches</p>
+                  <ul class="footer_nav">
+                    <li class="footer_navItem">
+                      <a class="footer_navLink" href="#">Impressum</a>
+                    </li>
+                    <li class="footer_navItem">
+                      <a class="footer_navLink" href="#">Datenschutz</a>
+                    </li>
+                    <li class="footer_navItem">
+                      <a class="footer_navLink" href="#">AGBs</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-12 col-xl-8">
+            <p class="footer_contentTitle text-center">Folge uns</p>
+
+            <div class="footer_socialLinks text-center">
+              <a class="footer_socialLink" href="#">
+                <img src="assets/icon/social_instagram.png" alt="facebook icon"
+              /></a>
+              <a class="footer_socialLink" href="#">
+                <img src="assets/icon/social_twitter.png" alt="facebook icon"
+              /></a>
+              <a class="footer_socialLink" href="#">
+                <img src="assets/icon/social_facebook.png" alt="facebook icon"
+              /></a>
+              <a class="footer_socialLink" href="#">
+                <img src="assets/icon/social_youtube.png" alt="facebook icon"
+              /></a>
+              <a class="footer_socialLink" href="#">
+                <img src="assets/icon/social_linkedin.png" alt="facebook icon"
+              /></a>
+            </div>
+
+            <p class="footer_copyrightText text-center">
+              Copyright &copy;2022 Share 4 Growth. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ..................... End footer section ..................... -->
+
+    <!-- ............. scripts ............. -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/glightbox.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

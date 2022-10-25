@@ -1,0 +1,11 @@
+<svg id="video_overlay_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58.423" height="58.423" viewBox="0 0 58.423 58.423">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_19" data-name="Rectangle 19" width="58.423" height="58.423" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_29" data-name="Group 29" clip-path="url(#clip-path)">
+    <path id="Path_48" data-name="Path 48" d="M38.064,56.629A18.564,18.564,0,1,1,56.629,38.064,18.585,18.585,0,0,1,38.064,56.629m0-28.393a9.828,9.828,0,1,0,9.828,9.828,9.84,9.84,0,0,0-9.828-9.828" transform="translate(1.794 1.794)" fill="#6e8fe7"/>
+    <path id="Path_49" data-name="Path 49" d="M19.656,39.313A19.656,19.656,0,1,1,39.313,19.656,19.679,19.679,0,0,1,19.656,39.313m0-37.129A17.472,17.472,0,1,0,37.129,19.656,17.493,17.493,0,0,0,19.656,2.184m0,28.393a10.92,10.92,0,1,1,10.92-10.92,10.933,10.933,0,0,1-10.92,10.92m0-19.656a8.736,8.736,0,1,0,8.736,8.736,8.746,8.746,0,0,0-8.736-8.736" transform="translate(0 0)" fill="#2e2b62"/>
+  </g>
+</svg>

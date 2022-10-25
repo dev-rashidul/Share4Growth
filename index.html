@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Share4Growth</title>
+
+    <!-- ............. stylesheets ............. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/glightbox.min.css">
+
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <!-- ..................... start header section ..................... -->
+    <header class="header_sec fixed-top">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="index.html">
+                    <img src="assets/img/Logo.svg" alt="logo" class="img-fluid header_sec_logo">
+                </a>
+                <button class="menu_toggleBtn d-lg-none" id="menu_toggleBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="header_navLinkArea" id="header_navLinkArea">
+                    <div class="nav_backDrop d-lg-none" id="nav_backDrop"></div>
+                    <div class="header_navLinksBox">
+                        <button class="menu_clsBtn d-lg-none" id="menu_clsBtn"></button>
+                        <ul class="header_navLinks">
+                            <li class="header_navItem d-lg-none">
+                                <a href="index.html">
+                                    <img src="assets/img/Logo.svg" alt="logo" class="img-fluid header_sec_logo">
+                                </a>
+                            </li>
+                            <li class="header_navItem">
+                                <a class="header_navLink active" href="index.html">Home</a>
+                            </li>
+                            <li class="header_navItem">
+                                <a class="header_navLink" href="competence_marketplace.html">Kompetenzmarktplatz</a>
+                            </li>
+                            <li class="header_navItem">
+                                <a class="header_navLink" href="growth_marketplace.html">Wachstumsmarktplatz</a>
+                            </li>
+                            <li class="header_navItem">
+                                <a class="header_navLink" href="prices.html">Preise</a>
+                            </li>
+                            <li class="header_navItem">
+                                <a class="header_navLink" href="blog.html">Blog</a>
+                            </li>
+                            <div class="header_navItem d-lg-none">
+                                <a href="#" class="btn btn_primary rounded-pill">Log In</a>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="d-none d-lg-block">
+                    <a href="#" class="btn btn_primary rounded-pill">Log In</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ..................... End header section ..................... -->
+
+    <!-- ..................... start hero section ..................... -->
+    <div class="hero_sec">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-6 col-xl-5 order-2 order-lg-1">
+                    <div class="hero_content">
+                        <h1 class="hero_title c_primary" data-aos="slide-up">
+                            Teilen <span class="c_secondary">ist die Währung der Zukunft!</span>
+                        </h1>
+
+                        <h2 class="hero_subTitle c_primary" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="100">Die beste Online-Plattform, <br> um mit Wissen und Können anderen zu helfen und dadurch gezielt die eigene Weiterentwicklung zu finanzieren!</h2>
+
+                        <p class="hero_desc c_gray" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="250">
+                            Du wolltest schon immer dein Wissen teilen oder von den Besten lernen? Dann werde Teil der <span class="c_secondary">Share4Growth</span> Community!
+                        </p>
+                        <div class="hero_secActBtns" data-aos="fade-up" data-aos-easing="ease-out" data-aos-delay="400">
+                            <button class="btn btn_primary rounded-pill">Als MentorIn</button>
+                            <span class="lg_font hero_orText">oder</span>
+                            <button class="btn btn_primary_outline rounded-pill">Als Mentee</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-5 order-1 order-lg-2">
+                    <img src="assets/img/home/hero_img.png" alt="Image" class="hero_img">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ..................... End hero section ..................... -->
+
+    <!-- ..................... Start our vision section ..................... -->
+    <div class="ov_sec bg_primary">
+        <div class="container">
+            <h2 class="ov_secTitle sec_title c_primary" data-aos="zoom-in">
+                Wir werden die Welt mit <span class="c_secondary">Share4Growth</span> verändern!
+            </h2>
+
+            <div class="row justify-content-center">
+                <!-- left content -->
+                <div class="col-md-6 col-lg-7 col-xl-6 order-2 order-md-1">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="ov_item">
+                                <img class="ov_itemIcon" src="assets/icon/growth_icon.svg" alt="Growth Icon">
+                                <h3 class="ov_item_title c_primary">Persönliches Wachstum</h3>
+                                <p class="ov_itemDesc c_gray">Wissen wird geteilt, um persönliches Wachstum zu ermöglichen. In diesem System kann jeder geben und nehmen - <span class="c_primary fw-bolder fst-italic">Share4Growth</span> setzt persönliche Bedürfnisse technisch um.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="ov_item">
+                                <img class="ov_itemIcon" src="assets/icon/interactive.svg" alt="interactive Icon">
+                                <h3 class="ov_item_title c_primary">Digitale Möglichkeiten </h3>
+                                <p class="ov_itemDesc c_gray">Digitale Möglichkeiten schaffen neue Wege der Wissensvermittlung, die orts-, zeit- und personen- unabhängig durchgeführt werden können.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="ov_item">
+                                <img class="ov_itemIcon" src="assets/icon/profile_icon.svg" alt="profile Icon">
+                                <h3 class="ov_item_title c_primary">Mentee & MentorIn</h3>
+                                <p class="ov_itemDesc c_gray">Hier kannst Du zwei Rollen einnehmen. Als Mentee, wenn Du etwas lernen möchtest und als MentorIn, wenn Du etwas gut vermitteln kannst. </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="ov_item">
+                                <img class="ov_itemIcon" src="assets/icon/development.svg" alt="development icon">
+                                <h3 class="ov_item_title c_primary">Persönliches Wachstum</h3>
+                                <p class="ov_itemDesc c_gray readMore_container">
+                                    Share4Growth ist die Plattform der Zukunft für Persönlichkeitsentwicklung auf allen Ebenen und verbindet die Weiterbildungstrends (z.B. Microlearning,<span class="extra_text">Silver Learning, Gamification, mobiles Lernen, gemeinsames Lernen, Selbstverantwortung) um lebenslanges Lernen zu ermöglichen. </span>                                    <span class="c_primary fw-bold readmore_btn">...Read More</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- right content (video play) -->
+                <div class="col-md-6 col-lg-4 order-1 order-md-2">
+                    <div class="ov_videoPlyBox">
+                        <div class="ov_videoTmbBox">
+                            <img class="ov_videoThumb" src="assets/img/home/video_thumbnail.png" alt="video thumb">
+                            <a class="ov_videoPlyBtn glightbox" href="https://youtu.be/DGy_bSUzCBA" data-gallery="g_3">
+                                <img src="assets/icon/play_icon.svg" alt="Play button">
+                            </a>
+
+                        </div>
+                        <img class="ov_videoOverlay ov_videoOverlay_1 ani_float" src="assets/icon/overlay_dubbleCircle.svg" alt="video overlay">
+                        <img class="ov_videoOverlay ov_videoOverlay_2 ani_float" src="assets/icon/overlay_triangle.svg" alt="video overlay">
+                        <img class="ov_videoOverlay ov_videoOverlay_3 ani_float" src="assets/icon/overlay_circle.svg" alt="video overlay">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img class="ov_sec_overlay" src="assets/img/home/ov_bgLeft.png" alt="bg">
+
+    </div>
+    <!-- ..................... End our vision section ..................... -->
+
+    <!-- ..................... Start How Share4Growth works section ..................... -->
+    <div class="hsw_sec">
+        <div class="container">
+            <h2 class="sec_title hsw_secTitle def_underline" data-aos="zoom-in">Wie funktioniert <span class="c_secondary">Share4Growth</span>?</h2>
+            <div class="row justify-content-center">
+                <div class="col-xl-10">
+                    <div class="hsw_content">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="hsw_item">
+                                    <div class="hsw_itemNum">
+                                        01
+                                    </div>
+                                    <div class="hsw_itemContent">
+                                        <img class="hsw_itemIcon" src="assets/icon/communities.png" alt="communities">
+                                        <h3 class="hsw_itemTitle">Community beitreten</h3>
+                                        <p class="hsw_itemDesc">
+                                            Anmelden und Profil erstellen
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="hsw_item">
+                                    <div class="hsw_itemNum">
+                                        02
+                                    </div>
+                                    <div class="hsw_itemContent">
+                                        <img class="hsw_itemIcon" src="assets/icon/cart.png" alt="cart">
+                                        <h3 class="hsw_itemTitle">Marktplatz befüllen</h3>
+                                        <p class="hsw_itemDesc">
+                                            Als Mentee einen Kompetenzengpass einstellen & als Mentor Kompetenzen & Fähigkeiten anbieten
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="hsw_item">
+                                    <div class="hsw_itemNum">
+                                        03
+                                    </div>
+                                    <div class="hsw_itemContent">
+                                        <img class="hsw_itemIcon" src="assets/icon/goal.png" alt="goal">
+                                        <h3 class="hsw_itemTitle">Teilen und Wachsen
+                                        </h3>
+                                        <p class="hsw_itemDesc">
+                                            Die gemeinsame Weiterentwicklung starten
+
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ..................... End How Share4Growth works section ..................... -->
+
+    <!-- ..................... Start what does share4growht offer section ..................... -->
+    <div class="wdso_sec bg_primary">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-xl-8">
+                    <h2 class="wdso_secTitle sec_title c_primary text-center" data-aos="zoom-in">
+                        Was bietet <span class="c_secondary">Share4Growth</span>?
+                    </h2>
+                    <p class="wdso_secBrief c_gray text-center" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="100">Share4Grwoth verbindet die richtigen Menschen miteinander und bringt Wissen & Können an alle Orte! Es ist die adaptivste und effizienteste Art und Weise jeglichen Wissensengpasst schnellstmöglich zu lösen!</p>
+                    <div class="row  gx-3 gy-4 justify-content-center wdso_cardRow">
+                        <div class="col-md-6 col-lg-4 wdso_cardCol">
+                            <div class="wdso_card" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="100">
+                                <div class="wdso_cardBox">
+                                    <div class="wdso_cardContent">
+                                        <img class="wdso_cardImg" src="assets/img/home/wdso_icon_1.png" alt="Icon">
+                                        <h3 class="wdso_cardTitle c_primary">
+                                            Orts- & zeitunabhängig
+                                        </h3>
+                                        <p class="wdso_cardDesc c_primary">
+                                            Du entscheidest selbst wann Du deinen Wissensengpass beseitigen möchtest und wo es für Dich am besten passt.
+                                        </p>
+                                    </div>
+                                </div>
+                                <img class="wdso_cardShadow" src="assets/img/home/wdso_card_shadow.svg" alt="Shadow">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 wdso_cardCol">
+                            <div class="wdso_card" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="200">
+                                <div class="wdso_cardBox">
+                                    <div class="wdso_cardContent">
+                                        <img class="wdso_cardImg" src="assets/img/home/wdso_icon_2.png" alt="Icon">
+                                        <h3 class="wdso_cardTitle c_primary">
+                                            100% Wertorientiert
+                                        </h3>
+                                        <p class="wdso_cardDesc c_primary">
+                                            Alles ist auf maximale Wertorientierung ausgelegt! Zeitverschwendung war gestern - nun ist Wirksamkeit in der DNA von <span class="fw-bold fst-italic">Share4Growth</span> verankert.
+                                        </p>
+                                    </div>
+                                </div>
+                                <img class="wdso_cardShadow" src="assets/img/home/wdso_card_shadow.svg" alt="Shadow">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 wdso_cardCol">
+                            <div class="wdso_card" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="300">
+                                <div class="wdso_cardBox">
+                                    <div class="wdso_cardContent">
+                                        <img class="wdso_cardImg" src="assets/img/home/wdso_icon_3.png" alt="Icon">
+                                        <h3 class="wdso_cardTitle c_primary">
+                                            Personen- unabhängig
+                                        </h3>
+                                        <p class="wdso_cardDesc c_primary">
+                                            Du entscheidest selbst wer MentorIn, TrainerIn und BefähigerIn sein soll. Suche nur die besten MentorInnen aus.
+
+                                        </p>
+                                    </div>
+                                </div>
+                                <img class="wdso_cardShadow" src="assets/img/home/wdso_card_shadow.svg" alt="Shadow">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 wdso_cardCol">
+                            <div class="wdso_card" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">
+                                <div class="wdso_cardBox">
+                                    <div class="wdso_cardContent">
+                                        <img class="wdso_cardImg" src="assets/img/home/wdso_icon_4.png" alt="Icon">
+                                        <h3 class="wdso_cardTitle c_primary">
+                                            100% Engpassorientiert
+                                        </h3>
+                                        <p class="wdso_cardDesc c_primary">
+                                            Du lernst immer nur an deinem Kompetenzengpass! Löse jetzt deinen Kompetenzengpass auf, um auf die nächste Kompetenzstufe zu kommen.
+                                        </p>
+                                    </div>
+                                </div>
+                                <img class="wdso_cardShadow" src="assets/img/home/wdso_card_shadow.svg" alt="Shadow">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 wdso_cardCol">
+                            <div class="wdso_card" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="500">
+                                <div class="wdso_cardBox">
+                                    <div class="wdso_cardContent">
+                                        <img class="wdso_cardImg" src="assets/img/home/wdso_icon_5.png" alt="Icon">
+                                        <h3 class="wdso_cardTitle c_primary">
+                                            Teilen als Prinzip
+                                        </h3>
+                                        <p class="wdso_cardDesc c_primary">
+                                            Du entscheidest selbst, ob Du alleine und individuell an einem Wissensengpass arbeitest oder ob Du nicht nur Wissen, sondern auch die Kosten teilst!
+                                        </p>
+                                    </div>
+                                </div>
+                                <img class="wdso_cardShadow" src="assets/img/home/wdso_card_shadow.svg" alt="Shadow">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- ..................... End what does share4growht offer section ..................... -->
+
+    <!-- ..................... Start share your knowledge section ..................... -->
+    <div class="syk_sec">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-11 col-xl-8">
+                    <h2 class="syk_secTitle sec_title c_primary text-center def_underline" data-aos="zoom-in">
+                        Teile Dein Wissen und löse den <span class="c_secondary">Kompetenzengpass</span> als MentorIn!
+                    </h2>
+                    <p class="syk_secBrief c_gray text-center" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="100">
+                        Jeder steht in seinem Leben auf unterschiedlichen Kompetenzstufen. Also kann auch jeder MentorIn sein!
+                    </p>
+                    <div class="row justify-content-center gy-4">
+                        <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="200">
+                            <div class="syk_card info_card">
+                                <img class="syk_cardIcon" src="assets/icon/school.svg" alt="school">
+                                <h3 class="syk_cardTitle info_cardTitle c_primary">Schule/Studium</h3>
+                                <p class="syk_cardDesc info_cardDesc c_gray">Du kannst Nachhilfe geben & anderen damit helfen! </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="300">
+                            <div class="syk_card info_card">
+                                <img class="syk_cardIcon" src="assets/icon/bag.svg" alt="bag">
+                                <h3 class="syk_cardTitle info_cardTitle c_primary">Berufsleben</h3>
+                                <p class="syk_cardDesc info_cardDesc c_gray">Du bist Coach, Führungskraft, hast spezifisches Wissen, dann ist deine Zielgruppe sehr groß! </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">
+                            <div class="syk_card info_card">
+                                <img class="syk_cardIcon" src="assets/icon/private.svg" alt="private">
+                                <h3 class="syk_cardTitle info_cardTitle c_primary">Privatleben</h3>
+                                <p class="syk_cardDesc info_cardDesc c_gray">Du kannst anderen im Privatleben helfen, bestimmte Situationen gut zu meistern!</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="500">
+                            <div class="syk_card info_card">
+                                <img class="syk_cardIcon" src="assets/icon/retirement.svg" alt="retirement">
+                                <h3 class="syk_cardTitle info_cardTitle c_primary">Ruhestand</h3>
+                                <p class="syk_cardDesc info_cardDesc c_gray">Du hast sehr viel Erfahrungs- & Fachwissen? Dann MUSST Du MentorIn werden!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <img class="syk_secOverlay" src="assets/img/home/syk_bg.png" alt="bg">
+    </div>
+    <!-- ..................... End share your knowledge section ..................... -->
+
+    <!-- ..................... Start referred to as a mentor section ..................... -->
+    <div class="ram_sec">
+        <div class="container-fluid container_fluid">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="ram_contentBox">
+                        <h2 class="sec_title c_secondary" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="100">
+                            Eine Person, die Wissen und Können weitergibt und so anderen hilft, wird bei uns als <span class="c_primary">MentorIn</span> bezeichnet!
+                        </h2>
+                        <form action="">
+                            <div class="ram_formBox">
+                                <img class="ram_formIcon" src="assets/img/home/Mentor.svg" alt="Mantor">
+
+                                <div class="ram_formContent">
+                                    <p class="ram_formTitle def_formTitle c_primary">Werde MentorIn und sorge für Weiterentwicklung</p>
+                                    <div class="ram_formInpGrp def_formInpGrp  rounded-pill">
+                                        <input type="text" class="ram_formInp def_formInp rounded-pill border-0" placeholder="Befähigungsthema finden">
+                                        <button class="btn btn_primary rounded-pill" type="submit">SUCHEN</button>
+                                    </div>
+                                    <p class="ram_formSubTitle def_formSubTitle c_primary">Wachstumsmarktplatz durchsuchen</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-5 pe-0">
+                    <div class="ram_imgBox">
+                        <img class="ram_img pe-lg-0" src="assets/img/home/family-superheroes.png" alt="family superheroes" data-aos="slide-up" data-aos-easing="ease" data-aos-delay="400">
+                        <img class="ram_imgOverlay ani_float" src="assets/icon/overlay_triangle.svg" alt="overlay">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ..................... End referred to as a mentor section ..................... -->
+
+    <!-- ..................... Start top 5 cateogories section ..................... -->
+    <div class="tcat_sec bg_primary">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <h2 class="tcat_secTitle sec_title c_secondary text-center def_underline" data-aos="zoom-in">
+                        Unsere TOP 5 Kategorien auf <span class="c_primary">Share4Growth</span> !
+                    </h2>
+                    <div class="owl-carousel tcat_slider modify_owlCarousel">
+                        <div>
+                            <div class="tcat_item" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="100">
+                                <div class="tcat_itemBox info_card">
+                                    <div>
+                                        <a href="#" class="btn btn_primary_outline rounded-pill w-100">Als Mentee <span class="gt_icon">&gt;</span></a>
+                                    </div>
+                                    <div class="tcat_itemContent">
+                                        <div class="tcat_itemImgBox">
+                                            <img class="tcat_itemImg" src="assets/img/home/Teaching-training-Further-Education.png" alt="icon">
+                                        </div>
+                                        <p class="tact_itemTitle">Lehre, Aus- & Weiterbildung</p>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="btn btn_primary rounded-pill w-100">Als MentorIn <span class="gt_icon">&gt;</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="tcat_item" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="250">
+                                <div class="tcat_itemBox info_card">
+                                    <div>
+                                        <a href="#" class="btn btn_primary_outline rounded-pill w-100">Als Mentee <span class="gt_icon">&gt;</span></a>
+                                    </div>
+                                    <div class="tcat_itemContent">
+                                        <div class="tcat_itemImgBox">
+                                            <img class="tcat_itemImg" src="assets/img/home/Management-and-strategy.png" alt="icon">
+                                        </div>
+                                        <p class="tact_itemTitle">Management & Strategie</p>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="btn btn_primary rounded-pill w-100">Als MentorIn <span class="gt_icon">&gt;</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="tcat_item" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">
+                                <div class="tcat_itemBox info_card">
+                                    <div>
+                                        <a href="#" class="btn btn_primary_outline rounded-pill w-100">Als Mentee <span class="gt_icon">&gt;</span></a>
+                                    </div>
+                                    <div class="tcat_itemContent">
+                                        <div class="tcat_itemImgBox">
+                                            <img class="tcat_itemImg" src="assets/img/home/Social-Media.png" alt="icon">
+                                        </div>
+                                        <p class="tact_itemTitle">Social Media</p>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="btn btn_primary rounded-pill w-100">Als MentorIn <span class="gt_icon">&gt;</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="tcat_item" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="550">
+                                <div class="tcat_itemBox info_card">
+                                    <div>
+                                        <a href="#" class="btn btn_primary_outline rounded-pill w-100">Als Mentee <span class="gt_icon">&gt;</span></a>
+                                    </div>
+                                    <div class="tcat_itemContent">
+                                        <div class="tcat_itemImgBox">
+                                            <img class="tcat_itemImg" src="assets/img/home/Digitisation.png" alt="icon">
+                                        </div>
+                                        <p class="tact_itemTitle">Digitalisierung</p>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="btn btn_primary rounded-pill w-100">Als MentorIn <span class="gt_icon">&gt;</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="tcat_item" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="700">
+                                <div class="tcat_itemBox info_card">
+                                    <div>
+                                        <a href="#" class="btn btn_primary_outline rounded-pill w-100">Als Mentee <span class="gt_icon">&gt;</span></a>
+                                    </div>
+                                    <div class="tcat_itemContent">
+                                        <div class="tcat_itemImgBox">
+                                            <img class="tcat_itemImg" src="assets/img/home/Management-Leadership.png" alt="icon">
+                                        </div>
+                                        <p class="tact_itemTitle">Führung & Leadership
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="btn btn_primary rounded-pill w-100">Als MentorIn <span class="gt_icon">&gt;</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ..................... End top 5 cateogories section ..................... -->
+
+    <!-- ..................... Start Find the right mentor section ..................... -->
+    <div class="frm_sec">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-xl-8">
+                    <h2 class="frm_secTitle sec_title c_primary text-center def_underline" data-aos="zoom-in">
+                        Finde die besten MentorInnen und 
+löse deinen Kompetenzengpass!
+                    </h2>
+                    <div class="row justify-content-center gy-4">
+                        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="100">
+                            <div class="frm_card info_card">
+                                <img class="frm_cardIcon" src="assets/icon/school.svg" alt="school">
+                                <h3 class="frm_cardTitle info_cardTitle c_primary">Für die Schule/Studium</h3>
+                                <p class="frm_cardDesc info_cardDesc c_gray">Du hast einen Wissensengpass oder brauchst Hilfe um Dich auf eine Prüfung oder einen Test vorzubereiten? </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="250">
+                            <div class="frm_card info_card">
+                                <img class="frm_cardIcon" src="assets/icon/professional_life.svg" alt="professional life">
+                                <h3 class="frm_cardTitle info_cardTitle c_primary">Für das Berufsleben</h3>
+                                <p class="frm_cardDesc info_cardDesc c_gray">Du suchst jemanden, der Dich auf die nächste Stufe vorbereitet und Dir dabei hilft? </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">
+                            <div class="frm_card info_card">
+                                <img class="frm_cardIcon" src="assets/icon/private_life.svg" alt="private life">
+                                <h3 class="frm_cardTitle info_cardTitle c_primary">Für das Privatleben</h3>
+                                <p class="frm_cardDesc info_cardDesc c_gray">Du hast Fragen und brauchst Antworten? Dann lass Dich finden. Das Suchen hat ein Ende!</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- ..................... End Find the right mentor section ..................... -->
+
+    <!-- ..................... Start business hero section ..................... -->
+    <div class="bizHero_sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 order-2 order-lg-1">
+                    <div class="bizHero_imgBox">
+                        <img class="bizHero_img" src="assets/img/home/business_hero.png" alt="business hero">
+                        <img class="bizHero_imgOverlay ani_float" src="assets/icon/overlay_dubbleCircle.svg" alt="dubble circle">
+                    </div>
+                </div>
+                <div class="col-lg-5 order-1 order-lg-2">
+                    <div class="bizHero_contentBox">
+                        <h2 class="sec_title bizHero_secTitle c_primary" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="100">
+                            Eine Person, die aktuell einen Wissensengpass hat und jemanden benötigt, um auf die nächste Kompetenzstufe zu kommen, ist bei uns ein <span class="c_secondary">Mentee</span>!
+                        </h2>
+
+                        <form action="">
+                            <div class="bizHero_formBox">
+                                <div class="bizHero_formContent">
+                                    <p class="bizHero_formTitle def_formTitle c_primary">Löse als Mentee deinen Kompetenzengpass</p>
+                                    <div class="bizHero_formInpGrp def_formInpGrp  rounded-pill">
+                                        <input type="text" class="bizHero_formInp def_formInp rounded-pill border-0" placeholder="Befähigungsthema finden">
+                                        <button class="btn btn_primary rounded-pill" type="submit">SUCHEN</button>
+                                    </div>
+                                    <p class="bizHero_formSubTitle def_formSubTitle c_primary">Kompetenzmarktplatz durchsuchen</p>
+                                </div>
+                                <img class="bizHero_formIcon" src="assets/img/home/mentee.png" alt="mentee">
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img class="bizHero_secBg" src="assets/img/home/bizHero_Bg.png" alt="bg">
+    </div>
+    <!-- ..................... End business hero section ..................... -->
+
+    <!-- ..................... start You can start section ..................... -->
+    <div class="ycs_sec bg_primary">
+        <!-- content area -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="sec_title ycs_secTitle c_primary d-lg-none" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="100">
+                        Du hast ein Handy in der Hand? Dann kannst Du sofort damit starten!
+                    </h2>
+                    <p class="ycs_secDesc c_gray d-lg-none" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="250">Stell Dir vor, Du liegst auf der Couch mit einem Handy in der Hand und kannst so ein Nebeneinkommen erzielen!</p>
+                    <div class="ycs_imgBox" data-aos="fade-in" data-aos-easing="ease" data-aos-delay="100">
+                        <img class="ycs_img ycs_img_1 ani_float" src="assets/img/home/Instagram_mobile_view.png" alt="Image">
+                        <img class="ycs_img ycs_img_2 ani_float" src="assets/img/home/Instagram_View_2.png" alt="Image">
+                        <img class="ycs_img_bg" src="assets/img/home/ycs_bg.svg" alt="Image">
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="ycs_content">
+                        <h2 class="sec_title ycs_secTitle c_primary d-none d-lg-block" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="100">
+                            Du hast ein Handy in der Hand? Dann kannst Du sofort damit starten!
+                        </h2>
+                        <p class="ycs_secDesc c_gray d-none d-lg-block" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="250">Stell Dir vor, Du liegst auf der Couch mit einem Handy in der Hand und kannst so ein Nebeneinkommen erzielen!</p>
+
+                        <ul class="cus_list ycs_sec_cusList" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">
+                            <li>Du bist jederzeit bereit <span class="small" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title='Mit deinem Handy bist Du immer erreichbar und bist jederzeit "ready for take off"'><i class="fa-solid fa-circle-question"></i></span></li>
+                            <li>Automatische Benachrichtigungen <span class="small" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title='Volle Erreichbarkeit und immer "up to date" mit automatischen Benachrichtigungen, die Du selbst konfigurieren kannst!'><i class="fa-solid fa-circle-question"></i></span></li>
+                            <li>100% ortsunabhängig <span class="small" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title='Unsere S4G Plattform ist auf 100% Ortsunabhängigkeit ausgelegt - was Du brauchst ist ein Endgerät und Internet - mehr nicht!'><i class="fa-solid fa-circle-question"></i></span></li>
+                            <li>komplette Abwicklung vom Handy möglich <span class="small" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title='Alle relevanten Kernfunktionen sind ebenfalls über das Handy aufrufbar. Du bist für die Nutzung von S4G nicht auf ein Desktop-PC angewiesen. * für einige Dienstleistungen ist es aber empfehlenswert.'><i class="fa-solid fa-circle-question"></i></span></li>
+                            <li>für iOS & Android optimiert <span class="small" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title='Es spielt keine Rolle, ob Du ein Android oder ein iOS Fan bist - S4G funktioniert auf beiden Endgeräten zuverlässig!'><i class="fa-solid fa-circle-question"></i></span></li>
+                            <li>und bald auch als App verfügbar <span class="small" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title='Eine App bringt noch weitere Vorteile mit sich und erhöht noch weiter die Benutzerfreundlichkeit. Wir sind schon in der Entwicklung und bald gibt es auch die S4G App für Euch!'><i class="fa-solid fa-circle-question"></i></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- divider -->
+        <div class="ycs_divider">
+            <img src="assets/img/home/divider_wave.png" alt="divider wave">
+        </div>
+    </div>
+    <!-- ..................... End You can start section ..................... -->
+
+    <!-- ..................... start top topics of month section ..................... -->
+    <div class="topTopics_sec bg_secondary">
+        <!-- content area -->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="topTopics_secTitle text-center c_white" data-aos="zoom-in">
+                        Top <br>
+                        <span>Themen des</span> <br> Monats
+                    </h2>
+
+                    <div class="topTopics_postSliderArea">
+                        <div class="owl-carousel topTopics_postSlider modify_owlCarousel">
+                            <div>
+                                <div class="topTopics_postItem" data-aos="zoom-in" data-aos-easing="ease" data-aos-delay="100">
+                                    <p class="topTopics_postDate">19.04.2022</p>
+                                    <a href="#" class="topTopics_postImgBox">
+                                        <img class="topTopics_postImg" src="assets/img/home/post_img.png" alt="post image">
+                                    </a>
+                                    <h3 class="topTopics_postTitle">Blog 8</h3>
+                                    <p class="topTopics_postBrief">Das ist ein Testblog und es ist nur zum Ausprobieren gedacht.</p>
+                                    <a class="topTopics_postLink" href="#">Beitrag lesen</a>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="topTopics_postItem" data-aos="zoom-in" data-aos-easing="ease" data-aos-delay="300">
+                                    <p class="topTopics_postDate">19.04.2022</p>
+                                    <a href="#" class="topTopics_postImgBox">
+                                        <img class="topTopics_postImg" src="assets/img/home/post_img.png" alt="post image">
+                                    </a>
+                                    <h3 class="topTopics_postTitle">Blog 8</h3>
+                                    <p class="topTopics_postBrief">Das ist ein Testblog und es ist nur zum Ausprobieren gedacht.</p>
+                                    <a class="topTopics_postLink" href="#">Beitrag lesen</a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="topTopics_postItem">
+                                    <p class="topTopics_postDate">19.04.2022</p>
+                                    <a href="#" class="topTopics_postImgBox">
+                                        <img class="topTopics_postImg" src="assets/img/home/post_img.png" alt="post image">
+                                    </a>
+                                    <h3 class="topTopics_postTitle">Blog 8</h3>
+                                    <p class="topTopics_postBrief">Das ist ein Testblog und es ist nur zum Ausprobieren gedacht.</p>
+                                    <a class="topTopics_postLink" href="#">Beitrag lesen</a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="topTopics_postItem">
+                                    <p class="topTopics_postDate">19.04.2022</p>
+                                    <a href="#" class="topTopics_postImgBox">
+                                        <img class="topTopics_postImg" src="assets/img/home/post_img.png" alt="post image">
+                                    </a>
+                                    <h3 class="topTopics_postTitle">Blog 8</h3>
+                                    <p class="topTopics_postBrief">Das ist ein Testblog und es ist nur zum Ausprobieren gedacht.</p>
+                                    <a class="topTopics_postLink" href="#">Beitrag lesen</a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="topTopics_postItem">
+                                    <p class="topTopics_postDate">19.04.2022</p>
+                                    <a href="#" class="topTopics_postImgBox">
+                                        <img class="topTopics_postImg" src="assets/img/home/post_img.png" alt="post image">
+                                    </a>
+                                    <h3 class="topTopics_postTitle">Blog 8</h3>
+                                    <p class="topTopics_postBrief">Das ist ein Testblog und es ist nur zum Ausprobieren gedacht.</p>
+                                    <a class="topTopics_postLink" href="#">Beitrag lesen</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- divider -->
+        <div class="topTopics_divider">
+            <img src="assets/img/home/top_topicsDivider.png" alt="top topics divider">
+        </div>
+    </div>
+    <!-- ..................... End top topics of month section ..................... -->
+
+    <!-- ..................... Start footer section ..................... -->
+    <footer class="footer_sec home_footerSec">
+        <div class="container">
+            <div class="row footer_topRow">
+                <div class="col-0 col-xl-2"></div>
+                <div class="col-lg-12 col-xl-9">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="footer_content">
+                                <p class="footer_contentTitle">Kompetenzmarktplatz</p>
+                                <ul class="footer_nav">
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="about_competence_marketplace.html">So funktioniert's</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Kostenlose Registrierung</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Login</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="footer_content">
+                                <p class="footer_contentTitle">Wachstumsmarktplatz</p>
+                                <ul class="footer_nav">
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="about_growth_marketplace.html">So funktioniert's</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Kostenlose Registrierung</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Login</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-2">
+                            <div class="footer_content">
+                                <p class="footer_contentTitle">Über uns</p>
+                                <ul class="footer_nav">
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Team</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Karriere</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-2">
+                            <div class="footer_content">
+                                <p class="footer_contentTitle">Hilfe</p>
+                                <ul class="footer_nav">
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="faq.html">FAQ</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="contact_us.html">Hilfe und Kontakt</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-2">
+                            <div class="footer_content">
+                                <p class="footer_contentTitle">Rechtliches</p>
+                                <ul class="footer_nav">
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Impressum</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Datenschutz</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">AGBs</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-12 col-xl-8">
+                    <p class="footer_contentTitle text-center">Folge uns</p>
+
+                    <div class="footer_socialLinks text-center">
+                        <a class="footer_socialLink" href="#"> <img src="assets/icon/social_instagram.png" alt="facebook icon"></a>
+                        <a class="footer_socialLink" href="#"> <img src="assets/icon/social_twitter.png" alt="facebook icon"></a>
+                        <a class="footer_socialLink" href="#"> <img src="assets/icon/social_facebook.png" alt="facebook icon"></a>
+                        <a class="footer_socialLink" href="#"> <img src="assets/icon/social_youtube.png" alt="facebook icon"></a>
+                        <a class="footer_socialLink" href="#"> <img src="assets/icon/social_linkedin.png" alt="facebook icon"></a>
+                    </div>
+
+                    <p class="footer_copyrightText text-center">Copyright &copy;2022 Share 4 Growth. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ..................... End footer section ..................... -->
+
+    <!-- ............. scripts ............. -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/glightbox.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

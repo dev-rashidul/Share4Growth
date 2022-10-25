@@ -1,0 +1,97 @@
+.mainSec_nav .nav-link:hover {
+  color: rgb(92, 91, 164);
+  background-color: rgba(90, 92, 168, 0.09);
+}
+
+.mainSec_nav .nav-link.active {
+  color: rgb(92, 91, 164);
+  background-color: rgba(90, 92, 168, 0.09);
+}
+
+.mainSec_nav .nav-link.active .nav_link_icon,
+.mainSec_nav .nav-link:hover .nav_link_icon,
+.nav-link.dropdown_indicator:not(.collapsed) .nav_link_icon {
+  color: #5c5ba5;
+}
+
+.einnahmen_secTitle {
+  color: #5a5ca8;
+  font-size: 30px;
+  line-height: 1.5333em;
+  margin: 1em 0;
+}
+
+.einnahmen_secTitle span {
+  color: #6e8fe7;
+}
+
+.einnahmen-toggle .me4 {
+  font-weight: 700;
+  color: #6e8fe7;
+  padding-right: 5px;
+}
+
+.einnahmen-toggle * {
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+.einnahmen-toggle .form-check-input:checked {
+  background-color: var(--df_color);
+  border-color: var(--df_color);
+}
+
+.einnahmen-wrapper {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #e2e2e2;
+  border-radius: 20px;
+  height: 100vh;
+  overflow-x: auto;
+  padding: 0;
+}
+
+table.einnahmen-table {
+  width: 100%;
+  white-space: nowrap;
+}
+
+.einnahmen-table thead tr,
+.einnahmen-table thead th,
+.einnahmen-table tbody tr,
+.einnahmen-table tbody td {
+  border: 1px solid #cecece;
+  border-top: 0;
+  border-left: 0;
+  padding: 10px;
+}
+
+.einnahmen-table thead th {
+  font-size: 20px;
+  font-weight: 700;
+  color: #5a5ca8;
+}
+
+.sticky-table th:nth-child(2),
+.sticky-table td:nth-child(2) {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  background: #ffffff;
+  width: 300px;
+}
+
+.einnahmen-table thead th select {
+  font-size: 20px;
+  font-weight: 700;
+  background: transparent;
+  color: #5a5ca8;
+  border: none;
+  outline: none;
+}
+
+@media (max-width: 1200px) {
+  .einnahmen_secTitle {
+    font-size: 22px;
+  }
+}

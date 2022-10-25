@@ -1,0 +1,1528 @@
+/* ..................... start hero section ..................... */
+
+.hero_sec {
+    padding: 201px 0px 165px 0px;
+    background-image: url("../img/home/hero_bg.png");
+    background-size: 56.7%;
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+.hero_content {
+    max-width: 647px;
+    padding-left: 15px;
+}
+
+.hero_title {
+    font-weight: 900;
+    font-size: 78px;
+    line-height: 0.9231em;
+    padding-bottom: 0.4744em;
+    margin-bottom: 0.2436em;
+    font-weight: 900;
+    border-bottom: 1px solid rgba(112, 112, 112, 0.27);
+    max-width: 598px;
+}
+
+.hero_subTitle {
+    font-size: 34px;
+    line-height: 1em;
+    margin-bottom: 0.9412em;
+    font-weight: 600;
+    font-style: italic;
+    max-width: 609px;
+}
+
+.hero_img {
+    margin-left: -23px;
+}
+
+.hero_secActBtns {}
+
+.hero_secActBtns .btn {
+    min-width: 267px;
+}
+
+.hero_orText {
+    font-size: 20px;
+    padding: 0.5em 0.2em;
+}
+
+
+/* ..................... end hero section ..................... */
+
+
+/* ..................... start our vision section ..................... */
+
+.ov_sec {
+    padding: 123px 0px 83px 0px;
+    position: relative;
+    z-index: 1;
+}
+
+.ov_sec_overlay {
+    position: absolute;
+    top: 22%;
+    left: 0px;
+    max-width: 4%;
+}
+
+.ov_secTitle {
+    max-width: 638px;
+    margin: auto auto 43px auto;
+}
+
+.ov_item {
+    max-width: 370px;
+    margin-bottom: 20px;
+}
+
+.ov_itemIcon {
+    height: 72px;
+    margin-bottom: 12px;
+}
+
+.ov_item_title {
+    margin-bottom: 14px;
+    font-size: 24px;
+    line-height: 1.25em;
+}
+
+.ov_itemDesc {
+    line-height: 1.05em;
+    margin-bottom: 1em;
+    margin-bottom: 0px;
+}
+
+.ov_videoPlyBox {
+    max-width: 448px;
+    padding-top: 44px;
+    padding-left: 44px;
+    margin-left: 15px;
+    margin-top: 73px;
+    position: relative;
+}
+
+.ov_videoTmbBox {
+    position: relative;
+}
+
+.ov_videoThumb {}
+
+.ov_videoPlyBtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 0px;
+    border-radius: 50%;
+    padding: 0px;
+    -webkit-box-shadow: 0px 0px 0px 20px rgba(255, 255, 255, 0.50);
+    box-shadow: 0px 0px 0px 20px rgba(255, 255, 255, 0.50);
+    background-color: var(--bg_white);
+    -webkit-animation: plybtn_pulse 1.3s ease-in infinite forwards;
+    animation: plybtn_pulse 1.3s ease-in infinite forwards;
+}
+
+.ov_videoPlyBtn img {
+    max-width: 100%;
+}
+
+@-webkit-keyframes plybtn_pulse {
+    0% {
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.50);
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.50);
+    }
+    100% {
+        -webkit-box-shadow: 0px 0px 0px 18.6px rgba(255, 255, 255, 0.0);
+        box-shadow: 0px 0px 0px 18.6px rgba(255, 255, 255, 0.0);
+    }
+}
+
+@keyframes plybtn_pulse {
+    0% {
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.50);
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.50);
+    }
+    100% {
+        -webkit-box-shadow: 0px 0px 0px 18.6px rgba(255, 255, 255, 0.0);
+        box-shadow: 0px 0px 0px 18.6px rgba(255, 255, 255, 0.0);
+    }
+}
+
+.ov_videoThumb {}
+
+.ov_videoOverlay {
+    position: absolute;
+}
+
+.ov_videoOverlay_1 {
+    top: -4px;
+    left: 66px;
+}
+
+.ov_videoOverlay_2 {
+    left: 2px;
+    bottom: 46px;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+.ov_videoOverlay_3 {
+    right: 10px;
+    bottom: 14px;
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+
+
+/* ..................... end our vision section ..................... */
+
+
+/* ..................... start How Share4Growth works section ..................... */
+
+.hsw_sec {
+    padding: 74px 0px 59px 0px;
+}
+
+.hsw_secTitle {
+    margin-bottom: 86px;
+}
+
+.hsw_content {
+    background-image: url("../img/home/hsw_bg_lg.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 48px;
+    margin-right: -10px;
+}
+
+.hsw_item {
+    height: 100%;
+    padding: 60px 48px 108px 52px;
+}
+
+.hsw_itemNum {
+    font-weight: 500;
+    font-size: 62px;
+    line-height: 1em;
+    margin-bottom: 0px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+}
+
+.hsw_itemContent {
+    max-width: 225px;
+    text-align: center;
+    margin: auto;
+}
+
+.hsw_itemIcon {
+    margin-bottom: -8px;
+}
+
+.hsw_itemTitle {
+    font-size: 36px;
+    line-height: 1.2em;
+    margin-bottom: 0px;
+    color: var(--c_primary);
+}
+
+.hsw_itemDesc {
+    font-size: 20px;
+    line-height: 1.2em;
+    margin-top: 0.35em;
+    color: var(--c_primary);
+}
+
+
+/* ..................... end How Share4Growth works section ..................... */
+
+
+/* ..................... start what does share4growht offer section ..................... */
+
+.wdso_sec {
+    padding: 131px 0px 173px 0px;
+    overflow: hidden;
+}
+
+.wdso_secBrief {
+    margin-bottom: 50px;
+}
+
+.wdso_card {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    padding: 0px 10px 60px 0px;
+}
+
+.wdso_cardBox {
+    background-image: url("../img/home/wdso_cardBg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center bottom;
+    height: 100%;
+    padding: 72px 64px 125px 20px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.wdso_card:hover .wdso_cardBox {
+    -webkit-transform: translateY(-20px) scale(1.02);
+    -ms-transform: translateY(-20px) scale(1.02);
+    transform: translateY(-20px) scale(1.02);
+}
+
+.wdso_cardContent {
+    padding: 23px;
+    /*! border-radius: 31px; */
+    /*! background-color: #eff3ff; */
+}
+
+.wdso_cardImg {
+    height: 106px;
+    display: block;
+    margin: -75px auto 49px auto;
+}
+
+.wdso_cardTitle {
+    font-size: 24px;
+    line-height: 1.1667em;
+    min-height: 2.5833em;
+    margin-bottom: 0.7625em;
+}
+
+.wdso_cardDesc {
+    line-height: 22px;
+    margin-bottom: 0px;
+}
+
+.wdso_cardShadow {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: -1;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    max-width: 100%;
+}
+
+.wdso_card:hover .wdso_cardShadow {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+    opacity: 0.7;
+}
+
+
+/* ..................... end what does share4growht offer section ..................... */
+
+
+/* ..................... start share your knowledge section ..................... */
+
+.syk_sec {
+    padding: 136px 0px 0px 0px;
+    position: relative;
+    z-index: 1;
+}
+
+.syk_secOverlay {
+    position: absolute;
+    top: 21%;
+    right: 0px;
+    z-index: -1;
+    max-width: 4%;
+}
+
+.syk_secTitle {
+    max-width: 766px;
+    margin-bottom: 6px;
+    margin-bottom: 17px;
+}
+
+.syk_secBrief {
+    max-width: 697px;
+    margin: auto;
+    margin-bottom: 31px;
+}
+
+.syk_card {
+    background-color: var(--bg_white);
+    padding: 54px 34px 28px 34px;
+    height: 100%;
+}
+
+.syk_cardIcon {
+    margin-bottom: 27px;
+}
+
+.syk_cardTitle {}
+
+.syk_cardDesc {}
+
+
+/* ..................... end share your knowledge section ..................... */
+
+
+/* ..................... start referred to as a mentor section ..................... */
+
+.ram_sec {
+    padding-top: 40px;
+    overflow: hidden;
+}
+
+.ram_contentBox {
+    padding: 187px 0px 40px 0px;
+    max-width: 868px;
+    margin-left: auto;
+}
+
+.ram_formBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 84px;
+    margin-left: -124px;
+}
+
+.ram_formIcon {
+    max-width: 253px;
+}
+
+.ram_formContent {
+    padding-top: 42px;
+    /*! padding-top: 19px; */
+}
+
+.def_formTitle,
+.def_formSubTitle {
+    font-size: 24px;
+    line-height: 1.25em;
+    font-weight: bold;
+}
+
+.def_formTitle {
+    text-align: center;
+    max-width: 328px;
+    margin-left: 75px;
+    margin-bottom: 5px;
+}
+
+.def_formInpGrp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 15px;
+    border-radius: 1.5333em;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    -webkit-box-shadow: 8px 0px 99px rgba(0, 0, 0, 0.16);
+    box-shadow: 8px 0px 99px rgba(0, 0, 0, 0.16);
+    margin-bottom: 10px;
+}
+
+.ram_formTitle {}
+
+.ram_formSubTitle {
+    text-align: center;
+}
+
+.ram_formInpGrp {}
+
+.def_formInp {
+    padding: 0.6667em 1.3333em;
+    outline: none;
+}
+
+.def_formInpGrp .btn {
+    padding: 0.6667em 4.2em;
+    font-size: 15px;
+}
+
+.def_formInpGrp .btn:hover {}
+
+.ram_formInp {}
+
+.ram_formInpGrp .btn {}
+
+.ram_formSubTitle {}
+
+.ram_imgBox {
+    position: relative;
+    margin-left: -58px;
+}
+
+.ram_img {
+    max-width: 100%;
+}
+
+.ram_imgOverlay {
+    position: absolute;
+    top: 0px;
+    left: -25px;
+}
+
+
+/* ..................... end referred to as a mentor section ..................... */
+
+
+/* ..................... start top 5 categories section ..................... */
+
+.tcat_sec {
+    padding: 140px 0px 95px 0px;
+}
+
+.tcat_secTitle {
+    font-weight: 900;
+}
+
+.tcat_items {
+    padding-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.tcat_slider {
+    /* padding: 50px 0px; */
+}
+.tcat_slider .owl-nav img{
+    -webkit-box-shadow: 0px 0px 2px var(--c_primary);
+            box-shadow: 0px 0px 2px var(--c_primary);
+}
+.modify_owlCarousel.tcat_slider .owl-dot{
+    background-color: #6e8ee77a !important;
+}
+.modify_owlCarousel.tcat_slider .owl-dot.active{
+    background-color: var(--c_secondary) !important;
+}
+.tcat_item {
+    /* width: 20%; */
+    padding: 0px 15px;
+    height: 100%;
+    margin: 50px 0px;
+}
+
+.tcat_itemBox {
+    padding: 30px;
+    height: 100%;
+}
+
+.tcat_itemContent {
+    margin-top: 80px;
+    min-height: 262px;
+    text-align: center;
+}
+
+.tcat_itemImgBox {
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+    display: -ms-inline-grid;
+    display: inline-grid;
+    place-items: center;
+    background: rgba(161, 161, 161, 0.15);
+    margin-bottom: 30px;
+}
+
+.tcat_itemImg {
+    max-width: 56px;
+    max-width: 68px;
+}
+
+.tact_itemTitle {
+    font-size: 24px;
+    line-height: 1.4583em;
+}
+
+
+/* ..................... end top 5 categories section ..................... */
+
+
+/* ..................... start find right mentor section ..................... */
+
+.frm_sec {
+    padding: 136px 0px 46px 0px;
+    position: relative;
+    z-index: 2;
+}
+
+.frm_secTitle {
+    max-width: 850px;
+    margin-bottom: 32px;
+}
+
+.frm_card {
+    padding: 52px 33px 34px 33px;
+    height: 100%;
+}
+
+.frm_cardIcon {
+    margin-bottom: 38.9px;
+    max-height: 61px;
+}
+
+.frm_cardTitle {
+    margin-bottom: 20px;
+}
+
+.frm_cardDesc {
+    margin-bottom: 0px;
+}
+
+
+/* ..................... end find right mentor section ..................... */
+
+
+/* ..................... start business hero section ..................... */
+
+.bizHero_sec {
+    padding-top: 26px;
+    z-index: 1;
+    position: relative;
+}
+
+.bizHero_imgBox {
+    position: relative;
+    margin-right: -54px;
+    margin-left: -34px;
+}
+
+.bizHero_img {
+    width: 100%;
+}
+
+.bizHero_imgOverlay {
+    position: absolute;
+    top: -30px;
+    left: 25%;
+}
+
+.bizHero_secBg {
+    position: absolute;
+    left: 0px;
+    top: -24%;
+    z-index: -1;
+    max-width: 6%;
+}
+
+.bizHero_contentBox {
+    padding-top: 45px;
+    margin-right: -32px;
+}
+
+.bizHero_secTitle {
+    text-align: center
+}
+
+.bizHero_formBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 46px;
+    margin-left: -124px;
+    padding-left: 180px;
+}
+
+.bizHero_formContent {
+    padding-top: 42px;
+    /*! padding-top: 19px; */
+    position: relative;
+}
+
+.bizHero_formTitle {
+    text-align: center;
+    /*! max-width: 332px; */
+}
+
+.bizHero_formInpGrp {}
+
+.bizHero_formInp {}
+
+.bizHero_formIcon {
+    max-width: 253px;
+    margin-left: -25px;
+    /*! margin-bottom: 23px; */
+}
+
+
+/* ..................... end business hero section ..................... */
+
+
+/* ..................... start You can start section ..................... */
+
+.ycs_sec {
+    padding: 95px 0px 275px 0px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.ycs_imgBox {
+    position: relative;
+    z-index: 1;
+    /*! margin-right: -91px; */
+    /*! user-select: none; */
+    pointer-events: none;
+}
+
+.ycs_img {
+    /*! width: 100%; */
+}
+
+.ycs_img_1 {
+    margin-left: -80px;
+    margin-top: -40px;
+}
+
+.ycs_img_2 {
+    position: absolute;
+    top: -10px;
+    left: -115px;
+    /*! width: 100%; */
+    z-index: -1;
+    /*! margin-left: 200px; */
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.ycs_img_bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: -2;
+    width: 70%;
+}
+
+.ycs_content {
+    margin-left: -30px;
+    padding-top: 22px;
+    max-width: 600px;
+}
+
+.ycs_secTitle {
+    font-size: 32px;
+    line-height: 1.4688em;
+    /*! max-width: 18.75rem; */
+    margin-bottom: 1.2813em;
+}
+
+.ycs_secDesc {
+    margin-bottom: 45px;
+}
+
+.ycs_divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: -1;
+}
+
+.ycs_divider img {
+    height: 477px;
+    width: 100%;
+}
+
+.ycs_sec_cusList {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 1.8636em;
+    color: var(--c_secondary);
+}
+
+
+/* ..................... end You can start section ..................... */
+
+
+/* ..................... start top topics of month section ..................... */
+
+.topTopics_sec {
+    padding: 296px 0px 692px 0px;
+    background-image: url("../img/home/bg_dots.png");
+    position: relative;
+    z-index: 2;
+}
+
+.topTopics_secTitle {
+    font-size: 36px;
+    line-height: 1.3333em;
+    font-weight: 400;
+    /*! margin-bottom: 1px; */
+}
+
+.topTopics_secTitle span {
+    font-size: 61px;
+    line-height: 1.082em;
+    font-weight: bold;
+}
+
+.topTopics_postSliderArea {
+    margin-left: -30px;
+    margin-right: -30px;
+}
+
+.topTopics_postSlider {}
+
+.topTopics_postItem {
+    text-align: center;
+    color: var(--c_white);
+    margin: 30px 15px;
+}
+
+.topTopics_postDate,
+.topTopics_postLink {
+    text-decoration: none;
+    color: var(--c_white);
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 1.2em;
+    border-radius: 0.8em;
+    padding: 0.2em 0.4em;
+    margin-bottom: 0.24em;
+    text-align: right;
+    color: var(--c_primary);
+    text-shadow: 7.31px 6.82px 20px rgba(25, 23, 25, 0.24);
+    background: var(--bg_white);
+    -webkit-box-shadow: 7.31px 6.82px 20px rgba(25, 23, 25, 0.24);
+    box-shadow: 7.31px 6.82px 20px rgba(25, 23, 25, 0.24);
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    display: inline-block;
+}
+
+.topTopics_postDate {}
+
+.topTopics_postImgBox {
+    display: block;
+    border-radius: 37px;
+    background: var(--c_primary);
+    -webkit-box-shadow: 7.31px 6.82px 20px rgba(25, 23, 25, 0.41);
+    box-shadow: 7.31px 6.82px 20px rgba(25, 23, 25, 0.41);
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.topTopics_postImg {
+    width: 100%;
+}
+
+.topTopics_postTitle {
+    font-size: 36px;
+    line-height: 1.2em;
+    font-weight: bold;
+}
+
+.topTopics_postBrief {
+    font-size: 32px;
+    line-height: 1.2em;
+}
+
+.topTopics_postLink {}
+
+.topTopics_divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: -1;
+}
+
+.topTopics_divider img {
+    /* height: 477px; */
+    width: 101%;
+}
+
+
+
+/* ..................... end top topics of month section ..................... */
+
+
+/* _______________________ start media queries _______________________ */
+
+@media(max-width:1799.98px) {
+    .hero_sec {
+        padding: 148px 0px 127px 0px;
+    }
+    .hero_title {
+        font-size: 58px;
+        max-width: 445px;
+    }
+    .hero_subTitle {
+        font-size: 25px;
+        max-width: 452px;
+    }
+    .hero_orText {
+        font-size: 16px;
+    }
+    .hero_secActBtns .btn {
+        min-width: 195px;
+    }
+    .hero_img {
+        width: 106%;
+    }
+    .ov_sec {
+        padding: 90px 0px 63px 0px;
+    }
+    .ov_secTitle {
+        max-width: 476px;
+    }
+    .ov_itemIcon {
+        height: 40px;
+    }
+    .ov_item_title {
+        font-size: 18px;
+    }
+    .ov_videoPlyBox {}
+    .ov_videoPlyBox {
+        max-width: 345px;
+        padding-top: 44px;
+        padding-left: 44px;
+        margin-left: 0px;
+        margin-top: 38px;
+    }
+    .ov_videoThumb {
+        max-width: 100%;
+    }
+    .ov_videoOverlay_1 {
+        top: 3px;
+        left: 56px;
+        width: 44px;
+    }
+    .ov_videoOverlay_2 {
+        left: 8px;
+        bottom: 30px;
+        width: 43px;
+    }
+    .ov_videoOverlay_3 {
+        width: 46px;
+    }
+    .ov_videoPlyBtn {
+        width: 78px;
+    }
+    .hsw_sec {
+        padding: 56px 0px 59px 0px;
+    }
+    .hsw_item {
+        padding: 54px 78px 70px 58px;
+    }
+    .hsw_itemNum {
+        font-size: 48px;
+    }
+    .hsw_itemIcon {
+        width: 60px;
+    }
+    .hsw_itemTitle {
+        font-size: 24px;
+    }
+    .hsw_itemDesc {
+        font-size: 16px;
+    }
+    .wdso_sec {
+        padding: 100px 0px 85px 0px;
+    }
+    .wdso_cardImg {
+        height: 80px;
+        margin: -95px auto 18px auto;
+    }
+    .wdso_cardBox {
+        padding: 75px 40px 109px 20px;
+    }
+    .wdso_cardTitle {
+        font-size: 17px;
+        /*! margin-b: 0; */
+    }
+    .wdso_cardContent {
+        padding: 13px;
+    }
+    .wdso_cardDesc {
+        line-height: 20px;
+        font-size: 14px;
+    }
+    .syk_sec {
+        padding: 100px 0px 40px 0px;
+    }
+    .syk_secTitle {
+        max-width: 640px;
+    }
+    .syk_secBrief {
+        max-width: 575px;
+        margin-bottom: 18px;
+    }
+    .syk_card {
+        padding: 40px 16px 18px 16px;
+    }
+    .syk_cardIcon {
+        margin-bottom: 16px;
+        height: 50px;
+    }
+    .ram_contentBox {
+        padding: 126px 0px 40px 0px;
+        max-width: 650px;
+    }
+    .ram_formIcon {
+        max-width: 190px;
+    }
+    .ram_formBox {
+        padding-top: 53px;
+        margin-left: -92px;
+    }
+    .def_formTitle,
+    .def_formSubTitle {
+        font-size: 16px;
+    }
+    .tcat_sec {
+        padding: 85px 0px 70px 0px;
+    }
+    .tcat_item {
+        margin: 40px 0px;
+    }
+    .tcat_itemBox {
+        padding: 20px;
+    }
+    .tcat_itemContent {
+        margin-top: 40px;
+        min-height: 210px;
+    }
+    .tcat_itemImgBox {
+        width: 70px;
+        height: 70px;
+        padding: 15px;
+    }
+    .tact_itemTitle {
+        font-size: 18px;
+    }
+    .frm_sec {
+        padding: 100px 0px 46px 0px;
+    }
+    .frm_secTitle {
+        max-width: 636px;
+        margin-bottom: 25px;
+    }
+    .frm_cardIcon {
+        margin-bottom: 28px;
+        max-height: 48px;
+    }
+    .frm_cardTitle {
+        margin-bottom: 16px;
+    }
+    .def_formInpGrp input,
+    .def_formInpGrp .btn {
+        font-size: 12px;
+    }
+    .bizHero_sec {
+        padding-top: 6px;
+    }
+    .bizHero_imgBox {
+        margin-right: -44px;
+        margin-left: -25px;
+    }
+    .bizHero_formBox {
+        padding-top: 0px;
+        padding-left: 120px;
+    }
+    .bizHero_formIcon {
+        max-width: 192px;
+        margin-left: -10px;
+    }
+    .bizHero_secBg {
+        width: 82px;
+    }
+    .ycs_sec {
+        padding: 88px 0px 275px 0px;
+    }
+    .ycs_img_1 {
+        width: 125%;
+    }
+    .ycs_img_2 {
+        width: 132%;
+        top: -32px;
+        left: -80px;
+    }
+    .ycs_content {
+        padding-top: 0px;
+        max-width: 500px;
+    }
+    .ycs_secTitle {
+        font-size: 26px;
+    }
+    .ycs_secDesc {
+        margin-bottom: 15px;
+    }
+    .ycs_sec_cusList {
+        font-size: 17px;
+    }
+    .topTopics_sec {
+        padding: 133px 0px 518px 0px;
+    }
+    .topTopics_secTitle {
+        font-size: 28px;
+    }
+    .topTopics_secTitle span {
+        font-size: 45px;
+    }
+    .topTopics_postDate,
+    .topTopics_postLink {
+        font-size: 20px;
+    }
+    .topTopics_postTitle {
+        font-size: 24px;
+    }
+    .topTopics_postBrief {
+        font-size: 24px;
+        margin-bottom: 0.6em;
+    }
+  
+    .home_footerSec {
+        padding-top: 32px;
+    }
+}
+
+@media(max-width:1399.98px) {
+    .hero_sec {
+        padding: 134px 0px 114px 0px;
+    }
+    .hero_title {
+        font-size: 52px;
+        max-width: 400px;
+    }
+    .hero_subTitle {
+        font-size: 22px;
+        max-width: 400px;
+    }
+    .hero_secActBtns .btn {
+        min-width: 170px;
+    }
+    .ov_sec {
+        padding: 80px 0px 50px 0px;
+    }
+    .ov_secTitle {
+        max-width: 421px;
+        margin: auto auto 36px auto;
+    }
+    .ov_item {
+        margin-bottom: 16px;
+    }
+    .ov_item_title {
+        font-size: 16px;
+    }
+    .hsw_sec {
+        padding: 51px 0px 25px 0px;
+    }
+    .hsw_secTitle {
+        margin-bottom: 42px;
+    }
+    .hsw_content {
+        margin-left: 30px;
+    }
+    .hsw_item {
+        padding: 52px 69px 60px 55px;
+    }
+    .hsw_itemNum {
+        font-size: 36px;
+        margin-left: -20px;
+    }
+    .hsw_itemIcon {
+        width: 50px;
+    }
+    .wdso_sec {
+        padding: 95px 0px 68px 0px;
+    }
+    .wdso_cardImg {
+        height: 70px;
+        margin: -95px auto 16px auto;
+    }
+    .wdso_cardBox {
+        padding: 75px 40px 94px 13px;
+    }
+    .wdso_cardTitle {
+        font-size: 15px;
+        margin-bottom: 0.2em;
+    }
+    .wdso_cardDesc {
+        font-size: 12px;
+    }
+    .syk_sec {
+        padding: 92px 0px 40px 0px;
+    }
+    .syk_secTitle {
+        max-width: 572px;
+        margin-bottom: 10px;
+    }
+    .syk_cardIcon {
+        margin-bottom: 14px;
+        height: 42px;
+    }
+    .ram_contentBox {
+        padding: 106px 0px 40px 0px;
+        max-width: 586px;
+        /*! text-align: center; */
+    }
+    .ram_formIcon {
+        max-width: 176px;
+    }
+    .ram_formBox {
+        padding-top: 49px;
+        margin-left: -78px;
+    }
+    .ram_imgBox {
+        margin-top: -20px;
+        margin-left: -43px;
+    }
+    .ram_imgOverlay {
+        width: 36px;
+    }
+    .def_formTitle {
+        margin-left: 20px;
+    }
+    .tcat_sec {
+        padding: 97px 0px 52px 0px;
+    }
+    .tcat_itemContent {
+        min-height: 180px;
+    }
+    .tcat_itemImgBox {
+        margin-bottom: 13px;
+    }
+    .frm_sec {
+        padding: 95px 0px 46px 0px;
+    }
+    .frm_cardIcon {
+        max-height: 40px;
+    }
+    .frm_cardTitle {
+        margin-bottom: 8px;
+    }
+    .bizHero_secBg {
+        width: 72px;
+    }
+    .ycs_sec {
+        padding: 88px 0px 185px 0px;
+    }
+    .ycs_content {
+        max-width: 418px;
+    }
+    .ycs_secTitle {
+        font-size: 22px;
+    }
+    .ycs_divider img {
+        height: 360px;
+    }
+    .ycs_sec_cusList {
+        font-size: 14px;
+    }
+    .topTopics_sec {
+        padding: 176px 0px 412px 0px;
+    }
+    .topTopics_secTitle {
+        font-size: 24px;
+    }
+    .topTopics_secTitle span {
+        font-size: 41px;
+    }
+    .topTopics_postDate,
+    .topTopics_postLink {
+        font-size: 16px;
+    }
+    .topTopics_postTitle {
+        font-size: 22px;
+    }
+    .topTopics_postBrief {
+        font-size: 20px;
+        margin-bottom: 0.6em;
+    }
+   
+}
+
+@media(max-width:1199.98px) {
+    .hsw_item {
+        padding: 52px 63px 60px 52px;
+    }
+    .hsw_itemNum {
+        margin-left: -18px;
+        margin-top: 21px;
+    }
+    .ram_contentBox {
+        padding: 42px 0px 20px 0px;
+        max-width: 442px;
+    }
+    .ram_imgBox {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    .def_formInp {
+        width: 192px;
+    }
+    .ram_formBox {
+        padding-top: 0px;
+        margin-left: -70px;
+    }
+    .bizHero_contentBox {
+        padding-top: 0px;
+        margin-right: 0px;
+    }
+    .def_formInpGrp .btn {
+        padding: 10px 20px;
+    }
+    .bizHero_formContent {
+        padding-top: 16px;
+    }
+    .bizHero_formIcon {
+        max-width: 156px;
+        margin-left: 0px;
+    }
+    .bizHero_formSubTitle {
+        text-align: center;
+    }
+    .ycs_sec {
+        padding: 116px 0px 185px 0px;
+    }
+    .ycs_divider img {
+        height: 220px;
+    }
+}
+
+@media(max-width:991.98px) {
+    .hero_sec {
+        background-size: 84%;
+    }
+    .hero_img {
+        width: 70%;
+        margin-left: 0px;
+    }
+    .hero_title {
+        max-width: 100%;
+    }
+    .hero_subTitle {
+        max-width: 100%;
+    }
+    .ov_secTitle {
+        text-align: center;
+    }
+    .hsw_content {
+        max-width: 370px;
+        margin: auto;
+        background-image: url("../img/home/hsw_bg_sm.png");
+        background-position: top center;
+    }
+    .hsw_item {
+        position: relative;
+        padding: 80px 56px 60px 60px;
+        min-height: 345px;
+    }
+    .hsw_itemNum {
+        position: absolute;
+        top: 24px;
+        right: 36px;
+    }
+    .hsw_itemIcon {
+        position: absolute;
+        left: 54px;
+        top: 25px;
+    }
+    .wdso_card {
+        max-width: 260px;
+        margin: auto;
+    }
+    .wdso_cardBox {
+        padding: 53px 40px 94px 13px;
+        min-height: 100%;
+    }
+    .ram_contentBox {
+        max-width: 100%;
+        padding: 42px 25px 20px 25px;
+    }
+    .ram_formBox {
+        max-width: -webkit-max-content;
+        max-width: -moz-max-content;
+        max-width: max-content;
+        margin: auto;
+    }
+    .ram_imgBox {
+        max-width: 60%;
+        margin-left: auto;
+    }
+    .bizHero_imgBox {
+        margin-top: 50px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+    .bizHero_formBox {
+        margin: auto;
+        padding-left: 0px;
+        max-width: -webkit-max-content;
+        max-width: -moz-max-content;
+        max-width: max-content;
+    }
+    .ycs_imgBox {
+        max-width: 500px;
+        margin: auto;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    .ycs_content {
+        max-width: 100%;
+        margin-left: 0px;
+    }
+    .syk_card {
+        padding: 40px 30px 40px 30px;
+    }
+}
+
+@media(max-width:767.98px) {
+    .ov_videoPlyBox {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+    .ov_item {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .ram_formIcon {
+        display: none;
+    }
+    .wdso_card {
+        max-width: 300px;
+        margin: auto;
+    }
+    /* .wdso_cardBox {
+        min-height: 385px;
+    } */
+    .syk_secTitle,
+    .tcat_secTitle,
+    .frm_secTitle {
+        max-width: 100%;
+    }
+    .bizHero_formIcon {
+        display: none;
+    }
+    .wdso_cardBox {
+        min-height: 420px;
+    }
+    .wdso_card {
+        max-width: 300px;
+        margin: auto;
+        margin-top: 30px;
+        min-height: 100%;
+        height: auto;
+        padding-bottom: 36px;
+    }
+    .wdso_cardCol {
+        margin-top: 40px;
+    }
+    .wdso_cardCol:nth-child(2n) .wdso_cardBox {
+        background-image: url("../img/home/wdso_cardBg_smLeft.png");
+        padding: 53px 25px 94px 50px;
+    }
+    .wdso_cardCol:nth-child(2n+1) .wdso_cardBox {
+        background-image: url("../img/home/wdso_cardBg_smRight.png");
+        padding: 53px 50px 94px 15px;
+    }
+    .topTopics_sec {
+        padding: 100px 0px 320px 0px;
+    }
+    .topTopics_postImgBox {
+        border-radius: 20px;
+    }
+}
+
+@media(max-width:575.98px) {
+    .hsw_secTitle {
+        max-width: 243px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .topTopics_sec {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .ycs_img_1 {
+        display: none;
+    }
+    .ycs_img_2 {
+        position: static;
+    }
+    .syk_card,
+    .frm_card{
+        margin:0px 20px;
+        max-width: 100%;
+    }
+}
+
+@media(max-width:459.98px) {
+    .hero_sec {
+        padding: 134px 0px 95px 0px;
+    }
+    .hero_title {
+        font-size: 42px;
+        text-align: center;
+    }
+    .hero_subTitle {
+        text-align: center;
+    }
+    .hero_orText {
+        display: block;
+        text-align: center;
+    }
+    .hero_secActBtns {
+        text-align: center;
+    }
+    .hero_secActBtns .btn {
+        min-width: 267px;
+    }
+    .hero_content {
+        padding-left: 0;
+    }
+    .hsw_item {
+        min-height: 250px;
+        padding: 84px 25px 60px 34px;
+    }
+    .hsw_content {
+        max-width: 275px;
+    }
+    .hsw_itemTitle {
+        font-size: 20px;
+    }
+    .hsw_itemDesc {
+        font-size: 14px;
+    }
+    .wdso_card {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .ram_contentBox {
+        max-width: 100%;
+        padding: 42px 10px 20px 10px;
+    }
+    .topTopics_sec {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+
+/* _______________________ end media queries _______________________ */

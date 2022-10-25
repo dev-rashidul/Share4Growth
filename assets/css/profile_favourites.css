@@ -1,0 +1,184 @@
+.favList_contianer{}
+.favList_secTitle{
+    color: #5A5CA8;
+    font-size: 30px;
+    line-height: 1.5333em;
+    margin-bottom: 1em;
+}
+.mentor_main_sec .favList_secTitle span{
+    font-weight: 900;
+    color:#6E8FE7;
+}
+
+.favList_row{
+
+}
+.favUserItem{
+    border-radius: 10px;
+    padding: 12px;
+    background-color: var(--bg_white);
+}
+.fav_userName{
+    font-size: 20px;
+    line-height: 1.5em;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+.fav_userName a{
+    text-decoration: none;
+    color: var(--c_primary);
+}
+.fav_userName a:hover{
+    text-decoration: underline;
+}
+
+.fav_userImgBox{
+    display: inline-block;
+    position: relative;
+    margin: 40px;
+    -webkit-box-shadow: 0px 0px 0px 37px #F2F2FA;
+            box-shadow: 0px 0px 0px 37px #F2F2FA;
+    border-radius: 50%;
+    width: 96px;
+    height: 96px;
+    text-decoration: none;
+}
+.fav_userImg{
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border: 3px solid var(--c_white);
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.16);
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.16);
+}
+
+.fav_userBadge{
+    position: absolute;
+    top:0px;
+    right: 0px;
+    -webkit-transform: translate(50%,-50%);
+        -ms-transform: translate(50%,-50%);
+            transform: translate(50%,-50%);
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #2F2B60;
+}
+
+
+.favUser_ratingBox{
+    padding-top: 0.5625em;
+    font-size: 16px;
+    line-height: 1.5625em;
+    margin-bottom: 3px;
+}
+
+.favUser_activeStatus{
+    font-size: 16px;
+    line-height: 1.1875em;
+    position: relative;
+    margin-bottom: 0.625em;
+    padding: 0em 1.875em;
+}
+
+.favUser_wishListAdBtn{
+    position: absolute;
+    right: 0px;
+    top:0px;
+    border: none;
+    background-color: transparent;
+    color: var(--df_color);
+}
+
+.favUser_wishListAdBtn .fa-solid,
+.favUser_wishListAdBtn:hover .fa-regular,
+.favUser_wishListAdBtn.active .fa-regular{
+    display: none;
+}
+
+
+.favUser_wishListAdBtn:hover .fa-solid,
+.favUser_wishListAdBtn.active .fa-solid{
+    display: initial;
+}
+.favUser_wishListAdBtn.active:hover .fa-solid{
+    display: none;
+}
+.favUser_wishListAdBtn.active:hover .fa-regular{
+    display: initial;
+}
+
+.favUser_infoBox{
+    font-size: 16px;
+    line-height: 1.5625em;
+}
+.favUser_infoTitle{
+    color: #747A91;
+}
+.favUser_infoVal{
+    font-weight: 600;
+    color: #0B192F;
+
+}
+
+.favUser_descBox{
+    padding-top: 8px;
+}
+.favUser_descTitle{
+    font-size: 20px;
+    line-height: 1.5em;
+    margin-bottom: 0.75em;
+}
+
+.favUser_desc{
+    font-size: 18px;
+    line-height: 1.1111em;
+    margin-bottom: 0px;
+    color: #666E76;
+}
+@media(min-width:1400px){
+    .col_xxl_20{
+        width:20%;
+    }
+}
+
+@media(max-width:1799.98px){
+    .favList_secTitle{
+        font-size: 24px;
+    }
+    .fav_userName {
+        font-size: 18px;
+    }
+    .fav_userImgBox {
+        margin: 20px;
+        -webkit-box-shadow: 0px 0px 0px 18px #F2F2FA;
+                box-shadow: 0px 0px 0px 18px #F2F2FA;
+        width: 60px;
+        height: 60px;
+    }
+    .fav_userImg{
+        border-width: 2px;
+    }
+    .fav_userBadge {
+        width: 25px;
+        height: 25px;
+    }
+
+    .favUser_ratingBox {
+        font-size: 13px;
+    }
+
+    .favUser_infoBox {
+        font-size: 13px;
+    }
+
+    .favUser_descTitle {
+        font-size: 15px;
+    }
+    .favUser_desc {
+        font-size: 13px;
+    }
+}
