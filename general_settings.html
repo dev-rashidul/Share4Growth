@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Share4Growth</title>
+
+    <!-- ............. stylesheets ............. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/glightbox.min.css">
+
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/intlTelInput.css">
+    <link rel="stylesheet" href="assets/css/settings.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <!-- ..................... start header section ..................... -->
+    <header class="header_sec fixed-top">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="index.html">
+                    <img src="assets/img/Logo.svg" alt="logo" class="img-fluid header_sec_logo">
+                </a>
+
+
+                <div class="header_navLinkArea" id="header_navLinkArea">
+                    <div class="nav_backDrop d-lg-none" id="nav_backDrop"></div>
+                    <div class="header_navLinksBox">
+                        <button class="menu_clsBtn d-lg-none" id="menu_clsBtn"></button>
+                        <ul class="header_navLinks">
+                            <li class="header_navItem d-lg-none">
+                                <a href="index.html">
+                                    <img src="assets/img/Logo.svg" alt="logo" class="img-fluid header_sec_logo">
+                                </a>
+                            </li>
+                            <li class="header_navItem">
+                                <a class="header_navLink" href="index.html">Home</a>
+                            </li>
+                            <li class="header_navItem">
+                                <a class="header_navLink" href="competence_marketplace.html">Kompetenzmarktplatz</a>
+                            </li>
+                            <li class="header_navItem">
+                                <a class="header_navLink" href="growth_marketplace.html">Wachstumsmarktplatz</a>
+                            </li>
+                            <li class="header_navItem">
+                                <a class="header_navLink" href="prices.html">Preise</a>
+                            </li>
+                            <li class="header_navItem">
+                                <a class="header_navLink" href="blog.html">Blog</a>
+                            </li>
+                            <!-- 
+                                before login
+
+                                <div class="header_navItem d-lg-none">
+                                    <a href="#" class="btn btn_primary rounded-pill">Log In</a>
+                                </div> 
+                            -->
+
+                            <!-- for logged user -->
+                            <li class="header_navItem d-lg-none">
+                                <div class="logged_divider"></div>
+                            </li>
+                            <li class="header_navItem d-lg-none">
+                                <a class="header_navLink" href="mentor_profile_details.html">MentorIn</a>
+                            </li>
+                            <li class="header_navItem d-lg-none">
+                                <a class="header_navLink" href="mentee_profile_details.html">Mentee</a>
+                            </li>
+                            <li class="header_navItem d-lg-none">
+                                <a class="header_navLink active" href="general_settings.html">Allg. Einstellungen</a>
+                            </li>
+                            <li class="header_navItem d-lg-none">
+                                <a class="header_navLink" href="security_settings.html">Sicherheit</a>
+                            </li>
+                            <li class="header_navItem d-lg-none">
+                                <a class="header_navLink" href="notification_settings.html">Benachrichtigungen</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--
+                    before login
+
+                    <div class="d-none d-lg-block">
+                        <a href="#" class="btn btn_primary rounded-pill">Log In</a>
+                    </div> 
+                -->
+
+                <!-- for logged user -->
+                <div class="userOptBox">
+                    <div>
+                        <a href="#" class="userOpt_item"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                    </div>
+                    <div>
+                        <a href="#" class="userOpt_item">
+                            <i class="fa-regular fa-bell"></i>
+                            <span class="notification_idecator"></span>
+                        </a>
+                    </div>
+
+                    <div class="d-none d-lg-block">
+                        <div class="btn-group">
+                            <button type="button" class="btn userOpt_userImgBox" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="userOpt_userImg" src="assets/img/messages/profile_img.png" alt="profile image" >
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end cus_dropdown-menu">
+                                <li><a class="dropdown-item" href="mentor_profile_details.html">MentorIn</a></li>
+                                <li><a class="dropdown-item" href="mentee_profile_details.html">Mentee</a></li>
+                                <li><a class="dropdown-item active" href="general_settings.html">Allg. Einstellungen</a></li>
+                                <li><a class="dropdown-item" href="security_settings.html">Sicherheit</a></li>
+                                <li><a class="dropdown-item" href="notification_settings.html">Benachrichtigungen</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="userWelcomeTxt">
+                        Schön das Du da bist <br>
+                        <span class="c_secondary">22_George</span>
+                    </div>
+                </div>
+
+
+
+
+                <button class="menu_toggleBtn d-lg-none" id="menu_toggleBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- ..................... End header section ..................... -->
+
+    <!-- ..................... start main section ..................... -->
+    <div class="stg_mainSec">
+        <form action="#" autocomplete="off">
+            <div class="container">
+                <h1 class="stg_pgTittle">Allgemeine Profileinstellungen</h1>
+    
+                <div class="mb-3 mb-lg-4">
+                    <h2 class="stg_secTitle">
+                        Persönliche Informationen
+                    </h2>
+    
+                    <div class="row gx-3 gx-lg-4 gx-xxl-5">
+                        <!-- left column -->
+                        <div class="col-xl-6">
+                            <div class="stg_inpGrp">
+                                <div class="row align-items-center">
+                                    <div class="col-sm-4">
+                                        <div class="stg_inpLabel fs_lg">
+                                            Vorname
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <input class="form-control stg_inp fs_lg" type="text" placeholder="hier eintragen" data-p_inp="fname">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stg_inpGrp">
+                                <div class="row align-items-center">
+                                    <div class="col-sm-4">
+                                        <div class="stg_inpLabel fs_lg">
+                                            Nachname
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <input class="form-control stg_inp fs_lg" type="text" placeholder="hier eintragen" data-p_inp="lname">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stg_inpGrp">
+                                <div class="row align-items-center">
+                                    <div class="col-sm-4">
+                                        <div class="stg_inpLabel fs_lg">
+                                            Benutzername
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <input class="form-control stg_inp fs_lg" type="text" >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stg_inpGrp">
+                                <div class="row align-items-center">
+                                    <div class="col-sm-4">
+                                        <div class="stg_inpLabel fs_lg">
+                                            E-Mail
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <!-- <input class="form-control stg_inp fs_lg" type="email" placeholder="hier eintragen" data-p_inp="email"> -->
+
+                                        <div class="form_inpRow">
+                                            <input type="email" class="form-control ck_valid_email inp_email stg_inp fs_lg" placeholder="hier eintragen" data-p_inp="email">
+                                            <p class="form_inpMsg form_inpInvalidMsg text-danger pt-1 mb-2">Please enter a valid email address </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stg_inpGrp">
+                                <div class="row align-items-center">
+                                    <div class="col-sm-4">
+                                        <div class="stg_inpLabel fs_lg">
+                                            Telefonnummer
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <!-- <input class="form-control stg_inp fs_lg" type="text" placeholder="hier eintragen" data-p_inp="tel"> -->
+                                        
+
+                                        <div class="form_inpRow">
+                                            <div class="phone_inpBox phone_inpBox_1">
+                                                <input class="form-control w-100 stg_inp fs_lg" id="phone" type="tel" data-p_inp="tel">
+                                            </div>
+                                            <p class="form_inpPnMsg text-danger hide" id="error_msg">Please enter valide phone number</p>
+                                            <p class="form_inpPnMsg text-success hide" id="valid_msg">✓ Valid</p>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- right column -->
+                        <div class="col-xl-6">
+                            <div class="stg_inpGrp">
+                                <div class="row align-items-center">
+                                    <div class="col-sm-4">
+                                        <div class="stg_inpLabel fs_lg">
+                                            Geburtsdatum
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <input class="form-control stg_inp fs_lg" type="date" >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stg_inpGrp">
+                                <div class="row align-items-center">
+                                    <div class="col-sm-4">
+                                        <div class="stg_inpLabel fs_lg">
+                                            Strasse & Hausnummer
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <div class="row g-3">
+                                            <div class="col-sm-9">
+                                                <input class="form-control stg_inp fs_lg" type="text" placeholder="hier eintragen" data-p_inp="street">
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <input class="form-control stg_inp fs_lg" type="text" placeholder="Nr." data-p_inp="house_number">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stg_inpGrp">
+                                <div class="row align-items-center">
+                                    <div class="col-sm-4">
+                                        <div class="stg_inpLabel fs_lg">
+                                            PLZ
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <input class="form-control stg_inp fs_lg" type="text" placeholder="hier eintragen" data-p_inp="plz">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stg_inpGrp">
+                                <div class="row align-items-center">
+                                    <div class="col-sm-4">
+                                        <div class="stg_inpLabel fs_lg">
+                                            Ort
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <input class="form-control stg_inp fs_lg" type="text" placeholder="hier eintragen" data-p_inp="ort">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stg_inpGrp">
+                                <div class="row align-items-center">
+                                    <div class="col-sm-4">
+                                        <div class="stg_inpLabel fs_lg">
+                                            Land
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <input class="form-control stg_inp fs_lg" type="text" placeholder="hier eintragen" data-p_inp="land">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <!-- -->
+                <div class="mb-3 mb-lg-4">
+                    <label class="stg_pflImg_inpBox text-center border rounded-circle">
+                        <input class="d-none stg_pflImgInp" type="file" name="" id="" accept=".jpg,.jpeg,.png,.webp">
+                        <div>
+                            <img class="stg_pflImg_inpBox_icon mb-2" src="assets/img/settings/attach-icon.png" alt="attach">
+                            <div class="fs_lg fw_semiBold c_gray_2">
+                                Upload Profilbild
+                            </div>
+                            <div class="fs_md c_gray_2">
+                                Max Größe 2 MB
+                            </div>
+                        </div>
+                        <img id="stg_pflImg_inpPreview" src="" alt="" >
+                    </label>
+                </div>
+    
+    
+                <!--  -->
+                <div class="mb-3 mb-lg-4">
+                    <h2 class="stg_secTitle d-flex align-items-center">
+                        <div class="me-2">
+                            Geschäftliche Informationen & angaben
+                        </div>
+                        <div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input business_infoTglInp" type="checkbox" id="" autocomplete="off">
+                            </div>
+                        </div>
+                    </h2>
+                    <div class="business_infoSec">
+                        <div class="mb-4">
+                            <div class="form-check fs_lg">
+                                <label class="form-check-label c_gray">
+                                    <input class="form-check-input use_pData_inpTgl" type="checkbox" value="">
+                                    Persönliche Daten übernehmen
+                                </label>
+                            </div>
+                        </div>
+        
+                        <div class="row gx-3 gx-lg-4 gx-xxl-5">
+                            <!-- left column -->
+                            <div class="col-xl-6">
+                                <div class="stg_inpGrp">
+                                    <div class="row align-items-center">
+                                        <div class="col-sm-4">
+                                            <div class="stg_inpLabel fs_lg">
+                                                Name 
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <input class="form-control stg_inp fs_lg" type="text" placeholder="hier eintragen" data-p_inpTo="name">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stg_inpGrp">
+                                    <div class="row align-items-center">
+                                        <div class="col-sm-4">
+                                            <div class="stg_inpLabel fs_lg">
+                                                Strasse & Hausnummer
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <div class="row g-3">
+                                                <div class="col-sm-9">
+                                                    <input class="form-control stg_inp fs_lg" type="text" placeholder="hier eintragen" data-p_inpTo="street">
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <input class="form-control stg_inp fs_lg" type="text" placeholder="Nr." data-p_inpTo="house_number">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stg_inpGrp">
+                                    <div class="row align-items-center">
+                                        <div class="col-sm-4">
+                                            <div class="stg_inpLabel fs_lg">
+                                                PLZ
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <input class="form-control stg_inp fs_lg" type="text" placeholder="hier eintragen" data-p_inpTo="plz">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stg_inpGrp">
+                                    <div class="row align-items-center">
+                                        <div class="col-sm-4">
+                                            <div class="stg_inpLabel fs_lg">
+                                                Ort
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <input class="form-control stg_inp fs_lg" type="text" placeholder="hier eintragen" data-p_inpTo="ort">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stg_inpGrp">
+                                    <div class="row align-items-center">
+                                        <div class="col-sm-4">
+                                            <div class="stg_inpLabel fs_lg">
+                                                Land
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <input class="form-control stg_inp fs_lg" type="text" placeholder="hier eintragen" data-p_inpTo="land">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stg_inpGrp">
+                                    <div class="row align-items-center">
+                                        <div class="col-sm-4">
+                                            <div class="stg_inpLabel fs_lg">
+                                                Steuernummer/
+                                                Umsatzsteuer-ID
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <input class="form-control stg_inp fs_lg" type="text" placeholder="hier eintragen">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stg_inpGrp">
+                                    <div class="row align-items-center">
+                                        <div class="col-sm-4">
+                                            <div class="stg_inpLabel fs_lg">
+                                                E-Mail
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <!-- <input class="form-control stg_inp fs_lg" type="email" placeholder="hier eintragen" data-p_inpTo="email"> -->
+                                            
+                                            <div class="form_inpRow">
+                                                <input type="email" class="form-control ck_valid_email inp_email stg_inp fs_lg" placeholder="hier eintragen"  data-p_inpTo="email">
+                                                <p class="form_inpMsg form_inpInvalidMsg text-danger pt-1 mb-2">Please enter a valid email address </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stg_inpGrp">
+                                    <div class="row align-items-center">
+                                        <div class="col-sm-4">
+
+                                            <div class="stg_inpLabel fs_lg">
+                                                Telefonnummer
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <!-- <input class="form-control stg_inp fs_lg" type="text" placeholder="hier eintragen" data-p_inpTo="tel"> -->
+                                            <div class="form_inpRow">
+                                                <div class="phone_inpBox phone_inpBox_2">
+                                                    <input class="form-control w-100 stg_inp fs_lg" id="phone_2" type="tel" data-p_inpTo="tel">
+                                                </div>
+                                                <p class="form_inpPnMsg text-danger hide" id="error_msg_2">Please enter valide phone number</p>
+                                                <p class="form_inpPnMsg text-success hide" id="valid_msg_2">✓ Valid</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                          
+                        </div>
+                    </div>
+                </div>
+    
+                <!--  -->
+                <div class="mb-5">
+                    <h2 class="stg_secTitle d-flex align-items-center">
+                        <div class="me-2">
+                            Zahlungsinformationen & einstellungen
+                        </div>
+                        <div>
+                            <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Demo title">
+                                <i class="fa-solid fa-circle-question c_primary"></i>
+                            </span>
+                        </div>
+                    </h2>
+                    <div class="mb-5">
+                        <div class="d-flex align-items-center">
+                            <div>
+                                <div class="form-check form-switch from_switchCol">
+                                    <input class="form-check-input" type="checkbox" id="" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="ps-2 ps-xx-3">
+                                <div class="fs_lg mb-3 mb-sm-4 c_gray_2">Private Informationen für Rechnungen übernehmen</div>
+                                <div class="fs_lg c_gray_2">Geschäftliche Informationen für Rechnungen übernehmen</div>
+                            </div>
+                        </div>
+                    </div>
+    
+                   <button class="btn btn_primary rounded-pill" type="submit">
+                        speichern
+                   </button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- ..................... end main section ..................... -->
+
+    <!-- ..................... Start footer section ..................... -->
+    <footer class="footer_sec">
+        <div class="container">
+            <div class="row footer_topRow">
+                <div class="col-0 col-xl-2"></div>
+                <div class="col-lg-12 col-xl-9">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="footer_content">
+                                <p class="footer_contentTitle">Kompetenzmarktplatz</p>
+                                <ul class="footer_nav">
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="about_competence_marketplace.html">So funktioniert's</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Kostenlose Registrierung</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Login</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="footer_content">
+                                <p class="footer_contentTitle">Wachstumsmarktplatz</p>
+                                <ul class="footer_nav">
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="about_growth_marketplace.html">So funktioniert's</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Kostenlose Registrierung</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Login</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-2">
+                            <div class="footer_content">
+                                <p class="footer_contentTitle">Über uns</p>
+                                <ul class="footer_nav">
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Team</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Karriere</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-2">
+                            <div class="footer_content">
+                                <p class="footer_contentTitle">Hilfe</p>
+                                <ul class="footer_nav">
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="faq.html">FAQ</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="contact_us.html">Hilfe und Kontakt</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-2">
+                            <div class="footer_content">
+                                <p class="footer_contentTitle">Rechtliches</p>
+                                <ul class="footer_nav">
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Impressum</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Datenschutz</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">AGBs</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-12 col-xl-8">
+                    <p class="footer_contentTitle text-center">Folge uns</p>
+
+                    <div class="footer_socialLinks text-center">
+                        <a class="footer_socialLink" href="#"> <img src="assets/icon/social_instagram.png" alt="facebook icon"></a>
+                        <a class="footer_socialLink" href="#"> <img src="assets/icon/social_twitter.png" alt="facebook icon"></a>
+                        <a class="footer_socialLink" href="#"> <img src="assets/icon/social_facebook.png" alt="facebook icon"></a>
+                        <a class="footer_socialLink" href="#"> <img src="assets/icon/social_youtube.png" alt="facebook icon"></a>
+                        <a class="footer_socialLink" href="#"> <img src="assets/icon/social_linkedin.png" alt="facebook icon"></a>
+                    </div>
+
+                    <p class="footer_copyrightText text-center">Copyright &copy;2022 Share 4 Growth. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ..................... End footer section ..................... -->
+
+    <!-- ............. scripts ............. -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/glightbox.min.js"></script>
+    
+    <script src="assets/js/intlTelInput.js"></script>
+    <script src="assets/js/utils.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/settings.js"></script>
+</body>
+
+</html>

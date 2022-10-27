@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Share4Growth</title>
+
+    <!-- ............. stylesheets ............. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/glightbox.min.css">
+
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/messages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <!-- ..................... start header section ..................... -->
+    <header class="header_sec fixed-top">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="index.html">
+                    <img src="assets/img/Logo.svg" alt="logo" class="img-fluid header_sec_logo">
+                </a>
+
+
+                <div class="header_navLinkArea" id="header_navLinkArea">
+                    <div class="nav_backDrop d-lg-none" id="nav_backDrop"></div>
+                    <div class="header_navLinksBox">
+                        <button class="menu_clsBtn d-lg-none" id="menu_clsBtn"></button>
+                        <ul class="header_navLinks">
+                            <li class="header_navItem d-lg-none">
+                                <a href="index.html">
+                                    <img src="assets/img/Logo.svg" alt="logo" class="img-fluid header_sec_logo">
+                                </a>
+                            </li>
+                            <li class="header_navItem">
+                                <a class="header_navLink" href="index.html">Home</a>
+                            </li>
+                            <li class="header_navItem">
+                                <a class="header_navLink" href="competence_marketplace.html">Kompetenzmarktplatz</a>
+                            </li>
+                            <li class="header_navItem">
+                                <a class="header_navLink" href="growth_marketplace.html">Wachstumsmarktplatz</a>
+                            </li>
+                            <li class="header_navItem">
+                                <a class="header_navLink" href="prices.html">Preise</a>
+                            </li>
+                            <li class="header_navItem">
+                                <a class="header_navLink" href="blog.html">Blog</a>
+                            </li>
+                            <!-- 
+                                before login
+
+                                <div class="header_navItem d-lg-none">
+                                    <a href="#" class="btn btn_primary rounded-pill">Log In</a>
+                                </div> 
+                            -->
+
+                            <!-- for logged user -->
+                            <li class="header_navItem d-lg-none">
+                                <div class="logged_divider"></div>
+                            </li>
+                            <li class="header_navItem d-lg-none">
+                                <a class="header_navLink" href="mentor_profile_details.html">MentorIn</a>
+                            </li>
+                            <li class="header_navItem d-lg-none">
+                                <a class="header_navLink" href="mentee_profile_details.html">Mentee</a>
+                            </li>
+                            <li class="header_navItem d-lg-none">
+                                <a class="header_navLink" href="general_settings.html">Allg. Einstellungen</a>
+                            </li>
+                            <li class="header_navItem d-lg-none">
+                                <a class="header_navLink" href="security_settings.html">Sicherheit</a>
+                            </li>
+                            <li class="header_navItem d-lg-none">
+                                <a class="header_navLink" href="notification_settings.html">Benachrichtigungen</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--
+                    before login
+
+                    <div class="d-none d-lg-block">
+                        <a href="#" class="btn btn_primary rounded-pill">Log In</a>
+                    </div> 
+                -->
+
+                <!-- for logged user -->
+                <div class="userOptBox">
+                    <div>
+                        <a href="#" class="userOpt_item"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                    </div>
+                    <div>
+                        <a href="#" class="userOpt_item">
+                            <i class="fa-regular fa-bell"></i>
+                            <span class="notification_idecator"></span>
+                        </a>
+                    </div>
+
+                    <div class="d-none d-lg-block">
+                        <div class="btn-group">
+                            <button type="button" class="btn userOpt_userImgBox" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="userOpt_userImg" src="assets/img/messages/profile_img.png" alt="profile image" >
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end cus_dropdown-menu">
+                                <li><a class="dropdown-item" href="mentor_profile_details.html">MentorIn</a></li>
+                                <li><a class="dropdown-item" href="mentee_profile_details.html">Mentee</a></li>
+                                <li><a class="dropdown-item" href="general_settings.html">Allg. Einstellungen</a></li>
+                                <li><a class="dropdown-item" href="security_settings.html">Sicherheit</a></li>
+                                <li><a class="dropdown-item" href="notification_settings.html">Benachrichtigungen</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="userWelcomeTxt">
+                        Schön das Du da bist <br>
+                        <span class="c_secondary">22_George</span>
+                    </div>
+                </div>
+
+
+
+
+                <button class="menu_toggleBtn d-lg-none" id="menu_toggleBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- ..................... End header section ..................... -->
+
+    <!-- ..................... start message main section ..................... -->
+    <div class="msgMain_sec">
+        <!-- client list column -->
+        <div class="client_listCol">
+            <!-- header -->
+            <div class="client_listCol_header">
+                <div class="d-flex justify-content-between align-items-center client_listFilterRow">
+                    <p class="mb-0 c_primary">
+                        Chatverlauf
+                    </p>
+                    <div>
+                        <div class="btn-group">
+                            <button type="button" class="btn dropdown_tglBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end cus_dropdown-menu">
+                                <li><button class="dropdown-item">Alle</button></li>
+                                <li><button class="dropdown-item">Neusten</button></li>
+                                <li><button class="dropdown-item">Ungelesen</button></li>
+                                <li><button class="dropdown-item">Spam</button></li>
+                                <li><button class="dropdown-item">Favoriten</button></li>
+                                <li><button class="dropdown-item">Archiviert</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-group client_listCol_searchBox">
+                    <input type="text" class="form-control" placeholder="nach Benutzer suchen" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- client list -->
+            <div class="client_listBox thin_scrollbar">
+                <ul class="client_list">
+                    <li class="client_listItem">
+                        <a class="client_itemLink active" href="messages.html?msgid=200">
+                            <div class="client_itemImgBox">
+                                <span class="client_itemShortTxt">PP</span>
+                                <img class="client_itemImg" src="assets/img/messages/PeterPeterson.png" alt="PeterPeterson">
+                                <span class="client_activeStatus active_online"></span>
+                                <span class="client_favItem">
+                                    <i class="fa-solid fa-heart"></i>
+                                </span>
+                            </div>
+                            <div class="client_itemInfoBox">
+                                <p class="client_itemClientName">
+                                    PeterPeterson1
+                                </p>
+                                <p class="client_itemLastMsg">Lorem ipsum dolor..</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="client_listItem">
+                        <a class="client_itemLink" href="messages.html?msgid=200">
+                            <div class="client_itemImgBox">
+                                <span class="client_itemShortTxt">JT</span>
+                                <img class="client_itemImg" src="assets/img/messages/Jerry_todd25.png" alt="PeterPeterson">
+                                <span class="client_activeStatus"></span>
+                                
+                            </div>
+                            <div class="client_itemInfoBox">
+                                <p class="client_itemClientName">
+                                    Jerry_Todd25
+                                </p>
+                                <p class="client_itemLastMsg">Lorem ipsum dolor..</p>
+                            </div>
+                            <div class="client_itemStatusBox">
+                                <span class="client_itemLastMsgTime">08:05</span>
+                                <span class="client_itemUnseenMsgNum">3</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="client_listItem">
+                        <a class="client_itemLink" href="messages.html?msgid=200">
+                            <div class="client_itemImgBox">
+                                <span class="client_itemShortTxt">EC</span>
+                                <span class="client_activeStatus active_online"></span>
+
+                                
+                            </div>
+                            <div class="client_itemInfoBox">
+                                <p class="client_itemClientName">
+                                    1980ElijahCarver
+                                </p>
+                                <p class="client_itemLastMsg client_itemMsgTyping">
+                                    schreibt <span>.</span><span>.</span><span>.</span>
+                                </p>
+                            </div>
+                            <div class="client_itemStatusBox">
+                                <span class="client_itemLastMsgTime">08:05</span>
+                                <span class="client_itemUnseenMsgNum">3</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="client_listItem">
+                        <a class="client_itemLink" href="messages.html?msgid=200">
+                            <div class="client_itemImgBox">
+                                <span class="client_itemShortTxt">JT</span>
+                                <img class="client_itemImg" src="assets/img/messages/Jerry_todd25.png" alt="PeterPeterson">
+                                <span class="client_activeStatus"></span>
+                                <span class="client_favItem">
+                                    <i class="fa-solid fa-heart"></i>
+                                </span>
+                            </div>
+                            <div class="client_itemInfoBox">
+                                <p class="client_itemClientName">
+                                    Jerry_Todd25
+                                </p>
+                                <p class="client_itemLastMsg">Lorem ipsum dolor..</p>
+                            </div>
+                            <div class="client_itemStatusBox">
+                                <span class="client_itemLastMsgTime">08:05</span>
+                                <span class="client_itemUnseenMsgNum">3</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="client_listItem">
+                        <a class="client_itemLink" href="messages.html?msgid=200">
+                            <div class="client_itemImgBox">
+                                <span class="client_itemShortTxt">JT</span>
+                                <img class="client_itemImg" src="assets/img/messages/Jerry_todd25.png" alt="PeterPeterson">
+                                <span class="client_activeStatus"></span>
+                                
+                            </div>
+                            <div class="client_itemInfoBox">
+                                <p class="client_itemClientName">
+                                    Jerry_Todd25
+                                </p>
+                                <p class="client_itemLastMsg">Lorem ipsum dolor..</p>
+                            </div>
+                            <div class="client_itemStatusBox">
+                                <span class="client_itemLastMsgTime">1 day ago</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="client_listItem">
+                        <a class="client_itemLink" href="messages.html?msgid=200">
+                            <div class="client_itemImgBox">
+                                <span class="client_itemShortTxt">JT</span>
+                                <img class="client_itemImg" src="assets/img/messages/Jerry_todd25.png" alt="PeterPeterson">
+                                <span class="client_activeStatus"></span>
+                                
+                            </div>
+                            <div class="client_itemInfoBox">
+                                <p class="client_itemClientName">
+                                    Jerry_Todd25
+                                </p>
+                                <p class="client_itemLastMsg">Lorem ipsum dolor..</p>
+                            </div>
+                            <div class="client_itemStatusBox">
+                                <span class="client_itemLastMsgTime">1 day ago</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="client_listItem">
+                        <a class="client_itemLink" href="messages.html?msgid=200">
+                            <div class="client_itemImgBox">
+                                <span class="client_itemShortTxt">JT</span>
+                                <img class="client_itemImg" src="assets/img/messages/Jerry_todd25.png" alt="PeterPeterson">
+                                <span class="client_activeStatus"></span>
+                                
+                            </div>
+                            <div class="client_itemInfoBox">
+                                <p class="client_itemClientName">
+                                    Jerry_Todd25
+                                </p>
+                                <p class="client_itemLastMsg">Lorem ipsum dolor..</p>
+                            </div>
+                            <div class="client_itemStatusBox">
+                                <span class="client_itemLastMsgTime">1 day ago</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="client_listItem">
+                        <a class="client_itemLink" href="messages.html?msgid=200">
+                            <div class="client_itemImgBox">
+                                <span class="client_itemShortTxt">JT</span>
+                                <img class="client_itemImg" src="assets/img/messages/Jerry_todd25.png" alt="PeterPeterson">
+                                <span class="client_activeStatus"></span>
+                                
+                            </div>
+                            <div class="client_itemInfoBox">
+                                <p class="client_itemClientName">
+                                    Jerry_Todd25
+                                </p>
+                                <p class="client_itemLastMsg">Lorem ipsum dolor..</p>
+                            </div>
+                            <div class="client_itemStatusBox">
+                                <span class="client_itemLastMsgTime">1 day ago</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="client_listItem">
+                        <a class="client_itemLink" href="messages.html?msgid=200">
+                            <div class="client_itemImgBox">
+                                <span class="client_itemShortTxt">JT</span>
+                                <img class="client_itemImg" src="assets/img/messages/Jerry_todd25.png" alt="PeterPeterson">
+                                <span class="client_activeStatus"></span>
+                                
+                            </div>
+                            <div class="client_itemInfoBox">
+                                <p class="client_itemClientName">
+                                    Jerry_Todd25
+                                </p>
+                                <p class="client_itemLastMsg">Lorem ipsum dolor..</p>
+                            </div>
+                            <div class="client_itemStatusBox">
+                                <span class="client_itemLastMsgTime">1 day ago</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="client_listItem">
+                        <a class="client_itemLink" href="messages.html?msgid=200">
+                            <div class="client_itemImgBox">
+                                <span class="client_itemShortTxt">JT</span>
+                                <img class="client_itemImg" src="assets/img/messages/Jerry_todd25.png" alt="PeterPeterson">
+                                <span class="client_activeStatus"></span>
+                                
+                            </div>
+                            <div class="client_itemInfoBox">
+                                <p class="client_itemClientName">
+                                    Jerry_Todd25
+                                </p>
+                                <p class="client_itemLastMsg">Lorem ipsum dolor..</p>
+                            </div>
+                            <div class="client_itemStatusBox">
+                                <span class="client_itemLastMsgTime">1 day ago</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="client_listItem">
+                        <a class="client_itemLink" href="messages.html?msgid=200">
+                            <div class="client_itemImgBox">
+                                <span class="client_itemShortTxt">JT</span>
+                                <img class="client_itemImg" src="assets/img/messages/Jerry_todd25.png" alt="PeterPeterson">
+                                <span class="client_activeStatus"></span>
+                                
+                            </div>
+                            <div class="client_itemInfoBox">
+                                <p class="client_itemClientName">
+                                    Jerry_Todd25
+                                </p>
+                                <p class="client_itemLastMsg">Lorem ipsum dolor..</p>
+                            </div>
+                            <div class="client_itemStatusBox">
+                                <span class="client_itemLastMsgTime">1 day ago</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="client_listItem">
+                        <a class="client_itemLink" href="messages.html?msgid=200">
+                            <div class="client_itemImgBox">
+                                <span class="client_itemShortTxt">JT</span>
+                                <img class="client_itemImg" src="assets/img/messages/Jerry_todd25.png" alt="PeterPeterson">
+                                <span class="client_activeStatus"></span>
+                                
+                            </div>
+                            <div class="client_itemInfoBox">
+                                <p class="client_itemClientName">
+                                    Jerry_Todd25
+                                </p>
+                                <p class="client_itemLastMsg">Lorem ipsum dolor..</p>
+                            </div>
+                            <div class="client_itemStatusBox">
+                                <span class="client_itemLastMsgTime">1 day ago</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="client_listItem">
+                        <a class="client_itemLink" href="messages.html?msgid=200">
+                            <div class="client_itemImgBox">
+                                <span class="client_itemShortTxt">JT</span>
+                                <img class="client_itemImg" src="assets/img/messages/Jerry_todd25.png" alt="PeterPeterson">
+                                <span class="client_activeStatus"></span>
+                                
+                            </div>
+                            <div class="client_itemInfoBox">
+                                <p class="client_itemClientName">
+                                    Jerry_Todd25
+                                </p>
+                                <p class="client_itemLastMsg">Lorem ipsum dolor..</p>
+                            </div>
+                            <div class="client_itemStatusBox">
+                                <span class="client_itemLastMsgTime">1 day ago</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="client_listItem">
+                        <a class="client_itemLink" href="messages.html?msgid=200">
+                            <div class="client_itemImgBox">
+                                <span class="client_itemShortTxt">JT</span>
+                                <img class="client_itemImg" src="assets/img/messages/Jerry_todd25.png" alt="PeterPeterson">
+                                <span class="client_activeStatus"></span>
+                                
+                            </div>
+                            <div class="client_itemInfoBox">
+                                <p class="client_itemClientName">
+                                    Jerry_Todd25
+                                </p>
+                                <p class="client_itemLastMsg">Lorem ipsum dolor..</p>
+                            </div>
+                            <div class="client_itemStatusBox">
+                                <span class="client_itemLastMsgTime">1 day ago</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="client_listItem">
+                        <a class="client_itemLink" href="messages.html?msgid=200">
+                            <div class="client_itemImgBox">
+                                <span class="client_itemShortTxt">JT</span>
+                                <img class="client_itemImg" src="assets/img/messages/Jerry_todd25.png" alt="PeterPeterson">
+                                <span class="client_activeStatus"></span>
+                                
+                            </div>
+                            <div class="client_itemInfoBox">
+                                <p class="client_itemClientName">
+                                    Jerry_Todd25
+                                </p>
+                                <p class="client_itemLastMsg">Lorem ipsum dolor..</p>
+                            </div>
+                            <div class="client_itemStatusBox">
+                                <span class="client_itemLastMsgTime">1 day ago</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="client_listItem">
+                        <a class="client_itemLink" href="messages.html?msgid=200">
+                            <div class="client_itemImgBox">
+                                <span class="client_itemShortTxt">JT</span>
+                                <img class="client_itemImg" src="assets/img/messages/Jerry_todd25.png" alt="PeterPeterson">
+                                <span class="client_activeStatus"></span>
+                                
+                            </div>
+                            <div class="client_itemInfoBox">
+                                <p class="client_itemClientName">
+                                    Jerry_Todd25
+                                </p>
+                                <p class="client_itemLastMsg">Lorem ipsum dolor..</p>
+                            </div>
+                            <div class="client_itemStatusBox">
+                                <span class="client_itemLastMsgTime">1 day ago</span>
+                            </div>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- message box column -->
+        <div class="msgBox_col">
+            <!-- message box header -->
+            <div class="msgBox_header d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                    <button class="msgBox_headerBackBtn btn btn-light rounded btn-small d-lg-none">
+                        <i class="fa-solid fa-arrow-left-long"></i>
+                    </button>
+                    <div class="msgBox_headerClientBox">
+                        <img class="msgBox_headerClientImg d-xl-none" src="assets/img/messages/PeterPeterson.png" alt="PeterPeterson">
+                        <p class="msgBox_headerClientName">
+                            PeterPeterson1
+                        </p>
+                    </div>
+                </div>
+
+                <div class="msgBox_headerActBox ">
+                    <button type="button" class="btn btn-light rounded-pill msgBox_headerActTglBtn">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </button>
+
+                    <button class="msgBox_headerActBtn msgBox_headerActBtn1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="zu den Favoriten">
+                        <span>
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                    </button>
+                    <button class="msgBox_headerActBtn msgBox_headerActBtn2" data-bs-toggle="tooltip" data-bs-placement="bottom" title="als ungelesen markieren">
+                        <span>
+                            <i class="fa-regular fa-envelope-open"></i>
+                        </span>
+                    </button>
+                    <button class="msgBox_headerActBtn msgBox_headerActBtn3" data-bs-toggle="tooltip" data-bs-placement="bottom" title="ins Archiv verschieben">
+                        <span>
+                            <i class="fa-solid fa-box-archive"></i>
+                        </span>
+                    </button>
+                    <button class="msgBox_headerActBtn msgBox_headerActBtn4" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Benutzer sperren">
+                        <span data-bs-toggle="modal" data-bs-target="#block_modal">
+                            <i class="fa-solid fa-user-slash" ></i>
+                        </span>
+                    </button>
+                    <button class="msgBox_headerActBtn msgBox_headerActBtn5" data-bs-toggle="tooltip" data-bs-placement="bottom" title=" Verlauf löschen">
+                        <span  data-bs-toggle="modal" data-bs-target="#delete_chat_modal">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- message box -->
+            <div class="msgBox thin_scrollbar">
+                <div class="msgBox_items">
+                    <!-- sent item -->
+                    <div class="msgBox_item sent_msg">
+                        <img class="msgBox_userImg" src="assets/img/messages/profile_img.png" alt="profile">
+                        <div class="msgBox_msgs">
+                            <div class="msgBox_msg">
+                                Hello Peter!
+                            </div>
+                            <div class="msgBox_msg">
+                                How are you doing today?
+                            </div>
+                            <p class="msg_sentTime">09:35 am</p>
+                        </div>
+                    </div>
+
+                    <!-- received item -->
+                    <div class="msgBox_item received_msg">
+                        <img class="msgBox_userImg" src="assets/img/messages/PeterPeterson.png" alt="profile">
+                        <div class="msgBox_msgs">
+                            <div class="msgBox_msg">
+                                Hi George! Nice to hear you again!
+
+                                <div class="msgBox_msgActBox">
+                                    <button data-bs-toggle="modal" data-bs-target="#report_modal"><i class="fa-solid fa-flag" ></i> melden</button>
+                                    <button data-bs-toggle="modal" data-bs-target="#spam_modal"><i class="fa-solid fa-ban" ></i> spam</button>
+                                </div>
+                            </div>
+                            <div class="msgBox_msg">
+                                I'm fine, thank you! And what about you? Is everything ok?
+
+                                <div class="msgBox_msgActBox">
+                                    <button data-bs-toggle="modal" data-bs-target="#report_modal"><i class="fa-solid fa-flag" ></i> melden</button>
+                                    <button data-bs-toggle="modal" data-bs-target="#spam_modal"><i class="fa-solid fa-ban" ></i> spam</button>
+                                </div>
+                            </div>
+                            <p class="msg_sentTime">09:42 am</p>
+                        </div>
+                    </div>
+
+                    <!-- sent item -->
+                    <div class="msgBox_item sent_msg">
+                        <img class="msgBox_userImg" src="assets/img/messages/profile_img.png" alt="profile">
+                        <div class="msgBox_msgs">
+                            <div class="msgBox_msg">
+                                Yep, thanks!
+                            </div>
+                            <div class="msgBox_msg">
+                                May I ask you a favour?
+                            </div>
+                            <div class="msgBox_msg">
+                                What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen
+                                book it has?
+                            </div>
+                            <div class="msgBox_msg">
+                                What does this dummy text mean?
+                            </div>
+                            <p class="msg_sentTime">09:56 am</p>
+                        </div>
+                    </div>
+
+                    <!-- received item -->
+                    <div class="msgBox_item received_msg">
+                        <img class="msgBox_userImg" src="assets/img/messages/PeterPeterson.png" alt="profile">
+                        <div class="msgBox_msgs">
+                            <div class="msgBox_msg">
+                                Hi George! Nice to hear you again!
+                                <div class="msgBox_msgActBox">
+                                    <button data-bs-toggle="modal" data-bs-target="#report_modal"><i class="fa-solid fa-flag" ></i> melden</button>
+                                    <button data-bs-toggle="modal" data-bs-target="#spam_modal"><i class="fa-solid fa-ban" ></i> spam</button>
+                                </div>
+                            </div>
+                            <div class="msgBox_msg">
+                                I'm fine, thank you! And what about you? Is everything ok?
+
+                                <div class="msgBox_msgActBox">
+                                    <button data-bs-toggle="modal" data-bs-target="#report_modal"><i class="fa-solid fa-flag" ></i> melden</button>
+                                    <button data-bs-toggle="modal" data-bs-target="#spam_modal"><i class="fa-solid fa-ban" ></i> spam</button>
+                                </div>
+                            </div>
+                            <p class="msg_sentTime">09:42 am</p>
+                        </div>
+                    </div>
+
+                    <!-- received item -->
+                    <div class="msgBox_item received_msg">
+                        <img class="msgBox_userImg" src="assets/img/messages/PeterPeterson.png" alt="profile">
+                        <div class="msgBox_msgs">
+                            <div class="msgBox_msg">
+                                <div class="msgBox_reciveFile">
+                                    <a href="assets/img/messages/PeterPeterson_lg.png" class="d-flex" target="_blank">
+                                        <div class="msgBox_reciveFileIcon">
+                                            <img src="assets/img/messages/attach_icon.svg" alt="img">
+                                        </div>
+                                        <div class="msgBox_reciveFileName">
+                                            demo.doc
+                                        </div>
+                                    </a>
+                                    <a class="msgBox_reciveFileDownload" href="assets/img/messages/PeterPeterson_lg.png" download>
+                                        <i class="fa-solid fa-cloud-arrow-down"></i>
+                                    </a>
+                                </div>
+                                <div class="msgBox_reciveFile">
+                                    <a href="assets/img/messages/PeterPeterson_lg.png" class="d-flex" target="_blank">
+                                        <div class="msgBox_reciveFileIcon">
+                                            <img src="assets/img/messages/attach_icon.svg" alt="img">
+                                        </div>
+                                        <div class="msgBox_reciveFileName">
+                                            demo.doc
+                                        </div>
+                                    </a>
+                                    <a class="msgBox_reciveFileDownload" href="assets/img/messages/PeterPeterson_lg.png" download>
+                                        <i class="fa-solid fa-cloud-arrow-down"></i>
+                                    </a>
+                                </div>
+                                <div class="msgBox_reciveFile">
+                                    <a href="assets/img/messages/PeterPeterson_lg.png" class="d-flex" target="_blank">
+                                        <div class="msgBox_reciveFileIcon">
+                                            <img src="assets/img/messages/attach_icon.svg" alt="img">
+                                        </div>
+                                        <div class="msgBox_reciveFileName">
+                                            demo.doc
+                                        </div>
+                                    </a>
+                                    <a class="msgBox_reciveFileDownload" href="assets/img/messages/PeterPeterson_lg.png" download>
+                                        <i class="fa-solid fa-cloud-arrow-down"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- received item -->
+                    <div class="msgBox_item received_msg">
+                        <img class="msgBox_userImg" src="assets/img/messages/PeterPeterson.png" alt="profile">
+                        <div class="msgBox_msgs">
+                            <div class="msgBox_msg">
+                                <div class="msgBox_msgTyping">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- message form box -->
+            <div class="msg_formBoxRow">
+                <form action="#" autocomplete="off">
+                    <div class="msg_formBox">
+                        <div class="flex-grow-1 msg_formBoxTextareaBox">
+                            <textarea class="msg_formBoxTextarea hide_scrollbar w-100" name="" id="" placeholder="Deine Nachricht hier eingeben"></textarea>
+                        </div>
+                        <div class="msg_formBoxActBox">
+                            <button class="msg_formBoxActBtn msg_formBoxEmojiPicker" type="button">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </button>
+                            <label class="msg_formBoxActBtn" type="button">
+                                <input class="d-none" type="file" name="" id="">
+                                <i class="fa-solid fa-paperclip"></i>
+                            </label>
+                            <button class="msg_formBoxActBtn msg_formBoxSubmitBtn btn btn-light" type="button">
+                                <img src="assets/img/messages/icon_send.png" alt="send">
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <!-- client action column -->
+        <div class="client_actCol">
+            <div class="client_actColBox thin_scrollbar">
+                <div class="client_actBox">
+                    <div class="client_imgBox">
+                        <img class="client_img" src="assets/img/messages/PeterPeterson_lg.png" alt="PeterPeterson">
+                    </div>
+                    <div class="text-center d-flex flex-column">
+                        <div class="d-flex justify-content-center client_ratingBox">
+                            <div>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                            </div>
+                            <div class="text-warning fw-bold ps-1 mb-0">
+                                4.8
+                            </div>
+                            <div class="ps-1 mb-0">
+                                (121)
+                            </div>
+                        </div>
+                        <div class="">
+                            <a href="" class="client_Name">
+                                PeterPeterson1
+                            </a>
+                        </div>
+                        <p class="client_onlineStatus ">Online</p>
+                    </div>
+                </div>
+                <div class="client_infoBox">
+                    <div class="d-flex justify-content-between client_infoItem">
+                        <span class="me-2">aus</span>
+                        <span class="client_infoItemVal">Unna</span>
+                    </div>
+                    <div class="d-flex justify-content-between client_infoItem">
+                        <span class="me-2">S4G Mitglied seit</span>
+                        <span class="client_infoItemVal">May 2021</span>
+                    </div>
+                    <div class="d-flex justify-content-between client_infoItem">
+                        <span class="me-2">Ø Antwortzeit</span>
+                        <span class="client_infoItemVal">6h</span>
+                    </div>
+                </div>
+
+                <div class="client_sharedFilesBox">
+                    <p class="client_sharedBoxTitle">geteilte Dateien</p>
+                    <div class="client_sharedFiles">
+                        <div class="client_sharedFile">
+                            <img class="client_sharedFileIcon" src="assets/img/messages/attach_icon.svg" alt="attach">
+                            <p class="client_sharedFileName">File.doc</p>
+                            <p class="client_sharedFileTime">
+                                Datei hochgeladen <br> vor 3 Stunden
+                            </p>
+
+                            <div class="client_sharedFileActBox">
+                                <a href="assets/img/messages/attach_icon.svg" class="client_sharedFileActBtn" download>
+                                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                                </a>
+                                <button class="client_sharedFileActBtn text-danger" data-bs-toggle="modal" data-bs-target="#delete_file_modal">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="client_sharedFile">
+                            <img class="client_sharedFileIcon" src="assets/img/messages/attach_icon.svg" alt="attach">
+                            <p class="client_sharedFileName">File.doc</p>
+                            <p class="client_sharedFileTime">
+                                Datei hochgeladen <br> vor 3 Stunden
+                            </p>
+
+                            <div class="client_sharedFileActBox">
+                                <a href="assets/img/messages/attach_icon.svg" class="client_sharedFileActBtn" download>
+                                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                                </a>
+                                <button class="client_sharedFileActBtn text-danger" data-bs-toggle="modal" data-bs-target="#delete_file_modal">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="client_sharedFile">
+                            <img class="client_sharedFileIcon" src="assets/img/messages/attach_icon.svg" alt="attach">
+                            <p class="client_sharedFileName">File.doc</p>
+                            <p class="client_sharedFileTime">
+                                Datei hochgeladen <br> vor 3 Stunden
+                            </p>
+
+                            <div class="client_sharedFileActBox">
+                                <a href="assets/img/messages/attach_icon.svg" class="client_sharedFileActBtn" download>
+                                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                                </a>
+                                <button class="client_sharedFileActBtn text-danger" data-bs-toggle="modal" data-bs-target="#delete_file_modal">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                            </div>
+
+                        </div>
+
+                        <button class="see_allFileBtn" data-bs-toggle="modal" data-bs-target="#shared_fileList_modal">
+                            <p class="client_sharedFileName">+13</p>
+                            <p class="client_sharedFileTime">
+                                alle Dateien anzeigen
+                            </p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="client_actColBackdrop d-xl-none">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- shared file list modal -->
+    <div class="modal fade" id="shared_fileList_modal" tabindex="-1" aria-labelledby="SharedFileListModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content border-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="SharedFileListModalLabel">Shared files</h5>
+                    <button type="button" class="btn-close rounded-pill" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body thin_scrollbar">
+                    <ul class="shared_fileList">
+                        <li class="shared_fileItem">
+                            <div class="shared_fileIconBox">
+                                <img class="shared_fileImg" src="assets/img/messages/attach_icon.svg" alt="icon" >
+                            </div>
+                            <div class="shared_fileDesc">
+                                <p class="shared_fileName">File.doc</p>
+                                <p class="shared_fileTime"> Datei hochgeladen <br> vor 3 Stunden</p>
+                            </div>
+                            <div class="shared_fileActBox">
+                                <a  class="shared_fileActBtn" href="assets/img/messages/attach_icon.svg" download="">
+                                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                                </a>
+                                <button class="shared_fileActBtn text-danger" data-bs-toggle="modal" data-bs-target="#delete_file_modal">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="shared_fileItem">
+                            <div class="shared_fileIconBox">
+                                <img class="shared_fileImg" src="assets/img/messages/attach_icon.svg" alt="icon" >
+                            </div>
+                            <div class="shared_fileDesc">
+                                <p class="shared_fileName">File.doc</p>
+                                <p class="shared_fileTime"> Datei hochgeladen <br> vor 3 Stunden</p>
+                            </div>
+                            <div class="shared_fileActBox">
+                                <a  class="shared_fileActBtn" href="assets/img/messages/attach_icon.svg" download="">
+                                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                                </a>
+                                <button class="shared_fileActBtn text-danger" data-bs-toggle="modal" data-bs-target="#delete_file_modal">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="shared_fileItem">
+                            <div class="shared_fileIconBox">
+                                <img class="shared_fileImg" src="assets/img/messages/attach_icon.svg" alt="icon" >
+                            </div>
+                            <div class="shared_fileDesc">
+                                <p class="shared_fileName">File.doc</p>
+                                <p class="shared_fileTime"> Datei hochgeladen <br> vor 3 Stunden</p>
+                            </div>
+                            <div class="shared_fileActBox">
+                                <a  class="shared_fileActBtn" href="assets/img/messages/attach_icon.svg" download="">
+                                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                                </a>
+                                <button class="shared_fileActBtn text-danger" data-bs-toggle="modal" data-bs-target="#delete_file_modal">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="shared_fileItem">
+                            <div class="shared_fileIconBox">
+                                <img class="shared_fileImg" src="assets/img/messages/attach_icon.svg" alt="icon" >
+                            </div>
+                            <div class="shared_fileDesc">
+                                <p class="shared_fileName">File.doc</p>
+                                <p class="shared_fileTime"> Datei hochgeladen <br> vor 3 Stunden</p>
+                            </div>
+                            <div class="shared_fileActBox">
+                                <a  class="shared_fileActBtn" href="assets/img/messages/attach_icon.svg" download="">
+                                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                                </a>
+                                <button class="shared_fileActBtn text-danger" data-bs-toggle="modal" data-bs-target="#delete_file_modal">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="shared_fileItem">
+                            <div class="shared_fileIconBox">
+                                <img class="shared_fileImg" src="assets/img/messages/attach_icon.svg" alt="icon" >
+                            </div>
+                            <div class="shared_fileDesc">
+                                <p class="shared_fileName">File.doc</p>
+                                <p class="shared_fileTime"> Datei hochgeladen <br> vor 3 Stunden</p>
+                            </div>
+                            <div class="shared_fileActBox">
+                                <a  class="shared_fileActBtn" href="assets/img/messages/attach_icon.svg" download="">
+                                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                                </a>
+                                <button class="shared_fileActBtn text-danger" data-bs-toggle="modal" data-bs-target="#delete_file_modal">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="shared_fileItem">
+                            <div class="shared_fileIconBox">
+                                <img class="shared_fileImg" src="assets/img/messages/attach_icon.svg" alt="icon" >
+                            </div>
+                            <div class="shared_fileDesc">
+                                <p class="shared_fileName">File.doc</p>
+                                <p class="shared_fileTime"> Datei hochgeladen <br> vor 3 Stunden</p>
+                            </div>
+                            <div class="shared_fileActBox">
+                                <a  class="shared_fileActBtn" href="assets/img/messages/attach_icon.svg" download="">
+                                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                                </a>
+                                <button class="shared_fileActBtn text-danger" data-bs-toggle="modal" data-bs-target="#delete_file_modal">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="shared_fileItem">
+                            <div class="shared_fileIconBox">
+                                <img class="shared_fileImg" src="assets/img/messages/attach_icon.svg" alt="icon" >
+                            </div>
+                            <div class="shared_fileDesc">
+                                <p class="shared_fileName">File.doc</p>
+                                <p class="shared_fileTime"> Datei hochgeladen <br> vor 3 Stunden</p>
+                            </div>
+                            <div class="shared_fileActBox">
+                                <a  class="shared_fileActBtn" href="assets/img/messages/attach_icon.svg" download="">
+                                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                                </a>
+                                <button class="shared_fileActBtn text-danger" data-bs-toggle="modal" data-bs-target="#delete_file_modal">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="shared_fileItem">
+                            <div class="shared_fileIconBox">
+                                <img class="shared_fileImg" src="assets/img/messages/attach_icon.svg" alt="icon" >
+                            </div>
+                            <div class="shared_fileDesc">
+                                <p class="shared_fileName">File.doc</p>
+                                <p class="shared_fileTime"> Datei hochgeladen <br> vor 3 Stunden</p>
+                            </div>
+                            <div class="shared_fileActBox">
+                                <a  class="shared_fileActBtn" href="assets/img/messages/attach_icon.svg" download="">
+                                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                                </a>
+                                <button class="shared_fileActBtn text-danger" data-bs-toggle="modal" data-bs-target="#delete_file_modal">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="shared_fileItem">
+                            <div class="shared_fileIconBox">
+                                <img class="shared_fileImg" src="assets/img/messages/attach_icon.svg" alt="icon" >
+                            </div>
+                            <div class="shared_fileDesc">
+                                <p class="shared_fileName">File.doc</p>
+                                <p class="shared_fileTime"> Datei hochgeladen <br> vor 3 Stunden</p>
+                            </div>
+                            <div class="shared_fileActBox">
+                                <a  class="shared_fileActBtn" href="assets/img/messages/attach_icon.svg" download="">
+                                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                                </a>
+                                <button class="shared_fileActBtn text-danger" data-bs-toggle="modal" data-bs-target="#delete_file_modal">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="shared_fileItem">
+                            <div class="shared_fileIconBox">
+                                <img class="shared_fileImg" src="assets/img/messages/attach_icon.svg" alt="icon" >
+                            </div>
+                            <div class="shared_fileDesc">
+                                <p class="shared_fileName">File.doc</p>
+                                <p class="shared_fileTime"> Datei hochgeladen <br> vor 3 Stunden</p>
+                            </div>
+                            <div class="shared_fileActBox">
+                                <a  class="shared_fileActBtn" href="assets/img/messages/attach_icon.svg" download="">
+                                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                                </a>
+                                <button class="shared_fileActBtn text-danger" data-bs-toggle="modal" data-bs-target="#delete_file_modal">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- block modal -->
+    <div class="modal fade" id="block_modal" tabindex="-1" aria-labelledby="BlockModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="BlockModalLabel">User sperren</h5>
+                    <button type="button" class="btn-close rounded-pill" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="c_primary">
+                        Sind Sie sicher, dass Sie diesen Benutzer sperren wollen?
+                    </p>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-light rounded-pill px-3" data-bs-dismiss="modal">zurück</button>
+                    <button type="button" class="btn mdl_btnPrimary rounded-pill px-3">jetzt sperren</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- delete file modal -->
+    <div class="modal fade" id="delete_file_modal" tabindex="-1" aria-labelledby="DeleteFileModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="DeleteFileModalLabel">Datei löschen </h5>
+                    <button type="button" class="btn-close rounded-pill" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="c_primary">
+                        Sind Sie sicher, dass Sie diese Datei löschen wollen?
+                    </p>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-light rounded-pill px-3" data-bs-dismiss="modal">zurück</button>
+                    <button type="button" class="btn mdl_btnPrimary rounded-pill px-3">jetzt löschen</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Delete modal -->
+    <div class="modal fade" id="delete_chat_modal" tabindex="-1" aria-labelledby="deleteChatLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteChatLabel">Verlauf und Unterhaltung löschen</h5>
+                    <button type="button" class="btn-close rounded-pill" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="c_primary">
+                        Sind Sie sicher, dass Sie diesen Verlauf und die Unterhaltung löschen wollen?
+                    </p>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-light rounded-pill px-3" data-bs-dismiss="modal">zurück</button>
+                    <button type="button" class="btn mdl_btnPrimary rounded-pill px-3">jetzt löschen</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- report action modal -->
+    <div class="modal fade" id="report_modal" tabindex="-1" aria-labelledby="ReportModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ReportModalLabel">Nachricht melden</h5>
+                    <button type="button" class="btn-close rounded-pill" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" autocomplete="off">
+                        <h6 class="c_primary">Warum möchten Sie diese Nachricht und diesen Benutzer melden?</h6>
+                        <div class="form-check c_primary">
+                            <label class="form-check-label">
+                                <input class="form-check-input report_reason" type="radio" name="demo_1">
+                                Der Benutzer hat sich unangemessen verhalten
+                            </label>
+                        </div>
+                        <div class="form-check c_primary">
+                            <label class="form-check-label">
+                                <input class="form-check-input report_reason" type="radio" name="demo_1">
+                                Der Benutzer hat wiederholt Spam verschickt
+                            </label>
+                        </div>
+                        <div class="form-check c_primary">
+                            <label class="form-check-label">
+                                <input class="form-check-input report_reason" type="radio" name="demo_1">
+                                Der Benutzer hat gegen die AGB ́s von S4G verstossen
+                            </label>
+                        </div>
+                        <div class="form-check c_primary">
+                            <label class="form-check-label">
+                                <input class="form-check-input report_reason" type="radio" name="demo_1">
+                                Der Benutzer fragte nach einer Abwicklung außerhalb von S4G
+                            </label>
+                        </div>
+                        <div class="form-check c_primary">
+                            <label class="form-check-label">
+                                <input class="form-check-input report_reason other_report_reason" type="radio" name="demo_1">
+                                Andere Gründe
+                            </label>
+                        </div>
+
+                        <div class="report_reasionBox pt-2">
+                            <textarea name="" id="" rows="4" class="form-control" placeholder="Grund schreiben"></textarea>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-light rounded-pill px-3" data-bs-dismiss="modal">zurück</button>
+                    <button type="button" class="btn mdl_btnPrimary rounded-pill px-3">jetzt melden</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- spam action modal -->
+    <div class="modal fade" id="spam_modal" tabindex="-1" aria-labelledby="SpamModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="SpamModalLabel">als Spam markieren</h5>
+                    <button type="button" class="btn-close rounded-pill" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="c_primary">
+                        <span class="fw-bold">
+                            Sie wollen diese Nachricht als Spam markieren?
+                        </span><br> <br>
+                        Sie können uns dabei helfen, das Portal vor Spam zu schützen, indem Sie uns mitteilen, warum Sie diese Nachricht als SPAM markiert haben. Diese Angabe ist freiwillig.
+                    </p>
+
+                    <textarea name="" id="" rows="4" class="form-control" placeholder="Grund schreiben"></textarea>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-light rounded-pill px-3" data-bs-dismiss="modal">zurück</button>
+                    <button type="button" class="btn mdl_btnPrimary rounded-pill px-3">als Spam markieren</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- ..................... end message main section ..................... -->
+
+    <!-- ..................... Start footer section ..................... -->
+    <footer class="footer_sec">
+        <div class="container">
+            <div class="row footer_topRow">
+                <div class="col-0 col-xl-2"></div>
+                <div class="col-lg-12 col-xl-9">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="footer_content">
+                                <p class="footer_contentTitle">Kompetenzmarktplatz</p>
+                                <ul class="footer_nav">
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="about_competence_marketplace.html">So funktioniert's</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Kostenlose Registrierung</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Login</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="footer_content">
+                                <p class="footer_contentTitle">Wachstumsmarktplatz</p>
+                                <ul class="footer_nav">
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="about_growth_marketplace.html">So funktioniert's</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Kostenlose Registrierung</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Login</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-2">
+                            <div class="footer_content">
+                                <p class="footer_contentTitle">Über uns</p>
+                                <ul class="footer_nav">
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Team</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Karriere</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-2">
+                            <div class="footer_content">
+                                <p class="footer_contentTitle">Hilfe</p>
+                                <ul class="footer_nav">
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="faq.html">FAQ</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="contact_us.html">Hilfe und Kontakt</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-2">
+                            <div class="footer_content">
+                                <p class="footer_contentTitle">Rechtliches</p>
+                                <ul class="footer_nav">
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Impressum</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Datenschutz</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">AGBs</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-12 col-xl-8">
+                    <p class="footer_contentTitle text-center">Folge uns</p>
+
+                    <div class="footer_socialLinks text-center">
+                        <a class="footer_socialLink" href="#"> <img src="assets/icon/social_instagram.png" alt="facebook icon"></a>
+                        <a class="footer_socialLink" href="#"> <img src="assets/icon/social_twitter.png" alt="facebook icon"></a>
+                        <a class="footer_socialLink" href="#"> <img src="assets/icon/social_facebook.png" alt="facebook icon"></a>
+                        <a class="footer_socialLink" href="#"> <img src="assets/icon/social_youtube.png" alt="facebook icon"></a>
+                        <a class="footer_socialLink" href="#"> <img src="assets/icon/social_linkedin.png" alt="facebook icon"></a>
+                    </div>
+
+                    <p class="footer_copyrightText text-center">Copyright &copy;2022 Share 4 Growth. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ..................... End footer section ..................... -->
+
+    <!-- ............. scripts ............. -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/glightbox.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+
+    <script src='https://ili4x.github.io/inputEmoji/inputEmoji.js'></script>
+    <script>
+        $(document).ready(function() {
+            /*... controlling client list box with url ...*/
+            $.urlParam = function(name) {
+                var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+                if (results == null) {
+                    return null;
+                }
+                return decodeURI(results[1]) || 0;
+            }
+            if ($.urlParam('msgid') !== null) {
+                $(".client_listCol").addClass("hideList");
+            }
+            $(".msgBox_headerBackBtn").click(function() {
+                $(".client_listCol").removeClass("hideList");
+            })
+
+
+            /*.... animated option ....*/
+            $(".msgBox_headerActTglBtn").click(function() {
+                $(".msgBox_headerActBox").toggleClass("active");
+            });
+            $(document).on("click", function(event) {
+                if ($(event.target).closest(".msgBox_headerActBox").length === 0) {
+                    $(".msgBox_headerActBox").removeClass("active")
+                }
+            });
+
+
+            /*.... controll user options ....*/
+            $(".msgBox_headerClientBox").click(function() {
+                $(".client_actCol").addClass("active");
+            });
+            $(".client_actColBackdrop").click(function() {
+                $(".client_actCol").removeClass("active");
+            });
+
+
+            $('.msg_formBoxTextarea').emoji();
+            $(".msg_formBoxEmojiPicker").click(function() {
+                $(".msg_formBoxTextareaBox>span").click();
+            });
+
+            // $(".msg_formBoxTextarea").keyup(function(e) {
+            //     while ($(this).outerHeight() < this.scrollHeight + parseFloat($(this).css("borderTopWidth")) + parseFloat($(this).css("borderBottomWidth"))) {
+            //         $(this).height($(this).height() + 1);
+            //     };
+            // });
+
+            // $(".msg_formBoxTextarea").keyup(function(e) {
+            //     $(this).height("auto");
+            //     $(this).height(this.scrollHeight + parseFloat($(this).css("borderTopWidth")) + parseFloat($(this).css("borderBottomWidth")));
+            // });
+
+            $(".report_reason").click(function(){
+                if($(this).hasClass("other_report_reason")){
+                    $(".report_reasionBox").slideDown(200)
+                }else{
+                    $(".report_reasionBox").slideUp(200)
+                }
+            })
+
+
+        })
+    </script>
+</body>
+
+</html>

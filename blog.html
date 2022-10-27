@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Share4Growth- Blog</title>
+
+    <!-- ............. stylesheets ............. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <!-- <link rel="stylesheet" href="assets/css/glightbox.min.css"> -->
+
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <!-- ..................... start header section ..................... -->
+    <header class="header_sec fixed-top">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="index.html">
+                    <img src="assets/img/Logo.svg" alt="logo" class="img-fluid header_sec_logo">
+                </a>
+                <button class="menu_toggleBtn d-lg-none" id="menu_toggleBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="header_navLinkArea" id="header_navLinkArea">
+                    <div class="nav_backDrop d-lg-none" id="nav_backDrop"></div>
+                    <div class="header_navLinksBox">
+                        <button class="menu_clsBtn d-lg-none" id="menu_clsBtn"></button>
+                        <ul class="header_navLinks">
+                            <li class="header_navItem d-lg-none">
+                                <a href="index.html">
+                                    <img src="assets/img/Logo.svg" alt="logo" class="img-fluid header_sec_logo">
+                                </a>
+                            </li>
+                            <li class="header_navItem">
+                                <a class="header_navLink" href="index.html">Home</a>
+                            </li>
+                            <li class="header_navItem">
+                                <a class="header_navLink" href="competence_marketplace.html">Kompetenzmarktplatz</a>
+                            </li>
+                            <li class="header_navItem">
+                                <a class="header_navLink" href="growth_marketplace.html">Wachstumsmarktplatz</a>
+                            </li>
+                            <li class="header_navItem">
+                                <a class="header_navLink" href="prices.html">Preise</a>
+                            </li>
+                            <li class="header_navItem">
+                                <a class="header_navLink active" href="blog.html">Blog</a>
+                            </li>
+                            <div class="header_navItem d-lg-none">
+                                <a href="#" class="btn btn_primary rounded-pill">Log In</a>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="d-none d-lg-block">
+                    <a href="#" class="btn btn_primary rounded-pill">Log In</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ..................... End header section ..................... -->
+
+    <!-- ..................... start main section ..................... -->
+    <div class="main_sec">
+        <!-- left main content -->
+        <div class="main_secLeft">
+            <div class="main_ctgContainer">
+
+                <!-- category list section-->
+                <div class="ctg_listSec">
+                    <h2 class="sec-title ctg_secTitle">Share4Growth Blog</h2>
+
+                    <div class="ctg_listRow">
+                        <ul class="ctg_list">
+                            <li class="ctg_listItem">
+                                <a class="ctg_itemLink ctg_teaching active" href="#">
+                                    <img class="ctg_itemIcon" src="assets/img/blog/Teaching-training-Further-Education.png" alt="Lehre, Aus- & Weiterbildung">
+                                    <div class="ctg_itemTitle">
+                                        Lehre, Aus- & Weiterbildung
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="ctg_listItem">
+                                <a class="ctg_itemLink ctg_management" href="#">
+                                    <img class="ctg_itemIcon" src="assets/img/blog/Management-and-strategy.png" alt="Management & Strategie">
+                                    <div class="ctg_itemTitle">
+                                        Management & Strategie
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="ctg_listItem">
+                                <a class="ctg_itemLink ctg_socialMedia" href="#">
+                                    <img class="ctg_itemIcon" src="assets/img/blog/Social-Media.png" alt="Social Media">
+                                    <div class="ctg_itemTitle">
+                                        Social Media
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="ctg_listItem">
+                                <a class="ctg_itemLink ctg_digitalization" href="#">
+                                    <img class="ctg_itemIcon" src="assets/img/blog/Digitisation.png" alt="Digitalisierung">
+                                    <div class="ctg_itemTitle">
+                                        Digitalisierung
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="ctg_listItem">
+                                <a class="ctg_itemLink ctg_leadership" href="#">
+                                    <img class="ctg_itemIcon" src="assets/img/blog/Management-Leadership.png" alt="Führung & Leadership">
+                                    <div class="ctg_itemTitle">
+                                        Führung & Leadership
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="ctg_listItem">
+                                <a class="ctg_itemLink ctg_mentor" href="#">
+                                    <img class="ctg_itemIcon" src="assets/img/blog/Mentor.png" alt="MentorIn">
+                                    <div class="ctg_itemTitle">
+                                        MentorIn
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="ctg_listItem">
+                                <a class="ctg_itemLink ctg_mentee" href="#">
+                                    <img class="ctg_itemIcon" src="assets/img/blog/mentee.png" alt="Mentees">
+                                    <div class="ctg_itemTitle">
+                                        Mentees
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Top Topics section-->
+                <div class="tt_Sec">
+                    <h2 class="sec-title tt_secTitle">Share4Growth - Top Themen</h2>
+
+                    <div class="tt_sliderBox">
+                        <div class="owl-carousel tt_slider">
+                            <!-- slider item -->
+                            <div class="tt_sliderItemBox">
+                                <div class="tt_sliderItem ctg_leadership">
+                                    <div class="blog_cardCtg_name">
+                                        Führung & Leadership
+                                    </div>
+                                    <a href="blog_detail.html" class="blog_cardLink">
+                                        <h3 class="blog_cardTitle">
+                                            The title is max. 60 characters long | the title is max. 60
+                                        </h3>
+                                        <img class="blog_cardPreviewImg" src="assets/img/blog/blog_item_1.jpg" alt="blog item">
+                                    </a>
+                                    <p class="blog_cardDesc">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                    </p>
+                                    <p class="blog_cardDate">20 March, 2022</p>
+                                </div>
+                            </div>
+                            <!-- slider item -->
+                            <div class="tt_sliderItemBox">
+                                <div class="tt_sliderItem ctg_mentor">
+                                    <div class="blog_cardCtg_name">
+                                        Mentor
+                                    </div>
+                                    <a href="blog_detail.html" class="blog_cardLink">
+                                        <h3 class="blog_cardTitle">
+                                            The title is max. 60 characters long | the title is max. 60
+                                        </h3>
+                                        <img class="blog_cardPreviewImg" src="assets/img/blog/blog_item_1.jpg" alt="blog item">
+                                    </a>
+                                    <p class="blog_cardDesc">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                    </p>
+                                    <p class="blog_cardDate">20 March, 2022</p>
+                                </div>
+                            </div>
+                            <!-- slider item -->
+                            <div class="tt_sliderItemBox">
+                                <div class="tt_sliderItem ctg_mentee">
+                                    <div class="blog_cardCtg_name">
+                                        Mentees
+                                    </div>
+                                    <a href="blog_detail.html" class="blog_cardLink">
+                                        <h3 class="blog_cardTitle">
+                                            The title is max. 60 characters long | the title is max. 60
+                                        </h3>
+                                        <img class="blog_cardPreviewImg" src="assets/img/blog/blog_item_1.jpg" alt="blog item">
+                                    </a>
+                                    <p class="blog_cardDesc">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                    </p>
+                                    <p class="blog_cardDate">20 March, 2022</p>
+                                </div>
+                            </div>
+                            <!-- slider item -->
+                            <div class="tt_sliderItemBox">
+                                <div class="tt_sliderItem ctg_digitalization">
+                                    <div class="blog_cardCtg_name">
+                                        Digitalisierung
+                                    </div>
+                                    <a href="blog_detail.html" class="blog_cardLink">
+                                        <h3 class="blog_cardTitle">
+                                            The title is max. 60 characters long | the title is max. 60
+                                        </h3>
+                                        <img class="blog_cardPreviewImg" src="assets/img/blog/blog_item_1.jpg" alt="blog item">
+                                    </a>
+                                    <p class="blog_cardDesc">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                    </p>
+                                    <p class="blog_cardDate">20 March, 2022</p>
+                                </div>
+                            </div>
+                            <!-- slider item -->
+                            <div class="tt_sliderItemBox">
+                                <div class="tt_sliderItem ctg_socialMedia">
+                                    <div class="blog_cardCtg_name">
+                                        Social Media
+                                    </div>
+                                    <a href="blog_detail.html" class="blog_cardLink">
+                                        <h3 class="blog_cardTitle">
+                                            The title is max. 60 characters long | the title is max. 60
+                                        </h3>
+                                        <img class="blog_cardPreviewImg" src="assets/img/blog/blog_item_1.jpg" alt="blog item">
+                                    </a>
+                                    <p class="blog_cardDesc">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                    </p>
+                                    <p class="blog_cardDate">20 March, 2022</p>
+                                </div>
+                            </div>
+                            <!-- slider item -->
+                            <div class="tt_sliderItemBox">
+                                <div class="tt_sliderItem ctg_management">
+                                    <div class="blog_cardCtg_name">
+                                        Management & Strategie
+                                    </div>
+                                    <a href="blog_detail.html" class="blog_cardLink">
+                                        <h3 class="blog_cardTitle">
+                                            The title is max. 60 characters long | the title is max. 60
+                                        </h3>
+                                        <img class="blog_cardPreviewImg" src="assets/img/blog/blog_item_1.jpg" alt="blog item">
+                                    </a>
+                                    <p class="blog_cardDesc">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                    </p>
+                                    <p class="blog_cardDate">20 March, 2022</p>
+                                </div>
+                            </div>
+                            <!-- slider item -->
+                            <div class="tt_sliderItemBox">
+                                <div class="tt_sliderItem ctg_teaching">
+                                    <div class="blog_cardCtg_name">
+                                        Lehre, Aus- & Weiterbildung
+                                    </div>
+                                    <a href="blog_detail.html" class="blog_cardLink">
+                                        <h3 class="blog_cardTitle">
+                                            The title is max. 60 characters long | the title is max. 60
+                                        </h3>
+                                        <img class="blog_cardPreviewImg" src="assets/img/blog/blog_item_1.jpg" alt="blog item">
+                                    </a>
+                                    <p class="blog_cardDesc">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                    </p>
+                                    <p class="blog_cardDate">20 March, 2022</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  blog articles section-->
+                <div class="blog_listSec">
+                    <h2 class="blog_listSecTitle sec-title">Share4Growth - Unsere Blog Artikel</h2>
+
+                    <form action="#" autocomplete="off">
+                        <div class="input-group blog_listSearchBox">
+                            <input type="text" class="form-control" placeholder="Suche starten" >
+                            <button class="btn btn-outline-secondary" type="submit">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </form>
+
+
+                    <div class="blog_listBox">
+                        <div class="row g-4 g-xxl-5">
+                            <div class="col-lg-6">
+                                <div class="blog_cardItem ctg_leadership">
+                                    <div class="blog_cardImgBox">
+                                        <a href="blog_detail.html" class="blog_cardLink">
+                                            <img class="blog_cardPreviewImg" src="assets/img/blog/blog_item_1.jpg" alt="blog item">
+                                        </a>
+                                    </div>
+                                    <div class="blog_CardDescBox">
+                                        <div class="blog_cardCtg_name">
+                                            Führung & Leadership
+                                        </div>
+                                        <a href="blog_detail.html" class="blog_cardLink">
+                                            <h3 class="blog_cardTitle">
+                                                The title is max. 60 characters long | the title is max. 60
+                                            </h3>
+                                        </a>
+                                        <p class="blog_cardDesc">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                        </p>
+                                        <p class="blog_cardDate">20 March, 2022</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="blog_cardItem ctg_digitalization">
+                                    <div class="blog_cardImgBox">
+                                        <a href="blog_detail.html" class="blog_cardLink">
+                                            <img class="blog_cardPreviewImg" src="assets/img/blog/blog_item_1.jpg" alt="blog item">
+                                        </a>
+                                    </div>
+                                    <div class="blog_CardDescBox">
+                                        <div class="blog_cardCtg_name">
+                                            Digitalisierung
+                                        </div>
+                                        <a href="blog_detail.html" class="blog_cardLink">
+                                            <h3 class="blog_cardTitle">
+                                                The title is max. 60 characters long | the title is max. 60
+                                            </h3>
+                                        </a>
+                                        <p class="blog_cardDesc">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                        </p>
+                                        <p class="blog_cardDate">20 March, 2022</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="blog_cardItem ctg_management">
+                                    <div class="blog_cardImgBox">
+                                        <a href="blog_detail.html" class="blog_cardLink">
+                                            <img class="blog_cardPreviewImg" src="assets/img/blog/blog_item_1.jpg" alt="blog item">
+                                        </a>
+                                    </div>
+                                    <div class="blog_CardDescBox">
+                                        <div class="blog_cardCtg_name">
+                                            Management & Strategie
+                                        </div>
+                                        <a href="blog_detail.html" class="blog_cardLink">
+                                            <h3 class="blog_cardTitle">
+                                                The title is max. 60 characters long | the title is max. 60
+                                            </h3>
+                                        </a>
+                                        <p class="blog_cardDesc">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                        </p>
+                                        <p class="blog_cardDate">20 March, 2022</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="blog_cardItem ctg_socialMedia">
+                                    <div class="blog_cardImgBox">
+                                        <a href="blog_detail.html" class="blog_cardLink">
+                                            <img class="blog_cardPreviewImg" src="assets/img/blog/blog_item_1.jpg" alt="blog item">
+                                        </a>
+                                    </div>
+                                    <div class="blog_CardDescBox">
+                                        <div class="blog_cardCtg_name">
+                                            Social Media
+                                        </div>
+                                        <a href="blog_detail.html" class="blog_cardLink">
+                                            <h3 class="blog_cardTitle">
+                                                The title is max. 60 characters long | the title is max. 60
+                                            </h3>
+                                        </a>
+                                        <p class="blog_cardDesc">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                        </p>
+                                        <p class="blog_cardDate">20 March, 2022</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="blog_cardItem ctg_teaching">
+                                    <div class="blog_cardImgBox">
+                                        <a href="blog_detail.html" class="blog_cardLink">
+                                            <img class="blog_cardPreviewImg" src="assets/img/blog/blog_item_1.jpg" alt="blog item">
+                                        </a>
+                                    </div>
+                                    <div class="blog_CardDescBox">
+                                        <div class="blog_cardCtg_name">
+                                            Lehre, Aus- & Weiterbildung
+                                        </div>
+                                        <a href="blog_detail.html" class="blog_cardLink">
+                                            <h3 class="blog_cardTitle">
+                                                The title is max. 60 characters long | the title is max. 60
+                                            </h3>
+                                        </a>
+                                        <p class="blog_cardDesc">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                        </p>
+                                        <p class="blog_cardDate">20 March, 2022</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="blog_cardItem ctg_mentee">
+                                    <div class="blog_cardImgBox">
+                                        <a href="blog_detail.html" class="blog_cardLink">
+                                            <img class="blog_cardPreviewImg" src="assets/img/blog/blog_item_1.jpg" alt="blog item">
+                                        </a>
+                                    </div>
+                                    <div class="blog_CardDescBox">
+                                        <div class="blog_cardCtg_name">
+                                            Mentees
+                                        </div>
+                                        <a href="blog_detail.html" class="blog_cardLink">
+                                            <h3 class="blog_cardTitle">
+                                                The title is max. 60 characters long | the title is max. 60
+                                            </h3>
+                                        </a>
+                                        <p class="blog_cardDesc">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                        </p>
+                                        <p class="blog_cardDate">20 March, 2022</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                      
+
+                    <div class="blog_pgnSec">
+                        <ul class="blog_pgn">
+                            <li class="blog_pgn_item"><a class="blog_pgn_link" href="#"><i class="fa-solid fa-angles-left"></i></a></li>
+                            <li class="blog_pgn_item"><a class="blog_pgn_link" href="#"><i class="fa-solid fa-chevron-left"></i></a></li>
+                            <li class="blog_pgn_item"><a class="blog_pgn_link" href="#">4</a></li>
+                            <li class="blog_pgn_item"><a class="blog_pgn_link active" href="#">5</a></li>
+                            <li class="blog_pgn_item"><a class="blog_pgn_link" href="#">6</a></li>
+                            <li class="blog_pgn_item"><a class="blog_pgn_link" href="#"><i class="fa-solid fa-chevron-left"></i></a></li>
+                            <li class="blog_pgn_item"><a class="blog_pgn_link" href="#"><i class="fa-solid fa-angles-right"></i></a></li>
+                          </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- right menu box -->
+        <div class="main_secRight">
+            <!-- ad cards -->
+            <h3 class="right_secHeading">Kompetenzentwicklung</h3>
+            <div class="main_secRightAdCards">
+                <!-- ad card -->
+                <div class="ad_card">
+                    <h4 class="ad_title">
+                        <a href="">
+                            Nachhilfe Englisch wird hier angeboten und das ist gut
+                        </a>
+                    </h4>
+                    <div class="ad_previewBox">
+                        <div class="owl-carousel ad_previewSlider">
+                            <div class="ad_previewItem">
+                                <a class="ad_previewItemLink" href="#">
+                                    <img src="assets/img/blog/add_img.jpg" alt="ad image" class="ad_previewImg">
+                                </a>
+                            </div>
+                            <div class="ad_previewItem">
+                                <a class="ad_previewItemLink" href="#">
+                                    <button class="ad_videoPlyBtn">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                    <img src="assets/img/blog/add_img.jpg" alt="ad image" class="ad_previewImg">
+                                </a>
+                            </div>
+                            <div class="ad_previewItem">
+                                <a class="ad_previewItemLink" href="#">
+                                    <img src="assets/img/blog/add_img.jpg" alt="ad image" class="ad_previewImg">
+                                </a>
+                            </div>
+                            <div class="ad_previewItem">
+                                <a class="ad_previewItemLink" href="#">
+                                    <img src="assets/img/blog/add_img.jpg" alt="ad image" class="ad_previewImg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ad_authorInfoRow">
+                        <a class="ad_authorInfoBox" href="#">
+                            <div class="ad_authorImgBox">
+                                <img class="ad_authorImg" src="assets/img/blog/user_img.png" alt="user" >
+                                <div class="ad_authorTypeBox">
+                                   <img class="ad_authorTypeImg" src="assets/img/blog/Mentor_icon.png" alt="mentor" >
+                                </div>
+                            </div>
+                            <div class="ad_authorName">
+                                RHymer
+                            </div>
+                        </a>
+    
+                        <div class="ad_authorRating">
+                            <i class="fa-solid fa-star"></i> 4.8
+                        </div>
+                    </div>
+    
+                    <div class="ad_infoRow">
+                        <div class="ad_infoLeft">
+                            <div>
+                                <div class="ad_infoBox">
+                                    <img  class="ad_infoIcon" src="assets/img/blog/tachometer.svg" alt="tachometer" >
+                                    <div class="ad_infoTitle">01 - Beginner</div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="ad_infoBox">
+                                    <img  class="ad_infoIcon" src="assets/img/blog/credit-card.svg" alt="credit card" >
+                                    <div class="ad_infoTitle">4Share</div>
+                                </div>
+                                <div class="ad_infoBox">
+                                    <img  class="ad_infoIcon" src="assets/img/blog/Anzahl_TN.png" alt="Anzahl TN" >
+                                    <div class="ad_infoTitle">1/5</div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="ad_infoRight">
+                            <div class="ad_infoType">Investition</div>
+                            <div class="ad_infoPrice">Eur 50.00</div>
+                            <div>
+                                <button class="ad_wishListAdBtn">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <!-- ad card -->
+                <div class="ad_card">
+                    <h4 class="ad_title">
+                        <a href="">
+                            Nachhilfe Englisch wird hier angeboten und das ist gut
+                        </a>
+                    </h4>
+                    <div class="ad_previewBox">
+                        <div class="owl-carousel ad_previewSlider">
+                            <div class="ad_previewItem">
+                                <a class="ad_previewItemLink" href="#">
+                                    <img src="assets/img/blog/add_img.jpg" alt="ad image" class="ad_previewImg">
+                                </a>
+                            </div>
+                            <div class="ad_previewItem">
+                                <a class="ad_previewItemLink" href="#">
+                                    <button class="ad_videoPlyBtn">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                    <img src="assets/img/blog/add_img.jpg" alt="ad image" class="ad_previewImg">
+                                </a>
+                            </div>
+                            <div class="ad_previewItem">
+                                <a class="ad_previewItemLink" href="#">
+                                    <img src="assets/img/blog/add_img.jpg" alt="ad image" class="ad_previewImg">
+                                </a>
+                            </div>
+                            <div class="ad_previewItem">
+                                <a class="ad_previewItemLink" href="#">
+                                    <img src="assets/img/blog/add_img.jpg" alt="ad image" class="ad_previewImg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ad_authorInfoRow">
+                        <a class="ad_authorInfoBox" href="#">
+                            <div class="ad_authorImgBox">
+                                <img class="ad_authorImg" src="assets/img/blog/user_img.png" alt="user" >
+                                <div class="ad_authorTypeBox">
+                                   <img class="ad_authorTypeImg" src="assets/img/blog/Mentor_icon.png" alt="mentor" >
+                                </div>
+                            </div>
+                            <div class="ad_authorName">
+                                RHymer
+                            </div>
+                        </a>
+    
+                        <div class="ad_authorRating">
+                            <i class="fa-solid fa-star"></i> 4.8
+                        </div>
+                    </div>
+    
+                    <div class="ad_infoRow">
+                        <div class="ad_infoLeft">
+                            <div>
+                                <div class="ad_infoBox">
+                                    <img  class="ad_infoIcon" src="assets/img/blog/tachometer.svg" alt="tachometer" >
+                                    <div class="ad_infoTitle">01 - Beginner</div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="ad_infoBox">
+                                    <img  class="ad_infoIcon" src="assets/img/blog/credit-card.svg" alt="credit card" >
+                                    <div class="ad_infoTitle">4Share</div>
+                                </div>
+                                <div class="ad_infoBox">
+                                    <img  class="ad_infoIcon" src="assets/img/blog/Anzahl_TN.png" alt="Anzahl TN" >
+                                    <div class="ad_infoTitle">1/5</div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="ad_infoRight">
+                            <div class="ad_infoType">Investition</div>
+                            <div class="ad_infoPrice">Eur 50.00</div>
+                            <div>
+                                <button class="ad_wishListAdBtn listed">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+
+            <!-- Interesting article -->
+            <h3 class="right_secHeading">Interessante Artikel</h3>
+            <ul class="st_blogArticles">
+                <li class="st_blogArticleItem">
+                    <a class="st_blogArticle" href="#">
+                        <img  class="st_blogArticleImg" src="assets/img/blog/article_1.jpg" alt="article">
+                        <div class="st_blogArticleDesc">
+                            <h5 class="st_blogArticleName">Lorem ipsum dolor sit 
+                                amet, consectetur</h5>
+                            <p class="st_blogArticleDate">20 March, 2022</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="st_blogArticleItem">
+                    <a class="st_blogArticle" href="#">
+                        <img  class="st_blogArticleImg" src="assets/img/blog/article_2.jpg" alt="article">
+                        <div class="st_blogArticleDesc">
+                            <h5 class="st_blogArticleName">Lorem ipsum dolor sit 
+                                amet, consectetur</h5>
+                            <p class="st_blogArticleDate">20 March, 2022</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="st_blogArticleItem">
+                    <a class="st_blogArticle" href="#">
+                        <img  class="st_blogArticleImg" src="assets/img/blog/article_3.jpg" alt="article">
+                        <div class="st_blogArticleDesc">
+                            <h5 class="st_blogArticleName">Lorem ipsum dolor sit 
+                                amet, consectetur</h5>
+                            <p class="st_blogArticleDate">20 March, 2022</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="st_blogArticleItem">
+                    <a class="st_blogArticle" href="#">
+                        <img  class="st_blogArticleImg" src="assets/img/blog/article_1.jpg" alt="article">
+                        <div class="st_blogArticleDesc">
+                            <h5 class="st_blogArticleName">Lorem ipsum dolor sit 
+                                amet, consectetur</h5>
+                            <p class="st_blogArticleDate">20 March, 2022</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="st_blogArticleItem">
+                    <a class="st_blogArticle" href="#">
+                        <img  class="st_blogArticleImg" src="assets/img/blog/article_2.jpg" alt="article">
+                        <div class="st_blogArticleDesc">
+                            <h5 class="st_blogArticleName">Lorem ipsum dolor sit 
+                                amet, consectetur</h5>
+                            <p class="st_blogArticleDate">20 March, 2022</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="st_blogArticleItem">
+                    <a class="st_blogArticle" href="#">
+                        <img  class="st_blogArticleImg" src="assets/img/blog/article_3.jpg" alt="article">
+                        <div class="st_blogArticleDesc">
+                            <h5 class="st_blogArticleName">Lorem ipsum dolor sit 
+                                amet, consectetur</h5>
+                            <p class="st_blogArticleDate">20 March, 2022</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="st_blogArticleItem">
+                    <a class="st_blogArticle" href="#">
+                        <img  class="st_blogArticleImg" src="assets/img/blog/article_1.jpg" alt="article">
+                        <div class="st_blogArticleDesc">
+                            <h5 class="st_blogArticleName">Lorem ipsum dolor sit 
+                                amet, consectetur</h5>
+                            <p class="st_blogArticleDate">20 March, 2022</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="st_blogArticleItem">
+                    <a class="st_blogArticle" href="#">
+                        <img  class="st_blogArticleImg" src="assets/img/blog/article_2.jpg" alt="article">
+                        <div class="st_blogArticleDesc">
+                            <h5 class="st_blogArticleName">Lorem ipsum dolor sit 
+                                amet, consectetur</h5>
+                            <p class="st_blogArticleDate">20 March, 2022</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="st_blogArticleItem">
+                    <a class="st_blogArticle" href="#">
+                        <img  class="st_blogArticleImg" src="assets/img/blog/article_3.jpg" alt="article">
+                        <div class="st_blogArticleDesc">
+                            <h5 class="st_blogArticleName">Lorem ipsum dolor sit 
+                                amet, consectetur</h5>
+                            <p class="st_blogArticleDate">20 March, 2022</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="st_blogArticleItem">
+                    <a class="st_blogArticle" href="#">
+                        <img  class="st_blogArticleImg" src="assets/img/blog/article_1.jpg" alt="article">
+                        <div class="st_blogArticleDesc">
+                            <h5 class="st_blogArticleName">Lorem ipsum dolor sit 
+                                amet, consectetur</h5>
+                            <p class="st_blogArticleDate">20 March, 2022</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="st_blogArticleItem">
+                    <a class="st_blogArticle" href="#">
+                        <img  class="st_blogArticleImg" src="assets/img/blog/article_2.jpg" alt="article">
+                        <div class="st_blogArticleDesc">
+                            <h5 class="st_blogArticleName">Lorem ipsum dolor sit 
+                                amet, consectetur</h5>
+                            <p class="st_blogArticleDate">20 March, 2022</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="st_blogArticleItem">
+                    <a class="st_blogArticle" href="#">
+                        <img  class="st_blogArticleImg" src="assets/img/blog/article_3.jpg" alt="article">
+                        <div class="st_blogArticleDesc">
+                            <h5 class="st_blogArticleName">Lorem ipsum dolor sit 
+                                amet, consectetur</h5>
+                            <p class="st_blogArticleDate">20 March, 2022</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- ..................... End main section ..................... -->
+
+
+
+    <!-- ..................... Start footer section ..................... -->
+    <footer class="footer_sec">
+        <div class="container">
+            <div class="row footer_topRow">
+                <div class="col-0 col-xl-2"></div>
+                <div class="col-lg-12 col-xl-9">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="footer_content">
+                                <p class="footer_contentTitle">Kompetenzmarktplatz</p>
+                                <ul class="footer_nav">
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="about_competence_marketplace.html">So funktioniert's</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Kostenlose Registrierung</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Login</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="footer_content">
+                                <p class="footer_contentTitle">Wachstumsmarktplatz</p>
+                                <ul class="footer_nav">
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="about_growth_marketplace.html">So funktioniert's</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Kostenlose Registrierung</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Login</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-2">
+                            <div class="footer_content">
+                                <p class="footer_contentTitle">Über uns</p>
+                                <ul class="footer_nav">
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Team</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Karriere</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-2">
+                            <div class="footer_content">
+                                <p class="footer_contentTitle">Hilfe</p>
+                                <ul class="footer_nav">
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="faq.html">FAQ</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="contact_us.html">Hilfe und Kontakt</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-2">
+                            <div class="footer_content">
+                                <p class="footer_contentTitle">Rechtliches</p>
+                                <ul class="footer_nav">
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Impressum</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Datenschutz</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">AGBs</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-12 col-xl-8">
+                    <p class="footer_contentTitle text-center">Folge uns</p>
+
+                    <div class="footer_socialLinks text-center">
+                        <a class="footer_socialLink" href="#"> <img src="assets/icon/social_instagram.png" alt="facebook icon"></a>
+                        <a class="footer_socialLink" href="#"> <img src="assets/icon/social_twitter.png" alt="facebook icon"></a>
+                        <a class="footer_socialLink" href="#"> <img src="assets/icon/social_facebook.png" alt="facebook icon"></a>
+                        <a class="footer_socialLink" href="#"> <img src="assets/icon/social_youtube.png" alt="facebook icon"></a>
+                        <a class="footer_socialLink" href="#"> <img src="assets/icon/social_linkedin.png" alt="facebook icon"></a>
+                    </div>
+
+                    <p class="footer_copyrightText text-center">Copyright &copy;2022 Share 4 Growth. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ..................... End footer section ..................... -->
+
+    <!-- ............. scripts ............. -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/glightbox.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

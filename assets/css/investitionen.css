@@ -1,0 +1,65 @@
+.investitionen_secTitle {
+  color: #5a5ca8;
+  font-size: 30px;
+  line-height: 1.5333em;
+  margin: 1em 0;
+}
+
+.investitionen_secTitle span {
+  color: #6e8fe7;
+}
+
+.investitionen-wrapper {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #e2e2e2;
+  border-radius: 20px;
+  height: 100vh;
+  overflow-x: auto;
+  padding: 0;
+}
+
+table.investitionen-table {
+  width: 100%;
+  white-space: nowrap;
+}
+
+.investitionen-table thead tr,
+.investitionen-table thead th,
+.investitionen-table tbody tr,
+.investitionen-table tbody td {
+  border: 1px solid #cecece;
+  border-top: 0;
+  border-left: 0;
+  padding: 10px;
+}
+
+.investitionen-table thead th {
+  font-size: 20px;
+  font-weight: 700;
+  color: #5a5ca8;
+}
+
+.sticky-table th:first-child,
+.sticky-table td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  background: #ffffff;
+  width: 300px;
+}
+
+.investitionen-table thead th select {
+  font-size: 20px;
+  font-weight: 700;
+  background: transparent;
+  color: #5a5ca8;
+  border: none;
+  outline: none;
+}
+
+@media (max-width: 1200px) {
+  .investitionen_secTitle {
+    font-size: 22px;
+  }
+}

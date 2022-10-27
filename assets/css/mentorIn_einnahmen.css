@@ -35,6 +35,11 @@
   padding-right: 5px;
 }
 
+.einnahmen2-me4 {
+  color: #a1a1a1;
+  padding-right: 7px;
+}
+
 .einnahmen-toggle * {
   font-size: 20px;
   line-height: 1.5em;
@@ -67,7 +72,7 @@ table.einnahmen-table {
   border: 1px solid #cecece;
   border-top: 0;
   border-left: 0;
-  padding: 10px;
+  padding: 10px 15px;
 }
 
 .einnahmen-table thead th {
@@ -92,6 +97,15 @@ table.einnahmen-table {
   color: #5a5ca8;
   border: none;
   outline: none;
+}
+
+.einnahmen-table2 tbody td {
+  padding: 0 15px;
+}
+
+.einnahmen-table2 tbody td span {
+  display: block;
+  padding: 10px 0;
 }
 
 @media (max-width: 1200px) {

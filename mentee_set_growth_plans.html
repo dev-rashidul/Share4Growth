@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Share4Growth</title>
+
+    <!-- ............. stylesheets ............. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/glightbox.min.css">
+
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/profile.css">
+
+    <!-- groth plan page -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="assets/css/set_growth_plans.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <!-- ..................... start header section ..................... -->
+    <header class="header_sec fixed-top">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="index.html">
+                    <img src="assets/img/Logo.svg" alt="logo" class="img-fluid header_sec_logo">
+                </a>
+
+
+                <div class="header_navLinkArea" id="header_navLinkArea">
+                    <div class="nav_backDrop d-lg-none" id="nav_backDrop"></div>
+                    <div class="header_navLinksBox">
+                        <button class="menu_clsBtn d-lg-none" id="menu_clsBtn"></button>
+                        <ul class="header_navLinks">
+                            <li class="header_navItem d-lg-none">
+                                <a href="index.html">
+                                    <img src="assets/img/Logo.svg" alt="logo" class="img-fluid header_sec_logo">
+                                </a>
+                            </li>
+                            <li class="header_navItem">
+                                <a class="header_navLink" href="index.html">Home</a>
+                            </li>
+                            <li class="header_navItem">
+                                <a class="header_navLink" href="competence_marketplace.html">Kompetenzmarktplatz</a>
+                            </li>
+                            <li class="header_navItem">
+                                <a class="header_navLink" href="growth_marketplace.html">Wachstumsmarktplatz</a>
+                            </li>
+                            <li class="header_navItem">
+                                <a class="header_navLink" href="prices.html">Preise</a>
+                            </li>
+                            <li class="header_navItem">
+                                <a class="header_navLink" href="blog.html">Blog</a>
+                            </li>
+                            <!-- 
+                                before login
+
+                                <div class="header_navItem d-lg-none">
+                                    <a href="#" class="btn btn_primary rounded-pill">Log In</a>
+                                </div> 
+                            -->
+
+                            <!-- for logged user -->
+                            <li class="header_navItem d-lg-none">
+                                <div class="logged_divider"></div>
+                            </li>
+                            <li class="header_navItem d-lg-none">
+                                <a class="header_navLink" href="mentor_profile_details.html">MentorIn</a>
+                            </li>
+                            <li class="header_navItem d-lg-none">
+                                <a class="header_navLink active" href="mentee_profile_details.html">Mentee</a>
+                            </li>
+                            <li class="header_navItem d-lg-none">
+                                <a class="header_navLink" href="general_settings.html">Allg. Einstellungen</a>
+                            </li>
+                            <li class="header_navItem d-lg-none">
+                                <a class="header_navLink" href="security_settings.html">Sicherheit</a>
+                            </li>
+                            <li class="header_navItem d-lg-none">
+                                <a class="header_navLink" href="notification_settings.html">Benachrichtigungen</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--
+                    before login
+
+                    <div class="d-none d-lg-block">
+                        <a href="#" class="btn btn_primary rounded-pill">Log In</a>
+                    </div> 
+                -->
+
+                <!-- for logged user -->
+                <div class="userOptBox">
+                    <div>
+                        <a href="#" class="userOpt_item"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                    </div>
+                    <div>
+                        <a href="#" class="userOpt_item">
+                            <i class="fa-regular fa-bell"></i>
+                            <span class="notification_idecator"></span>
+                        </a>
+                    </div>
+
+                    <div class="d-none d-lg-block">
+                        <div class="btn-group">
+                            <button type="button" class="btn userOpt_userImgBox" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="userOpt_userImg" src="assets/img/messages/profile_img.png" alt="profile image" >
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end cus_dropdown-menu">
+                                <li><a class="dropdown-item" href="mentor_profile_details.html">MentorIn</a></li>
+                                <li><a class="dropdown-item active" href="mentee_profile_details.html">Mentee</a></li>
+                                <li><a class="dropdown-item" href="general_settings.html">Allg. Einstellungen</a></li>
+                                <li><a class="dropdown-item" href="security_settings.html">Sicherheit</a></li>
+                                <li><a class="dropdown-item" href="notification_settings.html">Benachrichtigungen</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="userWelcomeTxt">
+                        Schön das Du da bist <br>
+                        <span class="c_secondary">22_George</span>
+                    </div>
+                </div>
+
+
+
+
+                <button class="menu_toggleBtn d-lg-none" id="menu_toggleBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- ..................... End header section ..................... -->
+
+    <!-- ..................... start main section ..................... -->
+    <div class="main_sec mentee_main_sec">
+
+        <!-- navigation toggle button -->
+        <div class="d-xl-none">
+            <button class="main_navColTglBtn">
+                <i class="fa-solid fa-gear"></i>
+            </button>
+        </div>
+        <!-- navigation column -->
+        <div class="main_navCol">
+            <div class="main_navColBox">
+                <div class="userDetailsBox">
+                    <img class="userImg" src="assets/img/profile/user_img.png" alt="Profile picture">
+                    <p class="userName">22_George</p>
+
+                    <div class="pageNavBox">
+                        <a class="pageNavItem pageNavItem1" href="mentor_profile_details.html">MentorIn</a>
+                        <a class="pageNavItem pageNavItem2 active" href="mentee_profile_details.html">Mentee</a>
+                    </div>
+
+                    <div class="d-flex justify-content-center user_ratingBox">
+                        <div>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                        </div>
+                        <div class="text-warning fw-bold ps-1 mb-0">
+                            4.8
+                        </div>
+                        <div class="ps-1 mb-0">
+                            (121)
+                        </div>
+                    </div>
+                </div>
+                <ul class="navbar-nav flex-column mainSec_nav thin_scrollbar">
+                    <li class="nav-item">
+                        <a class="nav-link" href="mentee_profile_details.html">
+                            <div class="d-flex align-items-center">
+                                <span class="nav_link_icon">
+                                    <i class="fa-solid fa-house-chimney"></i>
+                                </span>
+                                <span class="nav-link-text ps-1">Profildetails</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+
+                        <a class="nav-link dropdown_indicator active" href="#growth_plan" role="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="dashboard">
+                            <div class="d-flex align-items-center">
+                                <span class="nav_link_icon">
+                                    <i class="fa-solid fa-chart-area"></i>
+                                </span>
+                                <span class="nav-link-text ps-1">Meine Wachstums-
+                                    pläne</span>
+                            </div>
+                        </a>
+                        <div class="collapse show" id="growth_plan">
+                            <ul class="nav sub_nav">
+                                <li class="sub_nav_item">
+                                    <a class="sub_nav_link active" href="mentee_set_growth_plans.html">
+                                        Wachstumspläne einstellen
+                                    </a>
+                                </li>
+                                <li class="sub_nav_item">
+                                    <a class="sub_nav_link" href="mentee_submitted_requests.html">
+                                        Abgegebene Anfragen
+                                    </a>
+                                </li>
+                                <li class="sub_nav_item">
+                                    <a class="sub_nav_link" href="mentee_order_overview.html">
+                                        Auftragsübersicht
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mentee_reviews.html">
+                            <div class="d-flex align-items-center">
+                                <span class="nav_link_icon">
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                                <span class="nav-link-text ps-1">Bewertungen</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mentee_investments.html">
+                            <div class="d-flex align-items-center">
+                                <span class="nav_link_icon">
+                                    <i class="fa-solid fa-wallet"></i>
+                                </span>
+                                <span class="nav-link-text ps-1">Investitionen</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mentee_favourites.html">
+                            <div class="d-flex align-items-center">
+                                <span class="nav_link_icon">
+                                    <i class="fa-solid fa-heart"></i>
+                                </span>
+                                <span class="nav-link-text ps-1">Favoriten</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="s4g_performace_dashboard.html">
+                            <div class="d-flex align-items-center">
+                                <span class="nav_link_icon">
+                                    <img class="nav_link_icon_1" src="assets/img/profile/s4g_performance_dashboard_1.svg" alt="icon">
+                                    <img class="nav_link_icon_2" src="assets/img/profile/s4g_performance_dashboard_2.svg" alt="icon">
+                                </span>
+                                <span class="nav-link-text ps-1">S4G Performance 
+                                    Dashboard</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="s4g_automation.html">
+                            <div class="d-flex align-items-center">
+                                <span class="nav_link_icon">
+                                    <img class="nav_link_icon_1" src="assets/img/profile/s4g_automatisierung_1.svg" alt="icon">
+                                    <img class="nav_link_icon_2" src="assets/img/profile/s4g_automatisierung_2.svg" alt="icon">
+                                </span>
+                                <span class="nav-link-text ps-1">S4G Automatisierung</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="s4g_marketing">
+                            <div class="d-flex align-items-center">
+                                <span class="nav_link_icon">
+                                    <img class="nav_link_icon_1" src="assets/img/profile/s4g_marketing_1.svg" alt="icon">
+                                    <img class="nav_link_icon_2" src="assets/img/profile/s4g_marketing_2.svg" alt="icon">
+                                </span>
+                                <span class="nav-link-text ps-1">S4G Marketing</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- parent pages-->
+                        <a class="nav-link dropdown_indicator collapsed" href="#moreOption" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="dashboard">
+                            <div class="d-flex align-items-center">
+                                <span class="nav_link_icon">
+                                    <i class="fa-brands fa-buromobelexperte"></i>
+                                </span>
+                                <span class="nav-link-text ps-1">Others</span>
+                            </div>
+                        </a>
+                        <div class="collapse" id="moreOption">
+                            <ul class="nav sub_nav">
+                                <li class="sub_nav_item">
+                                    <a class="sub_nav_link" href="#">
+                                        Demo title 1
+                                    </a>
+                                </li>
+                                <li class="sub_nav_item">
+                                    <a class="sub_nav_link" href="#">
+                                        Demo title 2
+                                    </a>
+                                </li>
+                                <li class="sub_nav_item">
+                                    <a class="sub_nav_link" href="#">
+                                        Demo title 3
+                                    </a>
+                                </li>
+                                <li class="sub_nav_item">
+                                    <a class="sub_nav_link" href="#">
+                                        Demo title 4
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="main_navColBackdrop d-xl-none"></div>
+        </div>
+
+        <!-- main content column -->
+        <div class="main_contentCol">
+            <div class="growth_planContainer">
+                <form action="#" autocomplete="off">
+                    <!-- input row 1 -->
+                    <div class="gInp_row_1">
+                        <div class="row g-3">
+                            <div class="col-md-6 col-xl-3">
+                                <select name="" id="" class="form-select gInp_item">
+                                    <option value="" selected="" disabled="">Hauptkategorie</option>
+                                    <option value="">option 1</option>
+                                    <option value="">option 2</option>
+                                    <option value="">option 3</option>
+                                    <option value="">option 4</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 col-xl-3">
+                                <select name="" id="" class="form-select gInp_item">
+                                    <option value="" selected="" disabled="">Unterkategorie</option>
+                                    <option value="">option 1</option>
+                                    <option value="">option 2</option>
+                                    <option value="">option 3</option>
+                                    <option value="">option 4</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 col-xl-3">
+                                <select name="" id="" class="form-select gInp_item">
+                                    <option value="" selected="" disabled="">Für Kompetenzstufe </option>
+                                    <option value="">option 1</option>
+                                    <option value="">option 2</option>
+                                    <option value="">option 3</option>
+                                    <option value="">option 4</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 col-xl-3">
+                                <input type="text" class="form-control gInp_item" placeholder="Hier den Ort eintragen">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- input row 2 -->
+                    <div class="gInp_row_2">
+                        <div class="row g-3">
+                            <div class="col-xl-6">
+                                <p class="gInp_title">Wie lautet der Titel deines Wachstumsplanes bzw. deiner Suche? </p>
+
+                                <div class="txt_countBox">
+                                    <input name="" id="" class="form-control fs_md txt_countBoxInp gInp_item" maxlength="55" placeholder="Hier kannst du einen passenden Titel vergeben">
+                                    <div class="txt_count">
+                                        <span class="txt_currentNum">0</span>
+                                        <span class="txt_maxLen">/ 55</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-5 col-md-4 col-xl-2">
+                                <div class="">
+                                    <p class="gInp_title">gewünschter Modus</p>
+                                    <div class="pe-3">
+                                        <label class="d-flex justify-content-between align-items-center mb-2">
+                                            <span class="c_gray">Online</span>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" id="" autocomplete="off" data-tgl_inprow="inprow_itm_1">
+                                            </div>
+                                        </label>
+                                        <label class="d-flex justify-content-between align-items-center mb-2">
+                                            <span class="c_gray">Physisch</span>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" id="" autocomplete="off" data-tgl_inprow="inprow_itm_2">
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-7 col-md-5 col-xl-4">
+                                <p class="gInp_title">Durchführungsart</p>
+                                <div class="row mb-2 inprow_itm inprow_itm_1">
+                                    <div class="col-sm-6">
+                                        <div class="form-check">
+                                            <label class="form-check-label c_gray">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                                Telefon
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-check">
+                                            <label class="form-check-label c_gray">
+                                                <input class="form-check-input" type="checkbox" value="" >
+                                                Videokonferenz
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row inprow_itm inprow_itm_2">
+                                    <div class="col-sm-6">
+                                        <div class="form-check">
+                                            <label class="form-check-label c_gray">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                                Privat
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-check">
+                                            <label class="form-check-label c_gray">
+                                                <input class="form-check-input" type="checkbox" value="" >
+                                                Seminarraum
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- input row 3 -->
+                    <div class="gInp_row_3">
+                        <div class="row g-3">
+
+                            <!-- left input column -->
+                            <div class="col-xl-9">
+                                <div class="mb-1">
+                                    <p class="gInp_title">Beschreibung deines Wissensengpasses</p>
+                                    <div class="txt_countBox">
+                                        <textarea name="" id="" class="form-control fs_md txt_countBoxInp gInp_item" maxlength="800" rows="8" placeholder='Beschreibe etwas genauer deinen Wissensengpass. Es halt sich bewährt wenn du wie folgt beginnst:
+
+"Ich benötige Unterstützung bei, …."
+"Ich habe aktuell die folgende Herausforderung: …. "
+"Ich möchte gerne folgendes lösen: …. "
+                                        '></textarea>
+                                        <div class="txt_count">
+                                            <span class="txt_currentNum">0</span>
+                                            <span class="txt_maxLen">/ 800</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-1">
+                                    <p class="gInp_title">Fragen und Erwartungen</p>
+                                    <div class="txt_countBox">
+                                        <textarea name="" id="" class="form-control fs_md txt_countBoxInp  gInp_item gInp_item_textarea_2" maxlength="2000" rows="13" placeholder='Notiere hier deine konkreten Fragen und formuliere deine Erwartungen an einen guten Mentor bzw. ein gute Mentorin.
+
+Welche konkreten Fragen sollten beantwortet werden?
+Formuliere deine Fragen genau und liste alle Punkte auf, die du beantwortet haben möchtest. Je genauer du deine Fragen stellst, desto besser werden die Antworten und desto besser wird dein Kompetenzengpass geschlossen.
+
+Hierbei hat sich bewährt die Fragen auszuschreiben - z.B. nach dieser Struktur:
+Frage 1: …….
+
+Frage 2: …… 
+                                        
+                                        '></textarea>
+                                        <div class="txt_count">
+                                            <span class="txt_currentNum">0</span>
+                                            <span class="txt_maxLen">/ 2000</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="gInp_title">Welche Erfahrung solltest du mitbringen? <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Demo title"><i class="fa-solid fa-circle-question"></i></span></p>
+                                    </div>
+                                    <div class="col-md-8 col-lg-9">
+                                        <div class="mb-1">
+                                            <div class="txt_countBox">
+                                                <textarea name="" id="" class="form-control fs_md txt_countBoxInp gInp_item" maxlength="250" rows="3" placeholder='Du bist für mich besonders qualifiziert , wenn ...'></textarea>
+                                                <div class="txt_count">
+                                                    <span class="txt_currentNum">0</span>
+                                                    <span class="txt_maxLen">/ 250</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-4 mb-md-0 col-md-4 col-lg-3">
+                                        <div class="mb-2">
+                                            <div class="form-check">
+                                                <label class="form-check-label c_gray">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                    Qualifiziert/Zertifiziert
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="mb-2">
+                                            <div class="form-check">
+                                                <label class="form-check-label c_gray">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                    Praxiserfahrung
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <div class="form-check">
+                                                <label class="form-check-label c_gray">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                    Professional
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-1">
+                                    <p class="gInp_title">Was gibt es zu beachten?</p>
+
+                                    <div class="txt_countBox">
+                                        <textarea name="" id="" class="form-control fs_md txt_countBoxInp gInp_item" maxlength="500" rows="3" placeholder='Falls etwas besonderes beachtet werden sollte, kannst du es hier eintragen'></textarea>
+                                        <div class="txt_count">
+                                            <span class="txt_currentNum">0</span>
+                                            <span class="txt_maxLen">/ 500</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-4">
+                                    <div class="col-md-8 col-xl-10">
+                                        <p class="gInp_title">Bilder & Videos für dein Inserat <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Demo title"><i class="fa-solid fa-circle-question"></i></span></p>
+                                        <div class="row g-3 g-md-4">
+                                            <div class="col-6 col-sm-4">
+                                                <label class="gFile_inpBox gFile_inpBox_1">
+                                                    <div class="gFile_inpFilename"></div>
+                                                    <input class="d-none" type="file" accept=".jpg,.png,.mov,.mp4" />
+                                                    <div class="gFile_inpTitle1">Vorschaubild</div>
+                                                    <div class="gFile_inpIcon">
+                                                        <i class="fa-solid fa-photo-film"></i>
+                                                    </div>
+                                                    <div class="gFile_inpTitle">nur als JPG/PNG <br> oder MOV/MP4
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-6 col-sm-4">
+                                                <label class="gFile_inpBox"><div class="gFile_inpFilename"></div>
+                                                    <input class="d-none" type="file" accept=".jpg,.png,.mov,.mp4" />
+                                                    
+                                                    <div class="gFile_inpIcon">
+                                                        <i class="fa-solid fa-photo-film"></i>
+                                                    </div>
+                                                    <div class="gFile_inpTitle">nur als JPG/PNG <br> oder MOV/MP4
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-6 col-sm-4">
+                                                <label class="gFile_inpBox"><div class="gFile_inpFilename"></div><div class="gFile_inpFilename"></div>
+                                                    <input class="d-none" type="file" accept=".jpg,.png,.mov,.mp4" />
+                                                    
+                                                    <div class="gFile_inpIcon">
+                                                        <i class="fa-solid fa-photo-film"></i>
+                                                    </div>
+                                                    <div class="gFile_inpTitle">nur als JPG/PNG <br> oder MOV/MP4
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-6 col-sm-4">
+                                                <label class="gFile_inpBox"><div class="gFile_inpFilename"></div>
+                                                    <input class="d-none" type="file" accept=".jpg,.png,.mov,.mp4" />
+                                                    
+                                                    <div class="gFile_inpIcon">
+                                                        <i class="fa-solid fa-photo-film"></i>
+                                                    </div>
+                                                    <div class="gFile_inpTitle">nur als JPG/PNG <br> oder MOV/MP4
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-6 col-sm-4">
+                                                <label class="gFile_inpBox"><div class="gFile_inpFilename"></div>
+                                                    <input class="d-none" type="file" accept=".jpg,.png,.mov,.mp4" />
+                                                    
+                                                    <div class="gFile_inpIcon">
+                                                        <i class="fa-solid fa-photo-film"></i>
+                                                    </div>
+                                                    <div class="gFile_inpTitle">nur als JPG/PNG <br> oder MOV/MP4
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-6 col-sm-4">
+                                                <label class="gFile_inpBox"><div class="gFile_inpFilename"></div>
+                                                    <input class="d-none" type="file" accept=".jpg,.png,.mov,.mp4" />
+                                                    
+                                                    <div class="gFile_inpIcon">
+                                                        <i class="fa-solid fa-photo-film"></i>
+                                                    </div>
+                                                    <div class="gFile_inpTitle">nur als JPG/PNG <br> oder MOV/MP4
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-4">
+                                    <div class="col-md-10 col-lg-8 col-xl-10">
+                                        <div class="row g-3 g-md-4">
+                                            <div class="col-6 col-sm-4  col-md-3">
+                                                <p class="gInp_title">Dokument 1</p>
+                                                <label class="gFile_inpBox gFile_inpBox2"><div class="gFile_inpFilename"></div>
+                                                    <input class="d-none" type="file" accept=".pdf" />
+                                                    <div class="gFile_inpIcon">
+                                                        <i class="fa-solid fa-file-pdf"></i>
+                                                    </div>
+                                                    <div class="gFile_inpTitle">nur als PDF </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-6 col-sm-4  col-md-3">
+                                                <p class="gInp_title">Dokument 2</p>
+                                                <label class="gFile_inpBox gFile_inpBox2"><div class="gFile_inpFilename"></div>
+                                                    <input class="d-none" type="file" accept=".pdf" />
+                                                    <div class="gFile_inpIcon">
+                                                        <i class="fa-solid fa-file-pdf"></i>
+                                                    </div>
+                                                    <div class="gFile_inpTitle">nur als PDF </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-6 col-sm-4  col-md-3">
+                                                <p class="gInp_title">Dokument 3</p>
+                                                <label class="gFile_inpBox gFile_inpBox2"><div class="gFile_inpFilename"></div>
+                                                    <input class="d-none" type="file" accept=".pdf" />
+                                                    <div class="gFile_inpIcon">
+                                                        <i class="fa-solid fa-file-pdf"></i>
+                                                    </div>
+                                                    <div class="gFile_inpTitle">nur als PDF </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- right input column -->
+                            <div class="col-xl-3">
+                                <div class="gRightInputCol">
+                                    <div class="mb-3">
+                                        <select name="" id="" class="form-select gInp_item appointment_numInp">
+                                            <option value="" selected="" disabled="">Anzahl Termine</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                        </select>
+                                    </div>
+
+                                       
+                                    <div class="mb-3">
+                                        <select name="" id="" class="form-select gInp_item appointment_typeInp">
+                                            <option value="" selected="" disabled="">Terminart</option>
+                                            <option value="1">Fix geplant</option>
+                                            <option value="2">nach individueller Vereinbarung</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="appointment_opts">
+                                        <!-- appointment definitely -->
+                                        <div class="appointment_definitely">
+                                            <!-- 
+                                                <div class="form-select gInp_item appointment_defItem mb-3 show_date" data-bs-toggle="modal" data-bs-target="#appointment_modal">
+                                                    <input class="d-none" type="text" name="appt_date[]" id="" value="2022-07-29 14:30 120">
+                                                    <div class="appointment_defItem_title">
+                                                        Termin 1
+                                                    </div>
+                                                    <div class="appointment_defItem_date">
+                                                        07/29/2022  - 14:00Uhr bis 16:00Uhr
+                                                    </div>
+                                                </div> 
+
+                                                // comment for backend developer
+                                                - js file will make something like this
+                                                -here <input class="d-none" type="text" name="appt_date[]" id="" value="2022-07-29 14:30 120">
+                                                is equal to <input class="d-none" type="text" name="appt_date[]" id="" value="date start_time duration_in_minute">
+                                            -->
+                                        </div>
+
+                                        <!-- appointment individualy -->
+                                        <div class="appointment_individual mb-3">
+                                            <div class="mb-3">
+                                                <select name="" id="" class="form-select gInp_item">
+                                                    <option value="" selected="" disabled="">Dauer pro Termin</option>
+                                                    <option value="30">30 Min</option>
+                                                    <option value="60">1h</option>
+                                                    <option value="120">2h</option>
+                                                    <option value="180">3h</option>
+                                                    <option value="240">4h</option>
+                                                    <option value="480">8h</option>
+                                                </select>
+                                            </div>
+
+
+                                            <div class="bg-white p-3 gInp_item">
+                                                <div class="mb-2">
+                                                    <div class="form-check ">
+                                                        <label class="form-check-label c_gray">
+                                                            <input class="form-check-input" type="checkbox" value="">
+                                                            Termine auch nach 17:00Uhr möglich
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-2">
+                                                    <div class="form-check d-inline-block me-2 mb-1">
+                                                        <label class="form-check-label c_gray">
+                                                            <input class="form-check-input" type="checkbox" value="">
+                                                            Mo. 
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check d-inline-block me-2 mb-1">
+                                                        <label class="form-check-label c_gray">
+                                                            <input class="form-check-input" type="checkbox" value="">
+                                                            Di. 
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check d-inline-block me-2 mb-1">
+                                                        <label class="form-check-label c_gray">
+                                                            <input class="form-check-input" type="checkbox" value="">
+                                                            Mi.  
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check d-inline-block me-2 mb-1">
+                                                        <label class="form-check-label c_gray">
+                                                            <input class="form-check-input" type="checkbox" value="">
+                                                            Do. 
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check d-inline-block me-2 mb-1">
+                                                        <label class="form-check-label c_gray">
+                                                            <input class="form-check-input" type="checkbox" value="">
+                                                            Fr. 
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check d-inline-block me-2 mb-1">
+                                                        <label class="form-check-label c_gray">
+                                                            <input class="form-check-input" type="checkbox" value="">
+                                                            Sa. 
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check d-inline-block me-2 mb-1">
+                                                        <label class="form-check-label c_gray">
+                                                            <input class="form-check-input" type="checkbox" value="">
+                                                            So. 
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <select name="" id="" class="form-select gInp_item">
+                                            <option value="" selected="" disabled="">Videokonferenz</option>
+                                            <option value="1">MS-Teams</option>
+                                            <option value="2">Zoom</option>
+                                            <option value="3">Skype</option>
+                                            <option value="4">Google</option>
+                                            <option value="5">andere</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <p class="gInp_title">Meine Investition als Mentee</p>
+                                        <input name="" id="" class="form-control fs_md txt_countBoxInp gInp_item gInp_price" placeholder="12,05" type="number" min="1">
+                                        <p class="c_gray pt-1">Preisangebot für Mentor/in <br> € <span class="gInp_price_preview">10,00</span> <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Demo title"><i class="fa-solid fa-circle-question c_primary"></i></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="text-center py-4">
+                                    <button class="btn form_act_btn mx-0" type="submit">Inserat einstellen</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- appointment modal -->
+        <div class="modal fade appointment_modal" id="appointment_modal" tabindex="-1" aria-labelledby="appointment_modalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <input class="setGrowth_dateInp d-none" type="text" name="" id="appt_date">
+                        </div>
+
+                        <div class="mb-3">
+                            <select name="" id="appt_duration" class="form-select gInp_item">
+                                <option value="" selected="" disabled="">Dauer pro Termin</option>
+                                <option value="30">30 Min</option>
+                                <option value="60">1h</option>
+                                <option value="120">2h</option>
+                                <option value="180">3h</option>
+                                <option value="240">4h</option>
+                                <option value="480">8h</option>
+                            </select>
+                        </div>
+                        <div>
+                            <button id="appointment_modal_submitBtn" class="btn form_act_btn w-100" type="submit" >übernehmen</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- ..................... end main section ..................... -->
+
+    <!-- ..................... Start footer section ..................... -->
+    <footer class="footer_sec">
+        <div class="container">
+            <div class="row footer_topRow">
+                <div class="col-0 col-xl-2"></div>
+                <div class="col-lg-12 col-xl-9">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="footer_content">
+                                <p class="footer_contentTitle">Kompetenzmarktplatz</p>
+                                <ul class="footer_nav">
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="about_competence_marketplace.html">So funktioniert's</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Kostenlose Registrierung</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Login</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="footer_content">
+                                <p class="footer_contentTitle">Wachstumsmarktplatz</p>
+                                <ul class="footer_nav">
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="about_growth_marketplace.html">So funktioniert's</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Kostenlose Registrierung</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Login</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-2">
+                            <div class="footer_content">
+                                <p class="footer_contentTitle">Über uns</p>
+                                <ul class="footer_nav">
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Team</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Karriere</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-2">
+                            <div class="footer_content">
+                                <p class="footer_contentTitle">Hilfe</p>
+                                <ul class="footer_nav">
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="faq.html">FAQ</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="contact_us.html">Hilfe und Kontakt</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-2">
+                            <div class="footer_content">
+                                <p class="footer_contentTitle">Rechtliches</p>
+                                <ul class="footer_nav">
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Impressum</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Datenschutz</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">AGBs</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-12 col-xl-8">
+                    <p class="footer_contentTitle text-center">Folge uns</p>
+
+                    <div class="footer_socialLinks text-center">
+                        <a class="footer_socialLink" href="#"> <img src="assets/icon/social_instagram.png" alt="facebook icon"></a>
+                        <a class="footer_socialLink" href="#"> <img src="assets/icon/social_twitter.png" alt="facebook icon"></a>
+                        <a class="footer_socialLink" href="#"> <img src="assets/icon/social_facebook.png" alt="facebook icon"></a>
+                        <a class="footer_socialLink" href="#"> <img src="assets/icon/social_youtube.png" alt="facebook icon"></a>
+                        <a class="footer_socialLink" href="#"> <img src="assets/icon/social_linkedin.png" alt="facebook icon"></a>
+                    </div>
+
+                    <p class="footer_copyrightText text-center">Copyright &copy;2022 Share 4 Growth. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ..................... End footer section ..................... -->
+
+    <!-- ............. scripts ............. -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/glightbox.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/de.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

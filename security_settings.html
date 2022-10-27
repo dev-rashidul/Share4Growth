@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Share4Growth</title>
+
+    <!-- ............. stylesheets ............. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/glightbox.min.css">
+
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/settings.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <!-- ..................... start header section ..................... -->
+    <header class="header_sec fixed-top">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="index.html">
+                    <img src="assets/img/Logo.svg" alt="logo" class="img-fluid header_sec_logo">
+                </a>
+
+
+                <div class="header_navLinkArea" id="header_navLinkArea">
+                    <div class="nav_backDrop d-lg-none" id="nav_backDrop"></div>
+                    <div class="header_navLinksBox">
+                        <button class="menu_clsBtn d-lg-none" id="menu_clsBtn"></button>
+                        <ul class="header_navLinks">
+                            <li class="header_navItem d-lg-none">
+                                <a href="index.html">
+                                    <img src="assets/img/Logo.svg" alt="logo" class="img-fluid header_sec_logo">
+                                </a>
+                            </li>
+                            <li class="header_navItem">
+                                <a class="header_navLink" href="index.html">Home</a>
+                            </li>
+                            <li class="header_navItem">
+                                <a class="header_navLink" href="competence_marketplace.html">Kompetenzmarktplatz</a>
+                            </li>
+                            <li class="header_navItem">
+                                <a class="header_navLink" href="growth_marketplace.html">Wachstumsmarktplatz</a>
+                            </li>
+                            <li class="header_navItem">
+                                <a class="header_navLink" href="prices.html">Preise</a>
+                            </li>
+                            <li class="header_navItem">
+                                <a class="header_navLink" href="blog.html">Blog</a>
+                            </li>
+                            <!-- 
+                                before login
+
+                                <div class="header_navItem d-lg-none">
+                                    <a href="#" class="btn btn_primary rounded-pill">Log In</a>
+                                </div> 
+                            -->
+
+                            <!-- for logged user -->
+                            <li class="header_navItem d-lg-none">
+                                <div class="logged_divider"></div>
+                            </li>
+                            <li class="header_navItem d-lg-none">
+                                <a class="header_navLink" href="mentor_profile_details.html">MentorIn</a>
+                            </li>
+                            <li class="header_navItem d-lg-none">
+                                <a class="header_navLink" href="mentee_profile_details.html">Mentee</a>
+                            </li>
+                            <li class="header_navItem d-lg-none">
+                                <a class="header_navLink" href="general_settings.html">Allg. Einstellungen</a>
+                            </li>
+                            <li class="header_navItem d-lg-none">
+                                <a class="header_navLink active" href="security_settings.html">Sicherheit</a>
+                            </li>
+                            <li class="header_navItem d-lg-none">
+                                <a class="header_navLink" href="notification_settings.html">Benachrichtigungen</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--
+                    before login
+
+                    <div class="d-none d-lg-block">
+                        <a href="#" class="btn btn_primary rounded-pill">Log In</a>
+                    </div> 
+                -->
+
+                <!-- for logged user -->
+                <div class="userOptBox">
+                    <div>
+                        <a href="#" class="userOpt_item"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                    </div>
+                    <div>
+                        <a href="#" class="userOpt_item">
+                            <i class="fa-regular fa-bell"></i>
+                            <span class="notification_idecator"></span>
+                        </a>
+                    </div>
+
+                    <div class="d-none d-lg-block">
+                        <div class="btn-group">
+                            <button type="button" class="btn userOpt_userImgBox" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="userOpt_userImg" src="assets/img/messages/profile_img.png" alt="profile image" >
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end cus_dropdown-menu">
+                                <li><a class="dropdown-item" href="mentor_profile_details.html">MentorIn</a></li>
+                                <li><a class="dropdown-item" href="mentee_profile_details.html">Mentee</a></li>
+                                <li><a class="dropdown-item" href="general_settings.html">Allg. Einstellungen</a></li>
+                                <li><a class="dropdown-item active" href="security_settings.html">Sicherheit</a></li>
+                                <li><a class="dropdown-item" href="notification_settings.html">Benachrichtigungen</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="userWelcomeTxt">
+                        Schön das Du da bist <br>
+                        <span class="c_secondary">22_George</span>
+                    </div>
+                </div>
+
+
+
+
+                <button class="menu_toggleBtn d-lg-none" id="menu_toggleBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- ..................... End header section ..................... -->
+
+    <!-- ..................... start main section ..................... -->
+    <div class="stg_mainSec">
+        <form action="#" autocomplete="off">
+            <div class="container">
+                <h1 class="stg_pgTittle">Allgemeine Sicherheitseinstellungen</h1>
+
+                <!-- password -->
+                <div class="mb-3 mb-lg-4">
+                    <h2 class="stg_secTitle">
+                        Passwort ändern
+                    </h2>
+                    <div class="row">
+                        <div class="col-xl-9">
+                            <div class="row gy-3 gx-3 gx-lg-4 gx-xxl-5 pb-3 border-bottom align-items-end">
+                                <!-- left column -->
+                                <div class="col-lg-8">
+                                    <div class="stg_inpGrp">
+                                        <div class="row align-items-center">
+                                            <div class="col-sm-4">
+                                                <div class="stg_inpLabel fs_lg">
+                                                    Aktuelles Passwort
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <input class="form-control stg_inp fs_lg" type="password" placeholder="******">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="stg_inpGrp">
+                                        <div class="row align-items-center">
+                                            <div class="col-sm-4">
+                                                <div class="stg_inpLabel fs_lg">
+                                                    Neues Passwort
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <input class="form-control stg_inp fs_lg" type="password" placeholder="******">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="stg_inpGrp">
+                                        <div class="row align-items-center">
+                                            <div class="col-sm-4">
+                                                <div class="stg_inpLabel fs_lg">
+                                                    Passwort wiederholen
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <input class="form-control stg_inp fs_lg" type="password" placeholder="******">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="stg_inpGrp text-end">
+                                        <button class="btn btn_primary rounded-pill" type="button">
+                                            speichern
+                                       </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- safety -->
+                <div class="mb-3 mb-lg-4">
+                    <h2 class="stg_secTitle">
+                        Sicherheit
+                    </h2>
+                    <div class="row">
+                        <div class="col-xl-9">
+                            <div class="row gy-3 gx-3 gx-lg-4 pb-3">
+                                <div class="col-lg-9">
+                                    <div class="stg_inpGrp">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="stg_inpLabel fs_lg">
+                                                    Telefon Verifizierung
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <p class="fs_lg mb-0 fw_semiBold">
+                                                    Dein Telefon ist verifiziert. Klicken Sie auf bearbeiten, um die Telefonnummer zu ändern
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="stg_inpGrp text-end">
+                                        <button class="btn btn_primary rounded-pill" type="button">
+                                            bearbeiten
+                                       </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row gy-3 gx-3 gx-lg-4 pb-3 border-bottom">
+                                <div class="col-lg-9">
+                                    <div class="stg_inpGrp">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="stg_inpLabel fs_lg">
+                                                    Zwei Faktor Authentifizierung
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <p class="fs_lg mb-0 fw_semiBold">
+                                                    Um die Sicherheit Ihres Kontos zu erhöhen, können Sie hier eine zusätzliche Eingabe eines Codes aktivieren. Wir senden Ihnen dann einen zufällig generierten Zugangscode zusätzlich zum Passwort bei jeder Anmeldung auf Share4Growth.  <br> <br>
+                                                    Damit steigern Sie die Sicherheit Ihres Kontos
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="stg_inpGrp mw__maxContent ms-auto">
+                                        <div class="form-check form-switch s_stgSwitch">
+                                            <input class="form-check-input" type="checkbox" id="" autocomplete="off">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- connected devices -->
+                <div class="mb-3 mb-lg-4 ">
+                    <h2 class="stg_secTitle">
+                        Verbundenen Geräte
+                    </h2>
+                    <div class="row">
+                        <div class="col-xl-9 border-bottom">
+                            <div class="mb-3 mb-xxl-4 bg_white rounded p-3 p-xxl-4 d-sm-flex align-items-center">
+                                <div class="mb-2 mb-sm-0">
+                                    <img class="device_icon" src="assets/img/settings/pc_icon.png" alt="pc icon">
+                                </div>
+                                <div class="ps-2 ps-md-3">
+                                    <h6 class="fs_lg mb-2">
+                                        Macbook Pro
+                                    </h6>
+                                    <p class="fs_md">
+                                        Last activity: 2 hours ago  |  North Street, Germany
+                                    </p>
+                                </div>
+                                <div class="ps-2 ps-md-3 ms-auto">
+                                    <a class="btn btn_primary_outline rounded" href="#">ausloggen</a>
+                                </div>
+                            </div>
+
+                            <div class="mb-3 mb-xxl-4 bg_white rounded p-3 p-xxl-4 d-sm-flex align-items-center">
+                                <div class="mb-2 mb-sm-0">
+                                    <img class="device_icon" src="assets/img/settings/phone_icon.png" alt="phone icon">
+                                </div>
+                                <div class="ps-2 ps-md-3">
+                                    <h6 class="fs_lg mb-2">
+                                        iPhone
+                                    </h6>
+                                    <p class="fs_md">
+                                        Last activity: 2 hours ago  |  North Street, Germany
+                                    </p>
+                                </div>
+                                <div class="ps-2 ps-md-3 ms-auto">
+                                    <a class="btn btn_primary_outline rounded" href="#">ausloggen</a>
+                                </div>
+                            </div>
+
+                            <div class="text-end mb-4">
+                                <a href="#" class="fs_lg c_secondary hover_underline">
+                                    Alle Geräte ausloggen
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+
+                <!-- password -->
+                <h2 class="stg_pgTittle">Privatsphäre</h2>
+                <div class="mb-4 mb-lg-5">
+                    <h2 class="stg_secTitle">
+                        Passwort ändern
+                    </h2>
+                    <div class="row">
+                        <div class="col-lg-9">
+                            <div class="stg_inpGrp">
+                                <div class="row align-items-center">
+                                    <div class="col-sm-4">
+                                        <div class="stg_inpLabel fs_lg">
+                                            Blockierte Konten
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <button class="btn bg_white stg_inp border dropdown-toggle" type="button" data-bs-toggle="modal" data-bs-target="#blocked_accountsModal"><span class="pe-2">blockierte Konten</span></button>
+
+                                        <!-- modal -->
+                                        <div class="modal fade" id="blocked_accountsModal" tabindex="-1" aria-labelledby="blockedaccountsModal" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                                                <div class="modal-content border-0">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="blockedaccountsModal">blockierte Konte</h5>
+                                                        <button type="button" class="btn-close rounded-pill" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body thin_scrollbar">
+                                                        <ul class="blk_userList list-unstyled mb-0">
+                                                            <li class="blk_userItem">
+                                                                <div class="blk_userInfoBox fs_lg">
+                                                                    <img class="blk_userImg" src="assets/img/settings/user.png" alt="user" >
+                                                                    <div class="blk_userName">
+                                                                        <a href="#" class="hover_underline">Briyan Smith</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="blk_userActBox ps-2">
+                                                                    <a class="btn btn_primary blk_userActBtn" href="#">
+                                                                        <i class="fa-solid fa-unlock"></i>
+                                                                        <span>
+                                                                            unblock
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="blk_userItem">
+                                                                <div class="blk_userInfoBox fs_lg">
+                                                                    <img class="blk_userImg" src="assets/img/settings/user.png" alt="user" >
+                                                                    <div class="blk_userName">
+                                                                        <a href="#" class="hover_underline">Briyan Smith</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="blk_userActBox ps-2">
+                                                                    <a class="btn btn_primary blk_userActBtn" href="#">
+                                                                        <i class="fa-solid fa-unlock"></i>
+                                                                        <span>
+                                                                            unblock
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="blk_userItem">
+                                                                <div class="blk_userInfoBox fs_lg">
+                                                                    <img class="blk_userImg" src="assets/img/settings/user.png" alt="user" >
+                                                                    <div class="blk_userName">
+                                                                        <a href="#" class="hover_underline">Briyan Smith</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="blk_userActBox ps-2">
+                                                                    <a class="btn btn_primary blk_userActBtn" href="#">
+                                                                        <i class="fa-solid fa-unlock"></i>
+                                                                        <span>
+                                                                            unblock
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="blk_userItem">
+                                                                <div class="blk_userInfoBox fs_lg">
+                                                                    <img class="blk_userImg" src="assets/img/settings/user.png" alt="user" >
+                                                                    <div class="blk_userName">
+                                                                        <a href="#" class="hover_underline">Briyan Smith</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="blk_userActBox ps-2">
+                                                                    <a class="btn btn_primary blk_userActBtn" href="#">
+                                                                        <i class="fa-solid fa-unlock"></i>
+                                                                        <span>
+                                                                            unblock
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="blk_userItem">
+                                                                <div class="blk_userInfoBox fs_lg">
+                                                                    <img class="blk_userImg" src="assets/img/settings/user.png" alt="user" >
+                                                                    <div class="blk_userName">
+                                                                        <a href="#" class="hover_underline">Briyan Smith</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="blk_userActBox ps-2">
+                                                                    <a class="btn btn_primary blk_userActBtn" href="#">
+                                                                        <i class="fa-solid fa-unlock"></i>
+                                                                        <span>
+                                                                            unblock
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="blk_userItem">
+                                                                <div class="blk_userInfoBox fs_lg">
+                                                                    <img class="blk_userImg" src="assets/img/settings/user.png" alt="user" >
+                                                                    <div class="blk_userName">
+                                                                        <a href="#" class="hover_underline">Briyan Smith</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="blk_userActBox ps-2">
+                                                                    <a class="btn btn_primary blk_userActBtn" href="#">
+                                                                        <i class="fa-solid fa-unlock"></i>
+                                                                        <span>
+                                                                            unblock
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="blk_userItem">
+                                                                <div class="blk_userInfoBox fs_lg">
+                                                                    <img class="blk_userImg" src="assets/img/settings/user.png" alt="user" >
+                                                                    <div class="blk_userName">
+                                                                        <a href="#" class="hover_underline">Briyan Smith</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="blk_userActBox ps-2">
+                                                                    <a class="btn btn_primary blk_userActBtn" href="#">
+                                                                        <i class="fa-solid fa-unlock"></i>
+                                                                        <span>
+                                                                            unblock
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="blk_userItem">
+                                                                <div class="blk_userInfoBox fs_lg">
+                                                                    <img class="blk_userImg" src="assets/img/settings/user.png" alt="user" >
+                                                                    <div class="blk_userName">
+                                                                        <a href="#" class="hover_underline">Briyan Smith</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="blk_userActBox ps-2">
+                                                                    <a class="btn btn_primary blk_userActBtn" href="#">
+                                                                        <i class="fa-solid fa-unlock"></i>
+                                                                        <span>
+                                                                            unblock
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="blk_userItem">
+                                                                <div class="blk_userInfoBox fs_lg">
+                                                                    <img class="blk_userImg" src="assets/img/settings/user.png" alt="user" >
+                                                                    <div class="blk_userName">
+                                                                        <a href="#" class="hover_underline">Briyan Smith</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="blk_userActBox ps-2">
+                                                                    <a class="btn btn_primary blk_userActBtn" href="#">
+                                                                        <i class="fa-solid fa-unlock"></i>
+                                                                        <span>
+                                                                            unblock
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="blk_userItem">
+                                                                <div class="blk_userInfoBox fs_lg">
+                                                                    <img class="blk_userImg" src="assets/img/settings/user.png" alt="user" >
+                                                                    <div class="blk_userName">
+                                                                        <a href="#" class="hover_underline">Briyan Smith</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="blk_userActBox ps-2">
+                                                                    <a class="btn btn_primary blk_userActBtn" href="#">
+                                                                        <i class="fa-solid fa-unlock"></i>
+                                                                        <span>
+                                                                            unblock
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stg_inpGrp">
+                                <div class="row align-items-center">
+                                    <div class="col-md-7 col-xxl-5">
+                                        <label class="stg_inpLabel fs_lg d-flex justify-content-between">
+                                            <div>
+                                                Onlinestatus anzeigen
+                                            </div>
+                                            <div>
+                                                <div class="form-check form-switch s_stgSwitch">
+                                                    <input class="form-check-input" type="checkbox" id="" autocomplete="off">
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stg_inpGrp">
+                                <div class="row align-items-center">
+                                    <div class="col-md-7 col-xxl-5">
+                                        <label class="stg_inpLabel fs_lg d-flex justify-content-between">
+                                            <div>
+                                                Wachstumsengpässen aktivieren
+                                            </div>
+                                            <div>
+                                                <div class="form-check form-switch s_stgSwitch">
+                                                    <input class="form-check-input" type="checkbox" id="" autocomplete="off">
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stg_inpGrp">
+                                <div class="row align-items-center">
+                                    <div class="col-md-7 col-xxl-5">
+                                        <label class="stg_inpLabel fs_lg d-flex justify-content-between">
+                                            <div>
+                                                Kompetenzangebote aktivieren
+                                            </div>
+                                            <div>
+                                                <div class="form-check form-switch s_stgSwitch">
+                                                    <input class="form-check-input" type="checkbox" id="" autocomplete="off">
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="stg_inpGrp text-end">
+                                    <button class="btn btn_primary rounded-pill" type="button">
+                                        speichern
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                
+            </div>
+        </form>
+    </div>
+    <!-- ..................... end main section ..................... -->
+
+    <!-- ..................... Start footer section ..................... -->
+    <footer class="footer_sec">
+        <div class="container">
+            <div class="row footer_topRow">
+                <div class="col-0 col-xl-2"></div>
+                <div class="col-lg-12 col-xl-9">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="footer_content">
+                                <p class="footer_contentTitle">Kompetenzmarktplatz</p>
+                                <ul class="footer_nav">
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="about_competence_marketplace.html">So funktioniert's</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Kostenlose Registrierung</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Login</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="footer_content">
+                                <p class="footer_contentTitle">Wachstumsmarktplatz</p>
+                                <ul class="footer_nav">
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="about_growth_marketplace.html">So funktioniert's</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Kostenlose Registrierung</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Login</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-2">
+                            <div class="footer_content">
+                                <p class="footer_contentTitle">Über uns</p>
+                                <ul class="footer_nav">
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Team</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Karriere</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-2">
+                            <div class="footer_content">
+                                <p class="footer_contentTitle">Hilfe</p>
+                                <ul class="footer_nav">
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="faq.html">FAQ</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="contact_us.html">Hilfe und Kontakt</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-2">
+                            <div class="footer_content">
+                                <p class="footer_contentTitle">Rechtliches</p>
+                                <ul class="footer_nav">
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Impressum</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">Datenschutz</a>
+                                    </li>
+                                    <li class="footer_navItem">
+                                        <a class="footer_navLink" href="#">AGBs</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-12 col-xl-8">
+                    <p class="footer_contentTitle text-center">Folge uns</p>
+
+                    <div class="footer_socialLinks text-center">
+                        <a class="footer_socialLink" href="#"> <img src="assets/icon/social_instagram.png" alt="facebook icon"></a>
+                        <a class="footer_socialLink" href="#"> <img src="assets/icon/social_twitter.png" alt="facebook icon"></a>
+                        <a class="footer_socialLink" href="#"> <img src="assets/icon/social_facebook.png" alt="facebook icon"></a>
+                        <a class="footer_socialLink" href="#"> <img src="assets/icon/social_youtube.png" alt="facebook icon"></a>
+                        <a class="footer_socialLink" href="#"> <img src="assets/icon/social_linkedin.png" alt="facebook icon"></a>
+                    </div>
+
+                    <p class="footer_copyrightText text-center">Copyright &copy;2022 Share 4 Growth. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ..................... End footer section ..................... -->
+
+    <!-- ............. scripts ............. -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/glightbox.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/settings.js"></script>
+</body>
+
+</html>

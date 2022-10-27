@@ -58,7 +58,7 @@
       referrerpolicy="no-referrer"
     />
     <!--  -->
-    <link rel="stylesheet" href="assets/css/mentorIn_einnahmen.css" />
+    <link rel="stylesheet" href="assets/css/investitionen.css" />
   </head>
 
   <body>
@@ -255,12 +255,12 @@
 
             <div class="pageNavBox">
               <a
-                class="pageNavItem pageNavItem1 active"
+                class="pageNavItem pageNavItem1"
                 href="mentor_profile_details.html"
                 >MentorIn</a
               >
               <a
-                class="pageNavItem pageNavItem2"
+                class="pageNavItem pageNavItem2 active"
                 href="mentee_profile_details.html"
                 >Mentee</a
               >
@@ -339,7 +339,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="mentee_investments.html">
+              <a class="nav-link active" href="mentee_investments.html">
                 <div class="d-flex align-items-center">
                   <span class="nav_link_icon">
                     <i class="fa-solid fa-wallet"></i>
@@ -349,17 +349,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="mentee_favourites.html">
-                <div class="d-flex align-items-center">
-                  <span class="nav_link_icon">
-                    <i class="fa-solid fa-wallet"></i>
-                  </span>
-                  <span class="nav-link-text ps-1">Einnahmen</span>
-                </div>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="mentorIn_einnahmen.html">
+              <a class="nav-link" href="mentee_favourites.html">
                 <div class="d-flex align-items-center">
                   <span class="nav_link_icon">
                     <i class="fa-solid fa-heart"></i>
@@ -450,7 +440,7 @@
                     <a class="sub_nav_link" href="#"> Demo title 1 </a>
                   </li>
                   <li class="sub_nav_item">
-                    <a class="sub_nav_link" href="#"> Demo title </a>
+                    <a class="sub_nav_link" href="#"> Demo title 2 </a>
                   </li>
                   <li class="sub_nav_item">
                     <a class="sub_nav_link" href="#"> Demo title 3 </a>
@@ -470,30 +460,14 @@
       <!-- main content column -->
       <div class="main_contentCol">
         <div class="main_contentColBox">
-          <div class="einnahmen_contianer">
-            <div class="einnahmen-toggle">
-              <label class="d-flex align-items-center mb-2">
-                <span class="me4">4ME</span>
-                <div class="form-check form-switch">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id=""
-                    autocomplete="off"
-                    data-tgl_inprow="inprow_itm_2"
-                  />
-                </div>
-                <span class="c_gray">4 Share</span>
-              </label>
-            </div>
-            <h2 class="einnahmen_secTitle">
-              Meine Einnahmenübersicht als MentorIn -
-              <span>4Me</span>
+          <div class="investitionen_contianer">
+            <h2 class="investitionen_secTitle">
+              Meine Investitionen als Mentee
             </h2>
             <div class="row">
-              <div class="einnahmen-wrapper">
+              <div class="investitionen-wrapper">
                 <div class="sticky-table">
-                  <table class="einnahmen-table">
+                  <table class="investitionen-table">
                     <thead>
                       <tr>
                         <th>
@@ -515,14 +489,6 @@
                         </th>
                         <th>Rechnung</th>
                         <th>
-                          Abrechnungs- <br />
-                          nummer
-                        </th>
-                        <th>
-                          S4G- <br />
-                          Abrechnung
-                        </th>
-                        <th>
                           <select>
                             <option>
                               Gesamt- <br />
@@ -535,9 +501,9 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td>15.07.2022</td>
-                        <td>Leaves</td>
-                        <td>R4M2022111</td>
+                        <td>07.07.2022</td>
+                        <td>RHymer</td>
+                        <td>R4M2022107</td>
                         <td style="text-align: center">
                           <a href="#">
                             <img
@@ -545,60 +511,50 @@
                               alt="download-deep"
                           /></a>
                         </td>
-                        <td>A4M2022111</td>
+                        <td>7,75 EUR</td>
+                        <td>erledigt</td>
+                      </tr>
+                      <tr>
+                        <td>06.05.2022</td>
+                        <td>RHymer</td>
+                        <td>R4M2022106</td>
                         <td style="text-align: center">
                           <a href="#"
                             ><img
-                              src="assets/icon/download-light.svg"
-                              alt="download-light"
+                              src="assets/icon/download-deep.svg"
+                              alt="download-deep"
+                          /></a>
+                        </td>
+                        <td>5,02 EUR</td>
+                        <td>erledigt</td>
+                      </tr>
+                      <tr>
+                        <td>07.05.2022</td>
+                        <td>RHymer</td>
+                        <td>R4M2022105</td>
+                        <td style="text-align: center">
+                          <a href="#"
+                            ><img
+                              src="assets/icon/download-deep.svg"
+                              alt="download-deep"
                           /></a>
                         </td>
                         <td>6,03 EUR</td>
-                        <td>abgeschlossen</td>
+                        <td>erledigt</td>
                       </tr>
                       <tr>
-                        <td>16.05.2022</td>
-                        <td>LH_2022</td>
-                        <td>R4M2022298</td>
+                        <td>24.05.2022</td>
+                        <td>RHymer</td>
+                        <td>R4M2022104</td>
                         <td style="text-align: center">
                           <a href="#"
                             ><img
                               src="assets/icon/download-deep.svg"
                               alt="download-deep"
-                          /></a>
-                        </td>
-                        <td>A4M2022298</td>
-                        <td style="text-align: center">
-                          <a href="#"
-                            ><img
-                              src="assets/icon/download-light.svg"
-                              alt="download-light"
-                          /></a>
-                        </td>
-                        <td>6,69 EUR</td>
-                        <td>abgeschlossen</td>
-                      </tr>
-                      <tr>
-                        <td>1.05.2022</td>
-                        <td>210Luka</td>
-                        <td>R4M2022296</td>
-                        <td style="text-align: center">
-                          <a href="#"
-                            ><img
-                              src="assets/icon/download-deep.svg"
-                              alt="download-deep"
-                          /></a>
-                        </td>
-                        <td>A4M2022296</td>
-                        <td style="text-align: center">
-                          <a href="#"
-                            ><img
-                              src="assets/icon/download-light.svg"
-                              alt="download-light"
                           /></a>
                         </td>
                         <td>6,52 EUR</td>
-                        <td>abgeschlossen</td>
+                        <td>erledigt</td>
                       </tr>
                     </tbody>
                   </table>
