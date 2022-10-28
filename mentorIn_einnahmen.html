@@ -476,132 +476,329 @@
                 <span class="me4">4ME</span>
                 <div class="form-check form-switch">
                   <input
-                    class="form-check-input"
+                    class="form-check-input ennahToggle"
                     type="checkbox"
                     id=""
                     autocomplete="off"
                     data-tgl_inprow="inprow_itm_2"
                   />
                 </div>
-                <span class="c_gray">4 Share</span>
+                <span class="c_gray share4">4 Share</span>
               </label>
             </div>
-            <h2 class="einnahmen_secTitle">
-              Meine Einnahmenübersicht als MentorIn -
-              <span>4Me</span>
-            </h2>
-            <div class="row">
-              <div class="einnahmen-wrapper">
-                <div class="sticky-table">
-                  <table class="einnahmen-table">
-                    <thead>
-                      <tr>
-                        <th>
-                          <select>
-                            <option>Datum</option>
-                          </select>
-                        </th>
-                        <th>
-                          <select>
-                            <option>
-                              Benutzername <br />
-                              Mentee
-                            </option>
-                          </select>
-                        </th>
-                        <th>
-                          Rechnungs- <br />
-                          nummer
-                        </th>
-                        <th>Rechnung</th>
-                        <th>
-                          Abrechnungs- <br />
-                          nummer
-                        </th>
-                        <th>
-                          S4G- <br />
-                          Abrechnung
-                        </th>
-                        <th>
-                          <select>
-                            <option>
-                              Gesamt- <br />
-                              gutschrift
-                            </option>
-                          </select>
-                        </th>
-                        <th>Status</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>15.07.2022</td>
-                        <td>Leaves</td>
-                        <td>R4M2022111</td>
-                        <td style="text-align: center">
-                          <a href="#">
-                            <img
-                              src="assets/icon/download-deep.svg"
-                              alt="download-deep"
-                          /></a>
-                        </td>
-                        <td>A4M2022111</td>
-                        <td style="text-align: center">
-                          <a href="#"
-                            ><img
-                              src="assets/icon/download-light.svg"
-                              alt="download-light"
-                          /></a>
-                        </td>
-                        <td>6,03 EUR</td>
-                        <td>abgeschlossen</td>
-                      </tr>
-                      <tr>
-                        <td>16.05.2022</td>
-                        <td>LH_2022</td>
-                        <td>R4M2022298</td>
-                        <td style="text-align: center">
-                          <a href="#"
-                            ><img
-                              src="assets/icon/download-deep.svg"
-                              alt="download-deep"
-                          /></a>
-                        </td>
-                        <td>A4M2022298</td>
-                        <td style="text-align: center">
-                          <a href="#"
-                            ><img
-                              src="assets/icon/download-light.svg"
-                              alt="download-light"
-                          /></a>
-                        </td>
-                        <td>6,69 EUR</td>
-                        <td>abgeschlossen</td>
-                      </tr>
-                      <tr>
-                        <td>1.05.2022</td>
-                        <td>210Luka</td>
-                        <td>R4M2022296</td>
-                        <td style="text-align: center">
-                          <a href="#"
-                            ><img
-                              src="assets/icon/download-deep.svg"
-                              alt="download-deep"
-                          /></a>
-                        </td>
-                        <td>A4M2022296</td>
-                        <td style="text-align: center">
-                          <a href="#"
-                            ><img
-                              src="assets/icon/download-light.svg"
-                              alt="download-light"
-                          /></a>
-                        </td>
-                        <td>6,52 EUR</td>
-                        <td>abgeschlossen</td>
-                      </tr>
-                    </tbody>
-                  </table>
+            <div class="einnahmenContent active">
+              <h2 class="einnahmen_secTitle">
+                Meine Einnahmenübersicht als MentorIn -
+                <span>4Me</span>
+              </h2>
+              <div class="row">
+                <div class="einnahmen-wrapper">
+                  <div class="sticky-table">
+                    <table class="einnahmen-table">
+                      <thead>
+                        <tr>
+                          <th>
+                            <select>
+                              <option>Datum</option>
+                            </select>
+                          </th>
+                          <th>
+                            <select>
+                              <option>
+                                Benutzername <br />
+                                Mentee
+                              </option>
+                            </select>
+                          </th>
+                          <th>
+                            Rechnungs- <br />
+                            nummer
+                          </th>
+                          <th>Rechnung</th>
+                          <th>
+                            Abrechnungs- <br />
+                            nummer
+                          </th>
+                          <th>
+                            S4G- <br />
+                            Abrechnung
+                          </th>
+                          <th>
+                            <select>
+                              <option>
+                                Gesamt- <br />
+                                gutschrift
+                              </option>
+                            </select>
+                          </th>
+                          <th>Status</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>15.07.2022</td>
+                          <td>Leaves</td>
+                          <td>R4M2022111</td>
+                          <td style="text-align: center">
+                            <a href="#">
+                              <img
+                                src="assets/icon/download-deep.svg"
+                                alt="download-deep"
+                            /></a>
+                          </td>
+                          <td>A4M2022111</td>
+                          <td style="text-align: center">
+                            <a href="#"
+                              ><img
+                                src="assets/icon/download-light.svg"
+                                alt="download-light"
+                            /></a>
+                          </td>
+                          <td>6,03 EUR</td>
+                          <td>abgeschlossen</td>
+                        </tr>
+                        <tr>
+                          <td>16.05.2022</td>
+                          <td>LH_2022</td>
+                          <td>R4M2022298</td>
+                          <td style="text-align: center">
+                            <a href="#"
+                              ><img
+                                src="assets/icon/download-deep.svg"
+                                alt="download-deep"
+                            /></a>
+                          </td>
+                          <td>A4M2022298</td>
+                          <td style="text-align: center">
+                            <a href="#"
+                              ><img
+                                src="assets/icon/download-light.svg"
+                                alt="download-light"
+                            /></a>
+                          </td>
+                          <td>6,69 EUR</td>
+                          <td>abgeschlossen</td>
+                        </tr>
+                        <tr>
+                          <td>1.05.2022</td>
+                          <td>210Luka</td>
+                          <td>R4M2022296</td>
+                          <td style="text-align: center">
+                            <a href="#"
+                              ><img
+                                src="assets/icon/download-deep.svg"
+                                alt="download-deep"
+                            /></a>
+                          </td>
+                          <td>A4M2022296</td>
+                          <td style="text-align: center">
+                            <a href="#"
+                              ><img
+                                src="assets/icon/download-light.svg"
+                                alt="download-light"
+                            /></a>
+                          </td>
+                          <td>6,52 EUR</td>
+                          <td>abgeschlossen</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="einnahmenContent2">
+              <h2 class="einnahmen_secTitle">
+                Meine Einnahmenübersicht als MentorIn -
+                <span style="color: #2e2b6a">4Share</span>
+              </h2>
+              <div class="row">
+                <div class="einnahmen-wrapper">
+                  <div class="sticky-table">
+                    <table class="einnahmen-table einnahmen-table2">
+                      <thead>
+                        <tr>
+                          <th>
+                            <select>
+                              <option>Datum</option>
+                            </select>
+                          </th>
+                          <th>
+                            <select>
+                              <option>
+                                Benutzername <br />
+                                Mentee
+                              </option>
+                            </select>
+                          </th>
+                          <th>
+                            Rechnungs- <br />
+                            nummer
+                          </th>
+                          <th>Rechnung</th>
+                          <th>
+                            Abrechnungs- <br />
+                            nummer
+                          </th>
+                          <th>
+                            S4G- <br />
+                            Abrechnung
+                          </th>
+                          <th>
+                            <select>
+                              <option>
+                                Gesamt- <br />
+                                gutschrift
+                              </option>
+                            </select>
+                          </th>
+                          <th>Status</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <span>15.07.2022</span>
+                            <span>16.07.2022</span>
+                            <span>15.07.2022</span>
+                          </td>
+                          <td>
+                            <span>Leaves</span>
+                            <span>LH_2022</span>
+                            <span>210Luka</span>
+                          </td>
+                          <td>
+                            <span>R4M2022111</span>
+                            <span>R4S2022298</span>
+                            <span>R4S2022296</span>
+                          </td>
+                          <td style="text-align: center">
+                            <span>
+                              <a href="#">
+                                <img
+                                  src="assets/icon/download-deep.svg"
+                                  alt="download-deep"
+                              /></a>
+                            </span>
+                            <span>
+                              <a href="#">
+                                <img
+                                  src="assets/icon/download-deep.svg"
+                                  alt="download-deep"
+                              /></a>
+                            </span>
+                            <span>
+                              <a href="#">
+                                <img
+                                  src="assets/icon/download-deep.svg"
+                                  alt="download-deep"
+                              /></a>
+                            </span>
+                          </td>
+                          <td>A4M2022111</td>
+                          <td style="text-align: center">
+                            <a href="#"
+                              ><img
+                                src="assets/icon/download-light.svg"
+                                alt="download-light"
+                            /></a>
+                          </td>
+                          <td>6,03 EUR</td>
+                          <td>abgeschlossen</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span>13.07.2022</span>
+                            <span>13.07.2022</span>
+                            <span>13.07.2022</span>
+                          </td>
+                          <td>
+                            <span>Mentee2022</span>
+                            <span>Mentee2022</span>
+                            <span>Mentee2022</span>
+                          </td>
+                          <td>
+                            <span>R4M2022111</span>
+                            <span>R4S2022222</span>
+                            <span>R4S2023333</span>
+                          </td>
+                          <td style="text-align: center">
+                            <span>
+                              <a href="#">
+                                <img
+                                  src="assets/icon/download-deep.svg"
+                                  alt="download-deep"
+                              /></a>
+                            </span>
+                            <span>
+                              <a href="#">
+                                <img
+                                  src="assets/icon/download-deep.svg"
+                                  alt="download-deep"
+                              /></a>
+                            </span>
+                            <span>
+                              <a href="#">
+                                <img
+                                  src="assets/icon/download-deep.svg"
+                                  alt="download-deep"
+                              /></a>
+                            </span>
+                          </td>
+                          <td>A4M2022298</td>
+                          <td style="text-align: center">
+                            <a href="#"
+                              ><img
+                                src="assets/icon/download-light.svg"
+                                alt="download-light"
+                            /></a>
+                          </td>
+                          <td>6,69 EUR</td>
+                          <td>abgeschlossen</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span>15.07.2022</span>
+                            <span>16.07.2022</span>
+                          </td>
+                          <td>
+                            <span>LH_2022</span>
+                            <span>210Luka</span>
+                          </td>
+                          <td>
+                            <span>R4S2022298</span>
+                            <span>R4S2022296</span>
+                          </td>
+                          <td style="text-align: center">
+                            <span>
+                              <a href="#">
+                                <img
+                                  src="assets/icon/download-deep.svg"
+                                  alt="download-deep"
+                              /></a>
+                            </span>
+                            <span>
+                              <a href="#">
+                                <img
+                                  src="assets/icon/download-deep.svg"
+                                  alt="download-deep"
+                              /></a>
+                            </span>
+                          </td>
+                          <td>A4M2022296</td>
+                          <td style="text-align: center">
+                            <a href="#"
+                              ><img
+                                src="assets/icon/download-light.svg"
+                                alt="download-light"
+                            /></a>
+                          </td>
+                          <td>6,52 EUR</td>
+                          <td>abgeschlossen</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div>
@@ -748,5 +945,6 @@
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/glightbox.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/einnahmen.js"></script>
   </body>
 </html>

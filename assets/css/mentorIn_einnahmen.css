@@ -32,7 +32,7 @@
 .einnahmen-toggle .me4 {
   font-weight: 700;
   color: #6e8fe7;
-  padding-right: 5px;
+  padding-right: 10px;
 }
 
 .einnahmen2-me4 {
@@ -46,8 +46,8 @@
 }
 
 .einnahmen-toggle .form-check-input:checked {
-  background-color: var(--df_color);
-  border-color: var(--df_color);
+  background-color: #2e2b6a;
+  border-color: #2e2b6a;
 }
 
 .einnahmen-wrapper {
@@ -112,4 +112,34 @@ table.einnahmen-table {
   .einnahmen_secTitle {
     font-size: 22px;
   }
+}
+
+.einnahmenContent {
+  display: none;
+  transition: all 0.7s;
+}
+
+.einnahmenContent.active {
+  display: block;
+  transition: all 0.7s;
+}
+
+.einnahmenContent2 {
+  display: none;
+  transition: all 0.7s;
+}
+
+.einnahmenContent2.active {
+  display: block;
+  transition: all 0.7s;
+}
+
+.me4.active {
+  font-weight: normal;
+  color: #a1a1a1;
+}
+
+.share4.active {
+  font-weight: 700;
+  color: #5a5ca8;
 }
