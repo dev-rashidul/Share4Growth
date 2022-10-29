@@ -29,6 +29,41 @@
   color: #6e8fe7;
 }
 
+.einnahmen-toggle {
+  max-width: 190px;
+}
+
+.einnahmen-toggle input[type="checkbox"] {
+  position: relative;
+  background: #6e8fe7;
+  width: 50px;
+  height: 23px;
+  margin-top: 7px;
+  margin-right: 10px;
+  border-radius: 20px;
+  -webkit-appearance: none;
+}
+
+.einnahmen-toggle input:checked[type="checkbox"] {
+  background: linear-gradient(to left, #2e2b62, #7980db);
+}
+
+.einnahmen-toggle input[type="checkbox"]:before {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 18px;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  background: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+.einnahmen-toggle input:checked[type="checkbox"]:before {
+  left: 30px;
+}
+
 .einnahmen-toggle .me4 {
   font-weight: 700;
   color: #6e8fe7;
@@ -105,7 +140,7 @@ table.einnahmen-table {
 
 .einnahmen-table2 tbody td span {
   display: block;
-  padding: 10px 0;
+  padding: 5px 0;
 }
 
 @media (max-width: 1200px) {
